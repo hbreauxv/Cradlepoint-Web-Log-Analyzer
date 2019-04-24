@@ -42,7 +42,6 @@ class logFile(object):
 			self._tempFD.write(line)
 
 			line = self._sourceFD.readline()
-			print(line)
 
 		self.reset()
 
