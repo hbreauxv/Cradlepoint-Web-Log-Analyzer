@@ -172,7 +172,7 @@ class signalQualityParser(object):
 
 
 class gpsParser(object):
-	def __init__(object):
+	def __init__(self):
 		pass
 
 	def parseLog(self, logFileObject):
