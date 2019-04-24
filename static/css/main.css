@@ -23,3 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
 }
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
