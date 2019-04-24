@@ -5,13 +5,14 @@ from bokeh.embed import components
 app = Flask(__name__)
 
 @app.route('/')
-def show_dashboard():
+
+def showDashboard():
     plots = []
-    plots.append(make_plot())
+    plots.append(makePlot())
 
     return render_template('dashboard.html', plots=plots)
 
-def make_plot():
+def makePlot():
     plot = figure(plot_height=150, sizing_mode='scale_width')
 
     x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

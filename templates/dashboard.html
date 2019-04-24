@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
-{% block body %}
+
+
+{% block content %}
     {% for plot in plots %}
         {% for part in plot %}
             {{part | safe}}

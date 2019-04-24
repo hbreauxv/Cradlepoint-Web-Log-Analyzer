@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Java Script -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/main.css' ) }}" >
+
+
     <!-- Bokeh includes-->
     <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.css" type="text/css" />
     <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+    <title>Graphs</title>
+
   </head>
   <body>
-    <div>
-        <h1>Bokeh sample</h1>
-        {% block body %}{% endblock %}
-    </div>
+    {% include "siteHeader.html" %}
+    <main role="main">
+     <div class="container" style="max-width:960px; padding-left:10px; padding-right:0px; margin:0px">
+        <div>
+           {% with messages = get_flashed_messages() %}
+           {% if messages %}
+           <ul>
+               {% for message in messages %}
+               <li>{{ message }}</li>
+               {% endfor %}
+           </ul>
+           {% endif %}
+           {% endwith %}
+            <div class="col-md-12">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+     </div>
+    </main>
   </body>
 </html>
