@@ -1,21 +1,24 @@
 from flask import Flask, render_template, flash, redirect, url_for
+from flask_socketio import SocketIO, emit
 from bokeh.plotting import figure
 from bokeh.embed import components
 from forms import logFileForm
 from ConnStateParse import ConnStateParse
 from os import remove
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\x7f[\xce\x97\xf9\x86\x1b\x92YBx/7\xdcX^\xea\xd5\xc4\t~\x8c\xbe\x02'
+SIOapp = SocketIO(app)
 
 connStatePlot = None
 
+## View functions
 @app.route('/')
 def showDashboard():
 	form = logFileForm()
 
 	plots = []
-	plots.append(makePlot())
 	if connStatePlot:
 		plots.append(components(connStatePlot))
 
@@ -37,12 +40,15 @@ def uploadFile():
 
 	return redirect(url_for('showDashboard'))
 
-def makePlot():
-	plot = figure(plot_height=150, sizing_mode='scale_width')
+## SocketIO communication functions
+@SIOapp.on('connect')
+def connectHandler():
 
-	x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-	y = [2**v for v in x]
-	plot.line(x, y, line_width=4)
+	print("Client connected")
 
-	script, div = components(plot)
-	return script, div
+@SIOapp.on('disconnect')
+def disconnectHandler():
+	print("Client disconnected")
+
+
+
