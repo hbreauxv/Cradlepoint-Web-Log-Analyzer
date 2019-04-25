@@ -102,22 +102,23 @@ class connectionStateParser(object):
 
 	def parseLog(self, logFile):
 		output = {}
-		series1 = [[1,1,"stateone-1"],[2,2,"stateone-2"],[3,3,"stateone-3"]]
-		series2 = [[1,0,"statetwo-1"],[2,0,"statetwo-2"],[3,0,"statetwo-3"]]
-		output['state_series1'] = series1
-		output['state_series2'] = series2
+		#series1 = [[1,1,"stateone-1"],[2,2,"stateone-2"],[3,3,"stateone-3"]]
+		#series2 = [[1,0,"statetwo-1"],[2,0,"statetwo-2"],[3,0,"statetwo-3"]]
+		#output['state_series1'] = series1
+		#output['state_series2'] = series2
 		return output
 
 class signalQualityParser(object):
 	def __init__(self):
 		# excellent = if greater or equal to [0], 
-		# fair = if greater than [1] but less than [0],
-		# poor = if less than [1] 
-		self.rssi = [-67, -80] 
-		self.sinr = [ 20,   0] 
-		self.rsrp = [-80,-100] 
-		self.rsrq = [-10, -20] 
-		self.ecio = [ -6, -10] 
+		# good = if greater than [1] but less than [0]
+		# fair = if greater than [2] but less than [1],
+		# poor = if less than [2] 
+		self.rssi = [-67, -70,  -80] 
+		self.sinr = [ 20,  13,    0] 
+		self.rsrp = [-80, -90, -100] 
+		self.rsrq = [-10, -15,  -20] 
+		self.ecio = [ -6, -10,  -20] 
 
 	def parseLog(self, logFileObject):
 		# Find the current signal quality values over time so they can be plotted.
@@ -126,47 +127,56 @@ class signalQualityParser(object):
 		#  ex: Service Change : Not Reported -> LTE, 100%, RSSI: -45(dBm), SINR: 16.4, RSRP: -68, RSRQ: -7, RFBAND: Band 13
 		#   
 
-		
+		logFileObject.setIterMode('tokenize')
 
 		uids = {}
-		re_uid_str = r'WAN:([0-9a-f]*) -- '
+		re_uid_str = r'WAN:([0-9a-f]+)'
 		re_end_str = r'{}:(.*)'         #RF band doesn't have parens
 		re_gen_sig_str = r'{}:(.*?)\('  #signal strings in middle of line all have the form: XXXX:<val>(unit)
 
 		sig_strs = {
-					'RSSI':re_gen_sig_str, 
-					'SINR':re_gen_sig_str, 
-					'RSRP':re_gen_sig_str, 
-					'RSRQ':re_gen_sig_str, 
-					'ECIO':re_gen_sig_str, 
-					'RFBAND':re_end_str
+					'RSSI':[re_gen_sig_str, self.rssi],
+					'SINR':[re_gen_sig_str, self.sinr],
+					'RSRP':[re_gen_sig_str, self.rsrp],
+					'RSRQ':[re_gen_sig_str, self.rsrq],
+					'ECIO':[re_gen_sig_str, self.ecio],
+					'RFBAND':[re_end_str, None]
 		}
-		for l in logFileObject:
-			match_uid = re.search(re_uid_str, l, flags=0)
+		for line in logFileObject:
+			src = line['source']
+			msg = line['message']
+			#print("source: {}, message: {}".format(src, msg))
+			match_uid = re.search(re_uid_str, src, flags=0)
 			if match_uid:
-				#print("loop1 %s"%l)
 				uid = match_uid.group(1)
 				uid_name = 'uid-'+uid
-				#print("uid: {}".format(uid_name))
 				if uid_name not in uids:
+					print("source: {}, message: {}".format(src, msg))
+					print("uid: {}".format(uid_name))
 					uids[uid_name] = {'RSSI':[], 'SINR':[], 'RSRP':[], 'RSRQ':[], 'ECIO':[], 'RFBAND':[]}
-				for sig_str in sig_strs:
-					#put the leading value in: RSSI or SINR
-					search_str = sig_strs[sig_str].format(sig_str)
-					match_str = re.search(search_str, l, flags=0)
-					if match_str:
-						uids[uid_name][sig_str].append([match_str.group(1)])
+				if 'signal' in msg:
+					for sig_str in sig_strs:
+						#put the leading value in: RSSI or SINR
+						search_str = sig_strs[sig_str][0].format(sig_str)
+						match_str = re.search(search_str, msg, flags=0)
+						if match_str:
+							val = match_str.group(1)
+							limits = sig_strs[sig_str][1]
+							quality = None
+							if limits:
+								val_int = float(val)
+								quality = None
+								if val_int >= limits[0]:
+									quality = "Excellent"
+								elif val_int >= limits[1]:
+									quality = "Good"
+								elif val_int >= limits[2]:
+									quality = "Fair"
+								else:
+									quality = "Poor"
 
+							uids[uid_name][sig_str].append([line['timestamp'], val, quality ])
 
-
-		#logFileObject.reset()
-		#for l in logFileObject:
-		#	print("loop2 %s"%l)
-
-		#series1 = [[1,1,"sigone-1"],[2,2,"sigone-2"],[3,3,"sigone-3"]]
-		#series2 = [[1,0,"sigtwo-1"],[2,0,"sigtwo-2"],[3,0,"sigtwo-3"]]
-		#output['sig_series1'] = series1
-		#output['sig_series2'] = series2
 		#print(uids)
 		return uids
 
@@ -190,7 +200,10 @@ class generateOutput(object):
 				series_data = d[series]
 				if isinstance(series_data, dict):
 					for sd in series_data:
-						print("  sub name: {}, data: {}".format(sd, series_data[sd]))
+						print("  sub name: {}".format(sd))
+						for s in series_data[sd]:
+							print("    {}".format(s))
+						
 				else:
 					for sd in series_data:
 						print("  data: {}".format(sd))
