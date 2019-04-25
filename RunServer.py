@@ -1,4 +1,4 @@
-from app import app
+from app import SIOapp, app
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', threaded=True)
+    SIOapp.run(app, host='0.0.0.0')
