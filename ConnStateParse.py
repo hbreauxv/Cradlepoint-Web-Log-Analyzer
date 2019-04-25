@@ -7,7 +7,7 @@ from copy import copy
 from datetime import datetime
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import ColumnDataSource, HoverTool
-from web_log_parser import logFile
+from LogFile import logFile
 
 class ConnStateParse():
     #Wan state enumeration
@@ -115,14 +115,13 @@ class ConnStateParse():
     #Output is {uid:[[time,state,details],],}
     #output optional CSV string of all data
     @classmethod
-    def parseLog(self, filename, retType):
+    def parseLog(self, log, retType):
         retTypes = ['dict', 'csv', 'plot']
         if retType not in retTypes:
             raise ValueError(' retType must be in {}'.format(retTypes))
         #Every function in list below will be executed on every line
         parseFuncs = [self._parseDevState, self._parseUnplug, self._parsePlug] # Every function here should parse a line and return a wanEvt
-        log = logFile(filename)
-        log.open()
+        log.reset()
         retCSV = self.WanEvent.getCSVHeader()  # Start building string of all parsed data in CSV output format
         retDict = {}
         for line in log:
@@ -136,7 +135,7 @@ class ConnStateParse():
                             retDict[evt.uid] = []
                         retDict[evt.uid].append(evt.getList())
                     break
-        log.close()
+        log.reset()
         # Return format
         if retType == 'csv':
             return retCSV
@@ -187,12 +186,15 @@ if __name__ == '__main__':
     parser.add_argument('filename', type=str, help='syslog file to parse')
 
     args = parser.parse_args()
-
     filename = args.filename
 
+
     #Example usage of the class
-    resl = ConnStateParse.parseLog(filename, 'dict')  # Here we get our standard output. {uid1:[[event1,...eventN],[...]],...uidN:[[]]}
+    log = logFile(filename)
+    log.open()
+    resl = ConnStateParse.parseLog(log, 'dict')  # Here we get our standard output. {uid1:[[event1,...eventN],[...]],...uidN:[[]]}
     ConnStateParse.getPlot(resl, view=True)  # Plotting and viewing
     #ConnStateParse.parseLog(filename, 'log')  # Getting a plot back, to be viewed, saved, embedded
+    log.close()
     
 
