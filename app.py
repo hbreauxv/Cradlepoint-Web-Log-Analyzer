@@ -37,7 +37,9 @@ def uploadFile():
 		form.logFile.data.save(savedLocation)
 		flash("LogFile: {} has been submitted".format(logFileName))
 		global connStatePlot
-		connStatePlot = ConnStateParse.parseLog(savedLocation, 'plot')
+		log = logFile(savedLocation)
+		log.open()
+		connStatePlot = ConnStateParse.parseLog(log, 'plot')
 
 		session.pop('plots', None) #clear old plots
 		session['plots'] = components(connStatePlot) #add new one
