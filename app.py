@@ -3,6 +3,7 @@ from bokeh.plotting import figure
 from bokeh.embed import components
 from forms import logFileForm
 from ConnStateParse import ConnStateParse
+from os import remove
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\x7f[\xce\x97\xf9\x86\x1b\x92YBx/7\xdcX^\xea\xd5\xc4\t~\x8c\xbe\x02'
@@ -27,10 +28,12 @@ def uploadFile():
 
 	if form.validate_on_submit():
 		logFileName = form.logFile.data.filename
-		form.logFile.data.save('logFiles/' + logFileName)
+		savedLocation = 'logFiles/' + logFileName
+		form.logFile.data.save(savedLocation)
 		flash("LogFile: {} has been submitted".format(logFileName))
 		global connStatePlot
-		connStatePlot = ConnStateParse.parseLog('logFiles/' + logFileName, 'plot')
+		connStatePlot = ConnStateParse.parseLog(savedLocation, 'plot')
+		remove(savedLocation)  # don't want these files to build up, remove after parse
 
 	return redirect(url_for('showDashboard'))
 
