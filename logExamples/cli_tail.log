@@ -1,0 +1,1256 @@
+12/31/69 06:00:07 PM INFO syslogd started: BusyBox v1.24.1
+12/31/69 06:00:07 PM NOTICE kernel klogd started: BusyBox v1.24.1 (2019-02-25 21:03:34 UTC)
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Booting Linux on physical CPU 0x0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] Linux version 4.4.100-coconut (@838b34748b18) (gcc version 6.3.1 20170109 (crosstool-NG crosstool-ng-1.23.0) ) #1 SMP PREEMPT Mon Feb 25 21:02:25 UTC 2019
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Machine model: AER22x0
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Memory policy: Data cache writealloc
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] PERCPU: Embedded 11 pages/cpu @dfbb5000 s14796 r8192 d22068 u45056
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Built 1 zonelists in Zone order, mobility grouping on. Total pages: 128768
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] Kernel command line: root=/dev/mmcblk0p2 rootfstype=squashfs rootwait clk_ignore_unused usbcore.autosuspend=-1 console=none
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Memory: 507652K/519168K available (4490K kernel code, 307K rwdata, 1472K rodata, 188K init, 240K bss, 11516K reserved, 0K cma-reserved, 0K highmem)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] Virtual kernel memory layout:
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] vector : 0xffff0000 - 0xffff1000 ( 4 kB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] fixmap : 0xffc00000 - 0xfff00000 (3072 kB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] vmalloc : 0xe0800000 - 0xff800000 ( 496 MB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] lowmem : 0xc0000000 - 0xe0000000 ( 512 MB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] pkmap : 0xbfe00000 - 0xc0000000 ( 2 MB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] modules : 0xbf000000 - 0xbfe00000 ( 14 MB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] .text : 0xc0208000 - 0xc07dade4 (5964 kB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] .init : 0xc07db000 - 0xc080a000 ( 188 kB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] .data : 0xc080a000 - 0xc0856ce8 ( 308 kB)
+12/31/69 06:00:07 PM NOTICE kernel [ 0.000000] .bss : 0xc0859000 - 0xc0895128 ( 241 kB)
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Preemptible hierarchical RCU implementation.
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] NR_IRQS:16 nr_irqs:16 16
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] Architected cp15 timer(s) running at 48.00MHz (virt).
+12/31/69 06:00:07 PM INFO kernel [ 0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xb11fd3bfb, max_idle_ns: 440795203732 ns
+12/31/69 06:00:07 PM INFO kernel [ 0.000007] sched_clock: 56 bits at 48MHz, resolution 20ns, wraps every 4398046511096ns
+12/31/69 06:00:07 PM INFO kernel [ 0.000021] Switching to timer-based delay loop, resolution 20ns
+12/31/69 06:00:07 PM INFO kernel [ 0.000275] Calibrating delay loop (skipped), value calculated using timer frequency.. 96.00 BogoMIPS (lpj=480000)
+12/31/69 06:00:07 PM INFO kernel [ 0.000293] pid_max: default: 32768 minimum: 301
+12/31/69 06:00:07 PM INFO kernel [ 0.000412] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.000427] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.001031] CPU: Testing write buffer coherency: ok
+12/31/69 06:00:07 PM INFO kernel [ 0.001363] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+12/31/69 06:00:07 PM INFO kernel [ 0.001451] Setting up static identity map for 0x80208240 - 0x80208298
+12/31/69 06:00:07 PM INFO kernel [ 0.050143] MSM Memory Dump base table set up
+12/31/69 06:00:07 PM INFO kernel [ 0.050185] MSM Memory Dump apps data table set up
+12/31/69 06:00:07 PM INFO kernel [ 0.090932] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+12/31/69 06:00:07 PM INFO kernel [ 0.120971] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+12/31/69 06:00:07 PM INFO kernel [ 0.151035] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+12/31/69 06:00:07 PM INFO kernel [ 0.151124] Brought up 4 CPUs
+12/31/69 06:00:07 PM INFO kernel [ 0.151155] SMP: Total of 4 processors activated (384.00 BogoMIPS).
+12/31/69 06:00:07 PM INFO kernel [ 0.151165] CPU: All CPU(s) started in SVC mode.
+12/31/69 06:00:07 PM INFO kernel [ 0.160576] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+12/31/69 06:00:07 PM INFO kernel [ 0.161032] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+12/31/69 06:00:07 PM INFO kernel [ 0.161066] futex hash table entries: 1024 (order: 4, 65536 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.161310] pinctrl core: initialized pinctrl subsystem
+12/31/69 06:00:07 PM INFO kernel [ 0.162892] NET: Registered protocol family 16
+12/31/69 06:00:07 PM INFO kernel [ 0.164501] DMA: preallocated 2048 KiB pool for atomic coherent allocations
+12/31/69 06:00:07 PM INFO kernel [ 0.190316] cpuidle: using governor ladder
+12/31/69 06:00:07 PM INFO kernel [ 0.220344] cpuidle: using governor menu
+12/31/69 06:00:07 PM ERR kernel [ 0.237556] IPC logging disabled
+12/31/69 06:00:07 PM ERR kernel [ 0.237569] IPC logging disabled
+12/31/69 06:00:07 PM ERR kernel [ 0.237576] IPC logging disabled
+12/31/69 06:00:07 PM ERR kernel [ 0.237582] IPC logging disabled
+12/31/69 06:00:07 PM ERR kernel [ 0.237588] IPC logging disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.237842] sps:sps is ready.
+12/31/69 06:00:07 PM INFO kernel [ 0.273005] usbcore: registered new interface driver usbfs
+12/31/69 06:00:07 PM INFO kernel [ 0.273100] usbcore: registered new interface driver hub
+12/31/69 06:00:07 PM INFO kernel [ 0.273234] usbcore: registered new device driver usb
+12/31/69 06:00:07 PM INFO kernel [ 0.276173] clocksource: Switched to clocksource arch_sys_counter
+12/31/69 06:00:07 PM INFO kernel [ 0.277890] NET: Registered protocol family 2
+12/31/69 06:00:07 PM INFO kernel [ 0.278857] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.278924] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.279011] TCP: Hash tables configured (established 4096 bind 4096)
+12/31/69 06:00:07 PM INFO kernel [ 0.279075] UDP hash table entries: 256 (order: 1, 8192 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.279109] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+12/31/69 06:00:07 PM INFO kernel [ 0.279360] NET: Registered protocol family 1
+12/31/69 06:00:07 PM INFO kernel [ 0.288977] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+12/31/69 06:00:07 PM NOTICE kernel [ 0.293904] Key type asymmetric registered
+12/31/69 06:00:07 PM NOTICE kernel [ 0.293931] Asymmetric key parser 'x509' registered
+12/31/69 06:00:07 PM INFO kernel [ 0.293993] io scheduler noop registered (default)
+12/31/69 06:00:07 PM INFO kernel [ 0.296734] cp_gpio soc:cp_gpio@0: garnet_gpio_probe
+12/31/69 06:00:07 PM INFO kernel [ 0.296756] cp_gpio soc:cp_gpio@0: of_node=dfbf58b4
+12/31/69 06:00:07 PM INFO kernel [ 0.296771] cp_gpio soc:cp_gpio@0: found a match name= type= compatible=cp,garnet-gpio
+12/31/69 06:00:07 PM INFO kernel [ 0.296817] cp_gpio soc:cp_gpio@0: child=gpio-pcie-conn-ovc has overcurrent-power node=0
+12/31/69 06:00:07 PM ERR kernel [ 0.296897] cp_gpio soc:cp_gpio@0: garnet_gpio_probe failed to get gpio-power idx=0 err=fffffdfb
+12/31/69 06:00:07 PM WARN kernel [ 0.297477] 40000000.pci supply vdda not found, using dummy regulator
+12/31/69 06:00:07 PM WARN kernel [ 0.297574] 40000000.pci supply vdda_phy not found, using dummy regulator
+12/31/69 06:00:07 PM WARN kernel [ 0.297625] 40000000.pci supply vdda_refclk not found, using dummy regulator
+12/31/69 06:00:07 PM INFO kernel [ 0.297939] PCI host bridge /soc/pci@40000000 ranges:
+12/31/69 06:00:07 PM INFO kernel [ 0.297971] IO 0x40200000..0x402fffff -> 0x40200000
+12/31/69 06:00:07 PM INFO kernel [ 0.297989] MEM 0x48000000..0x57ffffff -> 0x48000000
+12/31/69 06:00:07 PM INFO kernel [ 0.456187] qcom-pcie 40000000.pci: link up
+12/31/69 06:00:07 PM INFO kernel [ 0.456450] qcom-pcie 40000000.pci: PCI host bridge to bus 0000:00
+12/31/69 06:00:07 PM INFO kernel [ 0.456471] pci_bus 0000:00: root bus resource [bus 00-ff]
+12/31/69 06:00:07 PM INFO kernel [ 0.456490] pci_bus 0000:00: root bus resource [io 0x0000-0xfffff] (bus address [0x40200000-0x402fffff])
+12/31/69 06:00:07 PM INFO kernel [ 0.456504] pci_bus 0000:00: root bus resource [mem 0x48000000-0x57ffffff]
+12/31/69 06:00:07 PM INFO kernel [ 0.456971] PCI: bus0: Fast back to back transfers disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.458108] PCI: bus1: Fast back to back transfers disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.458252] pci 0000:00:00.0: BAR 8: assigned [mem 0x48000000-0x481fffff]
+12/31/69 06:00:07 PM INFO kernel [ 0.458271] pci 0000:00:00.0: BAR 0: assigned [mem 0x48200000-0x48200fff]
+12/31/69 06:00:07 PM INFO kernel [ 0.458297] pci 0000:01:00.0: BAR 0: assigned [mem 0x48000000-0x481fffff 64bit]
+12/31/69 06:00:07 PM INFO kernel [ 0.458355] pci 0000:00:00.0: PCI bridge to [bus 01]
+12/31/69 06:00:07 PM INFO kernel [ 0.458372] pci 0000:00:00.0: bridge window [mem 0x48000000-0x481fffff]
+12/31/69 06:00:07 PM INFO kernel [ 0.458690] pcieport 0000:00:00.0: Signaling PME through PCIe PME interrupt
+12/31/69 06:00:07 PM INFO kernel [ 0.458707] pci 0000:01:00.0: Signaling PME through PCIe PME interrupt
+12/31/69 06:00:07 PM INFO kernel [ 0.462403] tcsr 194b000.tcsr: setting usb hs phy mode select = e700e7
+12/31/69 06:00:07 PM INFO kernel [ 0.462474] tcsr 1953000.ess_tcsr: setting ess interface select = 0
+12/31/69 06:00:07 PM INFO kernel [ 0.462548] tcsr 1949000.tcsr: setting wifi_glb_cfg = 41000000
+12/31/69 06:00:07 PM INFO kernel [ 0.462606] tcsr 1957000.tcsr: setting wifi_noc_memtype_m0_m2 = 2222222
+12/31/69 06:00:07 PM INFO kernel [ 0.463244] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.464256] msm_serial: driver initialized
+12/31/69 06:00:07 PM INFO kernel [ 0.464569] msm_serial_hsl_probe: detected port #0 (ttyMSM0)
+12/31/69 06:00:07 PM INFO kernel [ 0.464604] msm_serial_hsl_probe: Bus scaling is disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.464737] 78af000.serial: ttyMSM0 at MMIO 0x78af000 (irq = 26, base_baud = 115200) is a MSM
+12/31/69 06:00:07 PM INFO kernel [ 0.465236] msm_serial_hsl_probe: detected port #1 (ttyMSM1)
+12/31/69 06:00:07 PM INFO kernel [ 0.465267] msm_serial_hsl_probe: Bus scaling is disabled
+12/31/69 06:00:07 PM INFO kernel [ 0.465405] 78b0000.serial: ttyMSM1 at MMIO 0x78b0000 (irq = 27, base_baud = 115200) is a MSM
+12/31/69 06:00:07 PM INFO kernel [ 0.465889] msm_serial_hsl_init: driver initialized
+12/31/69 06:00:07 PM INFO kernel [ 0.467041] spi_qup 78b5000.spi: IN:block:16, fifo:64, OUT:block:16, fifo:64
+12/31/69 06:00:07 PM WARN filemgr Detected uninitialized sector at: id: 0, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM WARN kernel [ 0.469007] m25p80 spi0.0: found mx25l6405d, expected n25q128a11
+12/31/69 06:00:07 PM INFO kernel [ 0.469031] m25p80 spi0.0: mx25l6405d (8192 Kbytes)
+12/31/69 06:00:07 PM INFO filemgr Reseting sector: id: 0, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.469114] 12 ofpart partitions found on MTD device spi0.0
+12/31/69 06:00:07 PM WARN filemgr Detected uninitialized sector at: id: 1, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.469125] Creating 12 MTD partitions on "spi0.0":
+12/31/69 06:00:07 PM INFO filemgr Reseting sector: id: 1, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.469141] 0x000000000000-0x000000040000 : "0:SBL1"
+12/31/69 06:00:07 PM NOTICE kernel [ 0.470269] 0x000000040000-0x000000060000 : "0:MIBIB"
+12/31/69 06:00:07 PM WARN filemgr Detected uninitialized sector at: id: 2, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.471332] 0x000000060000-0x0000000c0000 : "0:QSEE"
+12/31/69 06:00:07 PM NOTICE kernel [ 0.472367] 0x0000000c0000-0x0000000d0000 : "0:CDT"
+12/31/69 06:00:07 PM INFO filemgr Reseting sector: id: 2, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.473408] 0x0000000d0000-0x0000000e0000 : "0:DDRPARAMS"
+12/31/69 06:00:07 PM WARN filemgr Detected uninitialized sector at: id: 3, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.474477] 0x0000000e0000-0x0000000f0000 : "0:APPSBLENV"
+12/31/69 06:00:07 PM INFO filemgr Reseting sector: id: 3, allocated: 0, remaining: 65536, total: 0, erase_count: 0, inodes: 0, files: 0
+12/31/69 06:00:07 PM NOTICE kernel [ 0.475558] 0x0000000f0000-0x000000170000 : "0:APPSBL"
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: qca-ssdk
+12/31/69 06:00:07 PM NOTICE kernel [ 0.476711] 0x000000170000-0x000000180000 : "0:ART"
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: shortcut-fe
+12/31/69 06:00:07 PM NOTICE kernel [ 0.477854] 0x000000180000-0x000000190000 : "0:CUSTDATA"
+12/31/69 06:00:07 PM NOTICE kernel [ 0.478898] 0x000000190000-0x0000001d0000 : "Filemanager"
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: shortcut-fe-ipv6
+12/31/69 06:00:07 PM NOTICE kernel [ 0.479895] 0x0000001d0000-0x000000210000 : "2nd Filemanager"
+12/31/69 06:00:07 PM NOTICE kernel [ 0.480904] 0x000000210000-0x000000220000 : "2nd 0:CUSTDATA"
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: shortcut-fe-cm
+12/31/69 06:00:07 PM INFO kernel [ 0.483834] ipq40xx-mdio 90000.mdio: Could not find phy-reset-gpio
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: essedma
+12/31/69 06:00:07 PM INFO kernel [ 0.484002] libphy: ipq40xx_mdio: probed
+12/31/69 06:00:07 PM INFO kernel [ 0.491567] ipq40xx-mdio 90000.mdio: ipq40xx-mdio driver was registered
+12/31/69 06:00:07 PM INFO cstore Installing default config
+12/31/69 06:00:07 PM INFO kernel [ 0.491692] tun: Universal TUN/TAP device driver, 1.6
+12/31/69 06:00:07 PM INFO kernel [ 0.491702] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+12/31/69 06:00:07 PM INFO mountfilesystem Running FSCK on Filesystem
+12/31/69 06:00:07 PM INFO kernel [ 0.491842] PPP generic driver version 2.4.2
+12/31/69 06:00:07 PM INFO kernel [ 0.998551] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+12/31/69 06:00:07 PM INFO mountfilesystem Filesystem FSCK passed
+12/31/69 06:00:07 PM INFO kernel [ 0.998579] ehci-pci: EHCI PCI platform driver
+12/31/69 06:00:07 PM INFO kernel [ 0.998675] ehci-platform: EHCI generic platform driver
+12/31/69 06:00:07 PM INFO kernel [ 0.998955] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+12/31/69 06:00:07 PM INFO mountfilesystem Mounted f2fs Filesystem partition (total 6.5 GB, free 6.1 GB) on mmc flash /dev/mmcblk0p4
+12/31/69 06:00:07 PM INFO kernel [ 0.998988] ohci-platform: OHCI generic platform driver
+12/31/69 06:00:07 PM INFO kernel [ 0.999601] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+12/31/69 06:00:07 PM INFO root Saving password for: admin
+12/31/69 06:00:07 PM INFO kernel [ 0.999646] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+12/31/69 06:00:07 PM INFO kernel [ 0.999901] xhci-hcd xhci-hcd.0.auto: hcc params 0x0228f665 hci version 0x100 quirks 0x00010010
+12/31/69 06:00:07 PM INFO root Firmware Build Date: Mon Feb 25 21:07:52 UTC 2019
+12/31/69 06:00:07 PM INFO kernel [ 0.999977] xhci-hcd xhci-hcd.0.auto: irq 233, io mem 0x08a00000
+12/31/69 06:00:07 PM INFO root Firmware Version: 7.0.40.2319051
+12/31/69 06:00:07 PM INFO kernel [ 1.000929] hub 1-0:1.0: USB hub found
+12/31/69 06:00:07 PM INFO kernel [ 1.000983] hub 1-0:1.0: 1 port detected
+12/31/69 06:00:07 PM INFO root Firmware Type: RELEASE
+12/31/69 06:00:07 PM INFO kernel [ 1.001465] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+12/31/69 06:00:07 PM INFO kernel [ 1.001493] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+12/31/69 06:00:07 PM INFO policy.SwansEnginePolicy None -> UpProcess (primary: None, next_dev: None)
+12/31/69 06:00:07 PM INFO kernel [ 1.001619] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+12/31/69 06:00:07 PM INFO kernel [ 1.002492] hub 2-0:1.0: USB hub found
+12/31/69 06:00:07 PM INFO policy.SWANS None -> idle (primary: None, next_dev: None)
+12/31/69 06:00:07 PM INFO kernel [ 1.002543] hub 2-0:1.0: 1 port detected
+12/31/69 06:00:07 PM INFO policy.FailoverFailback None -> start (primary: None, next_dev: None)
+12/31/69 06:00:07 PM INFO kernel [ 1.003067] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+12/31/69 06:00:07 PM INFO kernel [ 1.003104] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+12/31/69 06:00:07 PM INFO policy.WanChange None -> idle (primary: None, next_dev: None)
+12/31/69 06:00:07 PM INFO kernel [ 1.003339] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220f665 hci version 0x100 quirks 0x00010010
+12/31/69 06:00:07 PM INFO kernel [ 1.003414] xhci-hcd xhci-hcd.1.auto: irq 234, io mem 0x06000000
+12/31/69 06:00:07 PM INFO kernel [ 1.004234] hub 3-0:1.0: USB hub found
+12/31/69 06:00:07 PM INFO policy.FailoverFailback start -> pick_next (primary: None, next_dev: None)
+12/31/69 06:00:07 PM INFO kernel [ 1.004287] hub 3-0:1.0: 1 port detected
+12/31/69 06:00:07 PM INFO kernel [ 1.004714] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+12/31/69 06:00:07 PM INFO kernel [ 1.004740] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+12/31/69 06:00:07 PM WARN lan IPv6 LAN: No delegated prefixes
+12/31/69 06:00:07 PM INFO kernel [ 1.004831] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+12/31/69 06:00:07 PM INFO kernel [ 1.005588] hub 4-0:1.0: USB hub found
+12/31/69 06:00:07 PM ERR kernel [ 1.005635] hub 4-0:1.0: config failed, hub doesn't have any ports! (err -19)
+12/31/69 06:00:07 PM INFO scheduler Resuming network Primary LAN
+12/31/69 06:00:07 PM INFO kernel [ 1.005944] i2c /dev entries driver
+12/31/69 06:00:07 PM INFO scheduler Uninhibiting device wireless0
+12/31/69 06:00:07 PM INFO scheduler Setting radio 0 bss 0 inhibit to False
+12/31/69 06:00:07 PM INFO kernel [ 1.016817] sdhci: Secure Digital Host Controller Interface driver
+12/31/69 06:00:07 PM INFO kernel [ 1.016831] sdhci: Copyright(c) Pierre Ossman
+12/31/69 06:00:07 PM INFO scheduler Uninhibiting device wireless0_1
+12/31/69 06:00:07 PM INFO kernel [ 1.016848] sdhci-pltfm: SDHCI platform and OF driver helper
+12/31/69 06:00:07 PM INFO scheduler Setting radio 1 bss 0 inhibit to False
+12/31/69 06:00:07 PM INFO kernel [ 1.017885] sdhci_msm 7824900.sdhci: Got SD LDO GPIO #52
+12/31/69 06:00:07 PM INFO kernel [ 1.117945] sdhci_msm 7824900.sdhci: No vreg data found for vdd
+12/31/69 06:00:07 PM INFO lan Adding IP Network: (name: Primary LAN, ip: 192.168.0.1/255.255.255.0)
+12/31/69 06:00:07 PM INFO kernel [ 1.117970] sdhci_msm 7824900.sdhci: No vreg data found for vdd-io
+12/31/69 06:00:07 PM INFO kernel [ 1.130795] sdhci_msm 7824900.sdhci: No vmmc regulator found
+12/31/69 06:00:07 PM INFO kernel [ 1.176409] mmc0: SDHCI controller on 7824900.sdhci [7824900.sdhci] using ADMA 64-bit
+12/31/69 06:00:07 PM INFO scheduler Resuming network Guest LAN
+12/31/69 06:00:07 PM INFO kernel [ 1.176591] cp_garnet_led: Inserting kernel module
+12/31/69 06:00:07 PM INFO kernel [ 1.176713] cp_garnet_led_start of_find_compatible_node success!
+12/31/69 06:00:07 PM INFO scheduler Uninhibiting device wireless1
+12/31/69 06:00:07 PM INFO kernel [ 1.176724] cp_garnet_led_start name=board_leds type=<NULL> full_name=/soc/board_leds@0
+12/31/69 06:00:07 PM INFO kernel [ 1.176735] cp_garnet_led_start num_leds=12
+12/31/69 06:00:07 PM INFO kernel [ 1.176748] cp_garnet_led_start led idx=0 name=LED_SS_0 gpio=232
+12/31/69 06:00:07 PM INFO scheduler Setting radio 0 bss 1 inhibit to False
+12/31/69 06:00:07 PM WARN kernel [ 1.176759] cp_garnet_led_start use default=0 for property led-active-low idx=0 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176770] cp_garnet_led_start led idx=1 name=LED_SS_1 gpio=233
+12/31/69 06:00:07 PM INFO scheduler Uninhibiting device wireless1_1
+12/31/69 06:00:07 PM WARN kernel [ 1.176780] cp_garnet_led_start use default=0 for property led-active-low idx=1 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176791] cp_garnet_led_start led idx=2 name=LED_SS_2 gpio=234
+12/31/69 06:00:07 PM INFO scheduler Setting radio 1 bss 1 inhibit to False
+12/31/69 06:00:07 PM WARN kernel [ 1.176803] cp_garnet_led_start use default=0 for property led-active-low idx=2 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176815] cp_garnet_led_start led idx=3 name=LED_SS_3 gpio=235
+12/31/69 06:00:07 PM INFO lan Adding IP Network: (name: Guest LAN, ip: 192.168.10.1/255.255.255.0)
+12/31/69 06:00:07 PM WARN kernel [ 1.176824] cp_garnet_led_start use default=0 for property led-active-low idx=3 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176836] cp_garnet_led_start led idx=4 name=ATTN_RED gpio=236
+12/31/69 06:00:07 PM INFO qxdmlog logSetMode - val:usb
+12/31/69 06:00:07 PM WARN kernel [ 1.176846] cp_garnet_led_start use default=0 for property led-active-low idx=4 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176858] cp_garnet_led_start led idx=5 name=VPN_GRN gpio=237
+12/31/69 06:00:07 PM WARN kernel [ 1.176869] cp_garnet_led_start use default=0 for property led-active-low idx=5 err=-22
+12/31/69 06:00:07 PM INFO qxdmlog logEnableEvent - val:False
+12/31/69 06:00:07 PM INFO kernel [ 1.176881] cp_garnet_led_start led idx=6 name=LED_WIFI gpio=238
+12/31/69 06:00:07 PM INFO qxdmlog ramdumpEnableEvent - val:False
+12/31/69 06:00:07 PM WARN kernel [ 1.176890] cp_garnet_led_start use default=0 for property led-active-low idx=6 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176902] cp_garnet_led_start led idx=7 name=MODEM_GRN gpio=246
+12/31/69 06:00:07 PM INFO cpevt onMultiPDNEnable: path: None, value:
+12/31/69 06:00:07 PM WARN kernel [ 1.176912] cp_garnet_led_start use default=0 for property led-active-low idx=7 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176925] cp_garnet_led_start led idx=8 name=MODEM_RED gpio=247
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 0 to 1
+12/31/69 06:00:07 PM WARN kernel [ 1.176935] cp_garnet_led_start use default=0 for property led-active-low idx=8 err=-22
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 1 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.176947] cp_garnet_led_start led idx=9 name=MC400_RED gpio=66
+12/31/69 06:00:07 PM WARN kernel [ 1.176956] cp_garnet_led_start use default=0 for property led-active-low idx=9 err=-22
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 2 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.176969] cp_garnet_led_start led idx=10 name=MC400_GRN gpio=67
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 3 to 1
+12/31/69 06:00:07 PM WARN kernel [ 1.176979] cp_garnet_led_start use default=0 for property led-active-low idx=10 err=-22
+12/31/69 06:00:07 PM INFO kernel [ 1.176991] cp_garnet_led_start led idx=11 name=WIFI5G_BLU gpio=68
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 4 to 1
+12/31/69 06:00:07 PM WARN kernel [ 1.177001] cp_garnet_led_start use default=0 for property led-active-low idx=11 err=-22
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 5 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.179326] led register success
+12/31/69 06:00:07 PM INFO kernel [ 1.229723]
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 6 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.229723] Version Rollback Feature Disabled
+12/31/69 06:00:07 PM INFO kernel [ 1.232704] nf_conntrack version 0.5.0 (7932 buckets, 31728 max)
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 7 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.233806] ip_tables: (C) 2000-2006 Netfilter Core Team
+12/31/69 06:00:07 PM INFO cpevt Initialize multiPDN on port: 8 to 1
+12/31/69 06:00:07 PM INFO kernel [ 1.234970] NET: Registered protocol family 10
+12/31/69 06:00:07 PM INFO kernel [ 1.236323] ip6_tables: (C) 2000-2006 Netfilter Core Team
+12/31/69 06:00:07 PM INFO clock System time set to: 01:00:00 01/01/70 UTC
+12/31/69 06:00:07 PM INFO kernel [ 1.236653] NET: Registered protocol family 17
+12/31/69 06:00:07 PM INFO kernel [ 1.236734] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: nf_nat_proto_gre
+12/31/69 06:00:07 PM NOTICE kernel [ 1.236794] Bridge firewalling registered
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: nf_conntrack_proto_gre
+12/31/69 06:00:07 PM INFO kernel [ 1.236817] 8021q: 802.1Q VLAN Support v1.8
+12/31/69 06:00:07 PM NOTICE kernel [ 1.236980] Registering SWP/SWPB emulation handler
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: ip_tunnel
+12/31/69 06:00:07 PM INFO kernel [ 1.238484] cp_gpio soc:cp_gpio@0: garnet_gpio_probe
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: gre
+12/31/69 06:00:07 PM INFO kernel [ 1.238505] cp_gpio soc:cp_gpio@0: of_node=dfbf58b4
+12/31/69 06:00:07 PM INFO kernel [ 1.238522] cp_gpio soc:cp_gpio@0: found a match name= type= compatible=cp,garnet-gpio
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: ip_gre
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: ip6_tunnel
+12/31/69 06:00:07 PM INFO kernel [ 1.238569] cp_gpio soc:cp_gpio@0: child=gpio-pcie-conn-ovc has overcurrent-power node=0
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: ip6_gre
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: xfrm4_mode_tunnel
+12/31/69 06:00:07 PM INFO kmod Loading kernel module: ip_vti
+12/31/69 06:00:07 PM INFO kernel [ 1.238664] cp_gpio soc:cp_gpio@0: gpio irq domain=pca953x irq=12 base=232 event=10
+12/31/69 06:00:07 PM INFO hotspot No LAN ethernet device found, not setting rate
+12/31/69 06:00:07 PM INFO firewall Added zone All with id 1
+12/31/69 06:00:07 PM INFO kernel [ 1.238950] cp_gpio soc:cp_gpio@0: child=gpio-pcie-pwr-ovc has overcurrent-power node=1
+12/31/69 06:00:07 PM INFO firewall Added zone Router with id 2
+12/31/69 06:00:07 PM INFO firewall Added zone WAN Zone with id 3
+12/31/69 06:00:07 PM INFO kernel [ 1.239040] cp_gpio soc:cp_gpio@0: gpio irq domain=pca953x irq=17 base=232 event=10
+12/31/69 06:00:07 PM INFO firewall Added zone Primary LAN Zone with id 4
+12/31/69 06:00:07 PM INFO firewall Added zone Guest LAN Zone with id 5
+12/31/69 06:00:07 PM INFO kernel [ 1.239271] cp_gpio soc:cp_gpio@0: gpio irq domain=msmgpio irq=59 base=0 event=2
+12/31/69 06:00:07 PM INFO firewall Added filter policy Default Allow All
+12/31/69 06:00:07 PM INFO firewall Added filter policy Default Deny All
+12/31/69 06:00:07 PM INFO firewall Added zone forwarding 00000002-695c-3d87-95cb-d0ee2029d0b5->00000003-695c-3d87-95cb-d0ee2029d0b5
+12/31/69 06:00:07 PM INFO kernel [ 1.239581] cp_gpio soc:cp_gpio@0: gpio irq domain=msmgpio irq=35 base=0 event=15
+12/31/69 06:00:07 PM INFO firewall Added zone forwarding 00000003-695c-3d87-95cb-d0ee2029d0b5->00000002-695c-3d87-95cb-d0ee2029d0b5
+12/31/69 06:00:07 PM INFO firewall Added zone forwarding 00000002-695c-3d87-95cb-d0ee2029d0b5->00000004-695c-3d87-95cb-d0ee2029d0b5
+12/31/69 06:00:07 PM INFO kernel [ 1.239879] cp_gpio soc:cp_gpio@0: gpio irq domain=pca953x irq=7 base=232 event=12
+12/31/69 06:00:07 PM INFO firewall Added zone forwarding 00000004-695c-3d87-95cb-d0ee2029d0b5->00000002-695c-3d87-95cb-d0ee2029d0b5
+12/31/69 06:00:07 PM INFO kernel [ 1.240442] cp_gpio soc:cp_gpio@0: gpio irq domain=msmgpio irq=19 base=0 event=12
+12/31/69 06:00:07 PM INFO kernel [ 1.241067] hctosys: unable to open rtc device (rtc0)
+12/31/69 06:00:07 PM WARN kernel [ 1.245787] clk: Not disabling unused clocks
+12/31/69 06:00:07 PM ERR kernel [ 1.245929] Warning: unable to open an initial console.
+12/31/69 06:00:07 PM INFO kernel [ 1.246002] Waiting for root device /dev/mmcblk0p2...
+12/31/69 06:00:07 PM INFO kernel [ 1.251682] mmc0: MAN_BKOPS_EN bit is not set
+12/31/69 06:00:07 PM INFO kernel [ 1.260985] mmc0: new HS200 MMC card at address 0001
+12/31/69 06:00:07 PM INFO kernel [ 1.261629] mmcblk0: mmc0:0001 8GME4R 7.28 GiB
+12/31/69 06:00:07 PM INFO kernel [ 1.261881] mmcblk0rpmb: mmc0:0001 8GME4R partition 3 512 KiB
+12/31/69 06:00:07 PM WARN kernel [ 1.263099] Alternate GPT is invalid, using primary GPT.
+12/31/69 06:00:07 PM NOTICE kernel [ 1.263134] GPT: device [179:2] (rootfs) set to be root filesystem
+12/31/69 06:00:07 PM INFO kernel [ 1.263156] mmcblk0: p1 p2 p3 p4
+12/31/69 06:00:07 PM INFO kernel [ 1.316214] usb 1-1: new high-speed USB device number 2 using xhci-hcd
+12/31/69 06:00:07 PM INFO kernel [ 1.349622] VFS: Mounted root (squashfs filesystem) readonly on device 179:2.
+12/31/69 06:00:07 PM INFO kernel [ 1.349930] Freeing unused kernel memory: 188K
+12/31/69 06:00:07 PM INFO kernel [ 1.578975] hub 1-1:1.0: USB hub found
+12/31/69 06:00:07 PM INFO kernel [ 1.579289] hub 1-1:1.0: 4 ports detected
+12/31/69 06:00:07 PM INFO kernel [ 1.676402] usb 2-1: new SuperSpeed USB device number 2 using xhci-hcd
+12/31/69 06:00:07 PM INFO kernel [ 1.707737] hub 2-1:1.0: USB hub found
+12/31/69 06:00:07 PM INFO kernel [ 1.708122] hub 2-1:1.0: 4 ports detected
+12/31/69 06:00:07 PM WARN kernel [ 2.901444] cpmodem_wrapper: module license 'Proprietary' taints kernel.
+12/31/69 06:00:07 PM WARN kernel [ 2.901468] Disabling lock debugging due to kernel taint
+12/31/69 06:00:07 PM WARN kernel [ 2.902251] cp_lkm_wrapper: Inserting kernel module
+12/31/69 06:00:07 PM INFO kernel [ 2.912936] cp_lkm: Product chipset IPQ4019
+12/31/69 06:00:07 PM INFO kernel [ 2.912960] cp_lkm: Product platform qcom_arm
+12/31/69 06:00:07 PM INFO kernel [ 2.912975] cp_lkm: Processor: IPQ4019, Max work: 64, NAPI budget: 64, QLEN: 64.
+12/31/69 06:00:07 PM INFO kernel [ 2.913347] cp_lkm: Inserting kernel module
+12/31/69 06:00:07 PM NOTICE kernel [ 3.588690] random: cppython: uninitialized urandom read (24 bytes read, 13 bits of entropy available)
+12/31/69 06:00:07 PM INFO kernel [ 7.146234] usb 1-1.3: new high-speed USB device number 3 using xhci-hcd
+12/31/69 06:00:07 PM INFO kernel [ 7.403500] hub 1-1.3:1.0: USB hub found
+12/31/69 06:00:07 PM INFO kernel [ 7.405200] hub 1-1.3:1.0: 4 ports detected
+12/31/69 06:00:07 PM NOTICE kernel [ 8.631848] random: cppython: uninitialized urandom read (2496 bytes read, 19 bits of entropy available)
+12/31/69 06:00:07 PM NOTICE kernel [ 8.633382] random: cppython: uninitialized urandom read (2496 bytes read, 19 bits of entropy available)
+12/31/69 06:00:07 PM NOTICE kernel [ 13.173601] random: nonblocking pool is initialized
+12/31/69 06:00:07 PM INFO kernel [ 15.066242] usb 1-1.3.4: new high-speed USB device number 4 using xhci-hcd
+12/31/69 06:00:07 PM WARN kernel [ 15.297042] usb 1-1.3.4: config 1 has an invalid interface number: 8 but max is 4
+12/31/69 06:00:07 PM WARN kernel [ 15.297069] usb 1-1.3.4: config 1 has an invalid interface number: 10 but max is 4
+12/31/69 06:00:07 PM WARN kernel [ 15.297084] usb 1-1.3.4: config 1 has no interface number 1
+12/31/69 06:00:07 PM WARN kernel [ 15.297097] usb 1-1.3.4: config 1 has no interface number 4
+12/31/69 06:00:07 PM INFO kernel [ 21.657074] Netfilter messages via NETLINK v0.30.
+12/31/69 06:00:07 PM INFO kernel [ 23.591319] ip_set: protocol 6
+12/31/69 06:00:07 PM WARN kernel [ 34.277791] ess-switch DT exist!
+12/31/69 06:00:07 PM WARN kernel [ 34.277837] switchreg_base_addr: 0xc000000
+12/31/69 06:00:07 PM WARN kernel [ 34.277845] switchreg_size: 0x80000
+12/31/69 06:00:07 PM WARN kernel [ 34.277852] switch_access_mode: local bus
+12/31/69 06:00:07 PM WARN kernel [ 34.277861] mac mode = 0x0
+12/31/69 06:00:07 PM WARN kernel [ 34.277869] mac mode1 doesn't exit!
+12/31/69 06:00:07 PM WARN kernel [ 34.277877] mac mode2 doesn't exit!
+12/31/69 06:00:07 PM WARN kernel [ 34.277913] ess-uniphy DT doesn't exist!
+12/31/69 06:00:07 PM WARN kernel [ 34.277926] wan bmp:0x20
+12/31/69 06:00:07 PM WARN kernel [ 34.277945] ess-psgmii DT exist!
+12/31/69 06:00:07 PM WARN kernel [ 34.277979] current dts led_source_num is 5
+12/31/69 06:00:07 PM WARN kernel [ 34.277999] mdio DT exist!
+12/31/69 06:00:07 PM WARN kernel [ 34.278006] found slave s17c node!
+12/31/69 06:00:07 PM WARN kernel [ 34.278030] ssdk_plat_init start
+12/31/69 06:00:07 PM WARN kernel [ 34.278236] enable ess clk
+12/31/69 06:00:07 PM WARN kernel [ 34.388709] reset ok in probe!
+12/31/69 06:00:07 PM WARN kernel [ 34.388946] regi_init
+12/31/69 06:00:07 PM WARN kernel [ 34.388960] ssdk_phy_id_get dev_id 0
+12/31/69 06:00:07 PM WARN kernel [ 34.389309] PHY ID is 0x4dd0b1
+12/31/69 06:00:07 PM WARN kernel [ 34.448722] qca probe malibu phy driver succeeded!
+12/31/69 06:00:07 PM WARN kernel [ 34.510429] done with ssdk_init
+12/31/69 06:00:07 PM WARN kernel [ 37.318586] qca_dess_hw_init
+12/31/69 06:00:07 PM WARN kernel [ 37.318602] qca_switch_init dev_id 0
+12/31/69 06:00:07 PM WARN kernel [ 37.319982] Chip version 0x1401
+12/31/69 06:00:07 PM WARN kernel [ 37.321705] Registered switch QCA AR8327 AR8337 (241:0)
+12/31/69 06:00:07 PM WARN kernel [ 37.321766] cannot find link-polling-required node
+12/31/69 06:00:07 PM WARN kernel [ 37.321774] polling is selected
+12/31/69 06:00:07 PM WARN kernel [ 37.322404] ssdk_phy_id_get dev_id 1
+12/31/69 06:00:07 PM WARN kernel [ 37.322766] PHY ID is 0x4dd036
+12/31/69 06:00:07 PM WARN kernel [ 37.475094] qca probe f1 phy driver succeeded!
+12/31/69 06:00:07 PM WARN kernel [ 37.475725] ar8327 hw init!!!
+12/31/69 06:00:07 PM WARN kernel [ 38.511677] qca_switch_init dev_id 1
+12/31/69 06:00:07 PM WARN kernel [ 39.366176] ssdk_slave_special_hw_init
+12/31/69 06:00:07 PM WARN kernel [ 39.468660] Registered switch QCA AR8327 AR8337 (241:1)
+12/31/69 06:00:07 PM WARN kernel [ 39.468674] register_switch switch1 ok
+12/31/69 06:00:07 PM WARN kernel [ 39.468687] qca-ssdk module init succeeded!
+12/31/69 06:00:07 PM INFO kernel [ 58.491785] Setting debug log level:0
+12/31/69 06:00:07 PM INFO kernel [ 58.815407] gre: GRE over IPv4 demultiplexor driver
+12/31/69 06:00:07 PM INFO kernel [ 58.842153] ip_gre: GRE over IPv4 tunneling driver
+12/31/69 06:00:07 PM WARN kernel [ 58.876499] ip6_tunnel: Unknown symbol xfrm6_tunnel_register (err 0)
+12/31/69 06:00:07 PM WARN kernel [ 58.876728] ip6_tunnel: Unknown symbol xfrm6_tunnel_deregister (err 0)
+12/31/69 06:00:07 PM INFO kernel [ 58.944169] ip6_gre: GRE over IPv6 tunneling driver
+12/31/69 06:00:07 PM INFO kernel [ 59.153592] IPv4 over IPsec tunneling driver
+12/31/69 06:00:07 PM INFO kernel [ 63.410997] usbcore: registered new interface driver cpusb4
+12/31/69 06:00:07 PM INFO vlan Plugging VLAN: 1
+12/31/69 06:00:08 PM INFO vlan Plugging VLAN: 2
+12/31/69 06:00:08 PM INFO kernel [ 66.759351] device eth0 entered promiscuous mode
+12/31/69 06:00:08 PM INFO cpevt ifc supported tech: lte/3g
+12/31/69 06:00:10 PM INFO kernel [ 68.704998] IPv6: ADDRCONF(NETDEV_UP): primarylan1: link is not ready
+12/31/69 06:00:10 PM INFO kernel [ 68.707483] device eth0.2 entered promiscuous mode
+12/31/69 06:00:10 PM INFO kernel [ 68.707651] primarylan1: port 1(eth0.2) entered forwarding state
+12/31/69 06:00:10 PM INFO kernel [ 68.707705] primarylan1: port 1(eth0.2) entered forwarding state
+12/31/69 06:00:10 PM INFO kernel [ 68.707932] IPv6: ADDRCONF(NETDEV_CHANGE): primarylan1: link becomes ready
+12/31/69 06:00:10 PM INFO policyMgr.PolicyMgr WAN ready state: True
+12/31/69 06:00:10 PM WARN pam PCI/DSS mode set. Ensure all user passwords are PCI/DSS compliant.
+12/31/69 06:00:10 PM INFO WAN:wan wandev plugged: ethernet, uid: wan, uptime: 68
+12/31/69 06:00:10 PM INFO WAN:wan wandev preconfigured type: ethernet, uid: wan, uptime: 68
+12/31/69 06:00:10 PM INFO WAN:wan wandev configured type: ethernet, uid: wan, uptime: 69
+12/31/69 06:00:10 PM INFO WAN:47025ecf Plug event: ok
+12/31/69 06:00:10 PM INFO WAN:47025ecf wandev plugged: mdm, uid: 47025ecf, uptime: 69
+12/31/69 06:00:10 PM INFO WAN:47025ecf execute GET_ICCID
+12/31/69 06:00:10 PM INFO cpevt ifc supported tech: lte/3g
+12/31/69 06:00:11 PM INFO WAN:46d497c6 Plug event: ok
+12/31/69 06:00:11 PM INFO WAN:46d497c6 wandev plugged: mdm, uid: 46d497c6, uptime: 69
+12/31/69 06:00:11 PM INFO WAN:46d497c6 execute GET_ICCID
+12/31/69 06:00:11 PM INFO policy.FailoverFailback pick_next -> wait_for_next (primary: None, next_dev: ethernet-wan)
+12/31/69 06:00:11 PM INFO policy.WanChange idle -> connect_next (primary: None, next_dev: ethernet-wan)
+12/31/69 06:00:11 PM INFO policy.WanChange connect_next -> connect_wait (primary: None, next_dev: ethernet-wan)
+12/31/69 06:00:11 PM INFO WAN:wan WanDevMixIn:Starting
+12/31/69 06:00:11 PM INFO WAN:wan disconnected -> connecting
+12/31/69 06:00:11 PM INFO WAN:wan wandev connecting type: ethernet, uid: wan, uptime: 69
+12/31/69 06:00:11 PM INFO udhcpc[674] udhcpc (v1.24.1) started
+12/31/69 06:00:11 PM INFO WAN:46d497c6 Execute Event user intervention required: 10
+12/31/69 06:00:11 PM INFO WAN:46d497c6 Preconfigured Event: user intervention required
+12/31/69 06:00:11 PM INFO WAN:46d497c6 wandev preconfigured type: mdm, uid: 46d497c6, uptime: 69
+12/31/69 06:00:11 PM INFO udhcpc[674] Sending discover...
+12/31/69 06:00:11 PM INFO udhcpc[674] Sending select for 172.19.10.215...
+12/31/69 06:00:11 PM INFO wlan Random channel selection chose channel=1 for radio=0
+12/31/69 06:00:11 PM INFO wlan Random channel selection chose channel=149 for radio=1
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: asf
+12/31/69 06:00:11 PM INFO udhcpc[674] Lease of 172.19.10.215 obtained, lease time 28800
+12/31/69 06:00:11 PM INFO WAN:46d497c6 Configure Event: user intervention required
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: qdf
+12/31/69 06:00:11 PM INFO WAN:46d497c6 configured_event: Device activation state: True
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: ath_dfs
+12/31/69 06:00:11 PM INFO WAN:wan.DHCP ipinfo={'gateway': '172.19.8.1', 'ip_address': '172.19.10.215', 'netmask': '255.255.252.0', 'dnslist': ['172.21.21.50', '172.21.21.97']}
+12/31/69 06:00:11 PM INFO kernel [ 70.387692] ath_dfs: Version 2.0.0
+12/31/69 06:00:11 PM INFO kernel [ 70.387692] Copyright (c) 2005-2006 Atheros Communications, Inc. All Rights Reserved
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: ath_spectral
+12/31/69 06:00:11 PM INFO kernel [ 70.435084] ath_spectral: Version 2.0.0
+12/31/69 06:00:11 PM INFO kernel [ 70.435084] Copyright (c) 2005-2009 Atheros Communications, Inc. All Rights Reserved
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: pse
+12/31/69 06:00:11 PM INFO kmod Loading kernel module: ltc4266
+12/31/69 06:00:11 PM INFO kernel [ 70.480356] ltc4266 0-002f: Client data passed at address ded38c00
+12/31/69 06:00:11 PM INFO kernel [ 70.480379] ltc4266 0-002f: I2C Address 2f
+12/31/69 06:00:11 PM INFO kernel [ 70.480392] ltc4266 0-002f: name: ltc4266
+12/31/69 06:00:11 PM WARN WAN:46d497c6 SIM error: NOSIM
+12/31/69 06:00:11 PM INFO WAN:46d497c6 StandardModem::checkNIASession: NIA mode : disconnected session : None
+12/31/69 06:00:11 PM INFO WAN:46d497c6 StandardModem::checkNIASession: connection state : disconnected
+12/31/69 06:00:11 PM INFO WAN:wan.DHCP Connected
+12/31/69 06:00:11 PM INFO WAN:wan WanDevMixIn:startStabilityCheck
+12/31/69 06:00:11 PM INFO WAN:wan WanDevMixIn:startDoneContCheck
+12/31/69 06:00:11 PM INFO WAN:wan connecting -> connected, Reason: Failover
+12/31/69 06:00:11 PM INFO WAN:wan wandev connected type: ethernet, uid: wan, uptime: 70
+12/31/69 06:00:11 PM INFO WAN:wan Connection Type: DHCP
+12/31/69 06:00:11 PM INFO WAN:47025ecf Execute Event ok: 10
+12/31/69 06:00:11 PM INFO kernel [ 70.550250] ltc4266 0-002f: pse core: registered port 0 as port0 with priority 255
+12/31/69 06:00:11 PM INFO kernel [ 70.550277] ltc4266 0-002f: ltc4266_probe has registered port 0 on the LTC4266 as port0
+12/31/69 06:00:11 PM INFO kernel [ 70.550291] pse port0: Has been initialized
+12/31/69 06:00:12 PM INFO kernel [ 70.571001] ltc4266 0-002f: pse core: registered port 1 as port1 with priority 255
+12/31/69 06:00:12 PM INFO kernel [ 70.571027] ltc4266 0-002f: ltc4266_probe has registered port 1 on the LTC4266 as port1
+12/31/69 06:00:12 PM INFO kernel [ 70.571039] pse port1: Has been initialized
+12/31/69 06:00:12 PM INFO kernel [ 70.601613] ltc4266 0-002f: pse core: registered port 2 as port2 with priority 255
+12/31/69 06:00:12 PM INFO kernel [ 70.601640] ltc4266 0-002f: ltc4266_probe has registered port 2 on the LTC4266 as port2
+12/31/69 06:00:12 PM INFO kernel [ 70.601651] pse port2: Has been initialized
+12/31/69 06:00:12 PM INFO kernel [ 70.643565] ltc4266 0-002f: pse core: registered port 3 as port3 with priority 255
+12/31/69 06:00:12 PM INFO kernel [ 70.643592] ltc4266 0-002f: ltc4266_probe has registered port 3 on the LTC4266 as port3
+12/31/69 06:00:12 PM INFO kernel [ 70.643605] pse port3: Has been initialized
+12/31/69 06:00:12 PM INFO kmod Loading kernel module: umac
+12/31/69 06:00:12 PM INFO policy.WanChange connect_wait -> idle (primary: ethernet-wan, next_dev: ethernet-wan)
+12/31/69 06:00:13 PM INFO gre LAN change
+12/31/69 06:00:13 PM WARN kernel [ 71.790046] umac: Unknown symbol __wifi_kmem_free (err 0)
+12/31/69 06:00:13 PM WARN kernel [ 71.790094] umac: Unknown symbol __wifi_kmem_allocation (err 0)
+12/31/69 06:00:13 PM INFO policy.FailoverFailback wait_for_next -> disconnect_prev (primary: ethernet-wan, next_dev: ethernet-wan)
+12/31/69 06:00:13 PM INFO policy.FailoverFailback disconnect_prev -> connected (primary: ethernet-wan, next_dev: ethernet-wan)
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: ath_hal
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: ath_rate_atheros
+12/31/69 06:00:13 PM INFO kernel [ 71.927822] ath_hal: 0.9.17.1 (AR5416, AR9380, WRITE_EEPROM, 11D)
+12/31/69 06:00:13 PM INFO kernel [ 71.955110] ath_rate_atheros: Copyright (c) 2001-2005 Atheros Communications, Inc, All Rights Reserved
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: hst_tx99
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: ath_dev
+12/31/69 06:00:13 PM WARN kernel [ 71.980134] ath_tx99: Version 2.0
+12/31/69 06:00:13 PM WARN kernel [ 71.980134] Copyright (c) 2010 Atheros Communications, Inc, All Rights Reserved
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: qca_da
+12/31/69 06:00:13 PM INFO kernel [ 72.056446] ath_dev: Copyright (c) 2001-2007 Atheros Communications, Inc, All Rights Reserved
+12/31/69 06:00:13 PM INFO kmod Loading kernel module: qca_ol
+12/31/69 06:00:13 PM INFO kernel [ 72.089375] ath_da_pci: (Atheros/multi-bss)
+12/31/69 06:00:13 PM WARN kernel [ 72.242951] *********** IPQ4019 *************Wifi0 CPU frequency 250000000
+12/31/69 06:00:13 PM WARN kernel [ 72.263527] hif_target_sync_ahb: Got FW signal, retries = 1hif_ahb_enable_bus: X - hif_type = 0xd, target_type = 0xbhif_config_ce: ce_init donehif_config_ce: X, ret = 0hif_set_hia: Ehif_pci_bus_configure: hif_set_hia donehif_configure_irq: Ehif_enable: X OKhif_napi_create: NAPI structures initializedhif_napi_create: NAPI id 6 created for pipe 5qca_napi_create: napi instance 32 created on pipe 4
+12/31/69 06:00:13 PM WARN kernel [ 72.269621] hif_napi_event: received evnt: CONF cmd; v = 1 (state=0x1)hif_napi_event: setting configuration to ON
+12/31/69 06:00:13 PM WARN kernel [ 72.269621] __ol_ath_attach() Allocated scn dad00500
+12/31/69 06:00:13 PM INFO kernel [ 72.269787] __ol_ath_attach: dev name wifi0
+12/31/69 06:00:13 PM WARN kernel [ 72.269807] ol_ath_attach interface_id 0
+12/31/69 06:00:13 PM INFO kernel [ 72.270062] ol_target_init() BMI inited.
+12/31/69 06:00:13 PM INFO kernel [ 72.270179] ol_target_init() BMI Get Target Info.
+12/31/69 06:00:13 PM WARN kernel [ 72.270191] Chip id: 0xb, chip version: 0x1000000
+12/31/69 06:00:13 PM INFO kernel [ 72.270200]
+12/31/69 06:00:13 PM INFO kernel [ 72.270200] CE WAR Disabled
+12/31/69 06:00:13 PM INFO kernel [ 72.270341] NUM_DEV=1 FWMODE=0x2 FWSUBMODE=0x0 FWBR_BUF 0
+12/31/69 06:00:13 PM INFO kernel [ 72.270531] ol_target_init() configure Target .
+12/31/69 06:00:13 PM WARN kernel [ 72.270620]
+12/31/69 06:00:13 PM WARN kernel [ 72.270620] Target Version is 1000000
+12/31/69 06:00:13 PM WARN kernel [ 72.270632]
+12/31/69 06:00:13 PM WARN kernel [ 72.270632] Flash Download Address c0000
+12/31/69 06:00:13 PM WARN kernel [ 72.270643] ol_transfer_bin_file: flash data file defined
+12/31/69 06:00:13 PM WARN kernel [ 72.270653] ol_transfer_bin_file[3769] Get Caldata for wifi0.
+12/31/69 06:00:13 PM WARN kernel [ 72.270739] qdf_fs_read[59], Open File /tmp/wifi0.caldata SUCCESS!!file system magic:-2054924042super blocksize:4096inode 4177file size:12064qc98xx_verify_checksum: flash checksum passed: 0x5106
+12/31/69 06:00:13 PM WARN kernel [ 72.270860] ol_transfer_bin_file 3830: Download Flash data len 12064
+12/31/69 06:00:13 PM INFO kernel [ 72.271251] Board extended Data download address: 0x0
+12/31/69 06:00:13 PM WARN kernel [ 72.290816]
+12/31/69 06:00:13 PM WARN kernel [ 72.290816] Board data initialized
+12/31/69 06:00:13 PM INFO kernel [ 72.290995] ol_ath_download_firmware: Download OTP, flash download ADDRESS 0xc0000
+12/31/69 06:00:13 PM INFO kernel [ 72.291009]
+12/31/69 06:00:13 PM INFO kernel [ 72.291009] Selecting OTP binary for CHIP Version -1082699768
+12/31/69 06:00:13 PM INFO kernel [ 72.348168] ol_transfer_bin_file 3650: downloading file 0, Download data len 4676
+12/31/69 06:00:13 PM INFO kernel [ 72.364647]
+12/31/69 06:00:13 PM INFO kernel [ 72.364647] First OTP send param 8000
+12/31/69 06:00:13 PM WARN kernel [ 72.369375] ol_ath_download_firmware :First OTP download and Execute is good address:0x5000 return param 4660
+12/31/69 06:00:13 PM WARN kernel [ 72.369395] ol_ath_download_firmware:##Board Id 20 , CHIP Id 0
+12/31/69 06:00:13 PM INFO kernel [ 72.369497] ol_ath_download_firmware: BOARDDATA DOWNLOAD TO address 0xc0000
+12/31/69 06:00:13 PM WARN kernel [ 72.369518]
+12/31/69 06:00:13 PM WARN kernel [ 72.369518] wifi0: Selecting board data file name boardData_1_0_IPQ4019_DK04_2G.bin
+12/31/69 06:00:13 PM WARN kernel [ 72.369536] ol_transfer_bin_file: Board Data File download to address=0xc0000 file name=IPQ4019/hw.1/boardData_1_0_IPQ4019_DK04_2G.bin
+12/31/69 06:00:13 PM INFO kernel [ 72.369816] ol_transfer_bin_file 3650: downloading file 3, Download data len 12064
+12/31/69 06:00:13 PM INFO kernel [ 72.370209] Board extended Data download address: 0x0
+12/31/69 06:00:13 PM INFO kernel [ 72.389962] ol_ath_download_firmware: Using 0x1234 for the remainder of init
+12/31/69 06:00:13 PM INFO kernel [ 72.389983]
+12/31/69 06:00:13 PM INFO kernel [ 72.389983] Selecting OTP binary for CHIP Version -1082699768
+12/31/69 06:00:13 PM INFO kernel [ 72.390166] ol_transfer_bin_file 3650: downloading file 0, Download data len 4676
+12/31/69 06:00:13 PM WARN kernel [ 72.406587]
+12/31/69 06:00:13 PM WARN kernel [ 72.406587] [Flash] : Ignore Module param
+12/31/69 06:00:13 PM INFO kernel [ 72.406615]
+12/31/69 06:00:13 PM INFO kernel [ 72.406615] Second otp download Param 10000
+12/31/69 06:00:13 PM WARN kernel [ 72.416873] ol_ath_download_firmware : Second OTP download and Execute is good, param=0x0
+12/31/69 06:00:13 PM INFO kernel [ 72.416893]
+12/31/69 06:00:13 PM INFO kernel [ 72.416893] Mission mode: Firmware CHIP Version -1082699768
+12/31/69 06:00:13 PM INFO kernel [ 72.418216] ol_swap_seg_alloc: Successfully allocated memory for SWAP size=262144
+12/31/69 06:00:13 PM WARN kernel [ 72.418722] ol_swap_wlan_memory_expansion: length:185067 size_left:185087 dma_size_left:262144 fw_temp:e2461004 fw_entry_size:185091
+12/31/69 06:00:13 PM WARN kernel [ 72.418741] ol_swap_wlan_memory_expansion: dma_virt_addr :e23b0000 fw_temp: e2461008 length: 185067
+12/31/69 06:00:13 PM INFO kernel [ 72.419024] Swap: bytes_left to copy: fw:16; dma_page:77077
+12/31/69 06:00:13 PM WARN kernel [ 72.419038] ol_swap_wlan_memory_expansion: length:0 size_left:12 dma_size_left:77077 fw_temp:e248e2f7 fw_entry_size:185091
+12/31/69 06:00:13 PM INFO kernel [ 72.419048] Swap: wrong length read:0
+12/31/69 06:00:13 PM INFO kernel [ 72.419059] ol_swap_wlan_memory_expansion: Swap total_bytes copied: 185067 Target address 4180b0
+12/31/69 06:00:13 PM INFO kernel [ 72.419201] scn=dad00500 target_write_addr=4180b0 seg_info=dec8b810
+12/31/69 06:00:13 PM INFO kernel [ 72.419220] ol_transfer_swap_struct:Code swap structure successfully downloaded for bin type =2
+12/31/69 06:00:13 PM WARN kernel [ 72.419231] bin_filename=IPQ4019/hw.1/athwlan.bin swap_filename=/lib/firmware/IPQ4019/hw.1/athwlan.codeswap.bin
+12/31/69 06:00:13 PM WARN kernel [ 72.419313] ol_transfer_bin_file: Downloading firmware file: IPQ4019/hw.1/athwlan.bin
+12/31/69 06:00:14 PM INFO kernel [ 72.570833] ol_transfer_bin_file 3650: downloading file 1, Download data len 378640
+12/31/69 06:00:15 PM INFO kernel [ 73.847731] ol_target_init() Download FW done.
+12/31/69 06:00:15 PM WARN kernel [ 73.847813] ERROR: No wifi_dump dts node available in the dts entry file
+12/31/69 06:00:15 PM INFO kernel [ 73.848040] ol_ath_attach() WMI attached. wmi_handle da476000
+12/31/69 06:00:15 PM WARN kernel [ 73.848058] wmi_unified_register_event_handler: Event id 62 is unavailable
+12/31/69 06:00:15 PM WARN kernel [ 73.848071] +htc_create .. HIF :da9a0000-htc_create: (0xda455800)
+12/31/69 06:00:15 PM INFO kernel [ 73.848124] htc_wmi_init() HT Create . da455800
+12/31/69 06:00:15 PM INFO kernel [ 73.848241] htc_wmi_init 7779 host_enable 0 nss_nwifi_offload 0
+12/31/69 06:00:15 PM INFO kernel [ 73.848257] ol_ath_set_default_tgt_config : AC Minfree buffer allocation through module param (umac.ko)
+12/31/69 06:00:15 PM INFO kernel [ 73.848266] OL_ACBKMinfree : 0
+12/31/69 06:00:15 PM INFO kernel [ 73.848273] OL_ACBEMinfree : 0
+12/31/69 06:00:15 PM INFO kernel [ 73.848281] OL_ACVIMinfree : 0
+12/31/69 06:00:15 PM INFO kernel [ 73.848288] OL_ACVOMinfree : 0
+12/31/69 06:00:15 PM WARN kernel [ 73.848297] hif_enable_fastpath, Enabling fastpath mode
+12/31/69 06:00:15 PM ALERT kernel [ 73.848304] +HWT
+12/31/69 06:00:15 PM WARN kernel [ 73.848320] hif_completion_thread_startup: pipe_num:0 pipe_info:0xda9a4b78hif_completion_thread_startup: pipe_num:3 pipe_info:0xda9a4c50hif_completion_thread_startup: pipe_num:4 pipe_info:0xda9a4c98
+12/31/69 06:00:15 PM ALERT kernel [ 73.861016] -HWT
+12/31/69 06:00:15 PM WARN kernel [ 73.861114] Startup Mode-0 set
+12/31/69 06:00:15 PM INFO kernel [ 73.861125]
+12/31/69 06:00:15 PM INFO kernel [ 73.861125] <=== cfg max peer id 1056 ====>
+12/31/69 06:00:15 PM WARN kernel [ 73.861940] htt_peer_map_timer_init Enter pdev daeb0000 hrtimer daeb4948
+12/31/69 06:00:15 PM WARN kernel [ 73.861970]
+12/31/69 06:00:15 PM WARN kernel [ 73.861970] htt_alloc_peer_map_mem : Alloc Success : host q vaddr da93e000 paddr 9a93e000
+12/31/69 06:00:15 PM WARN kernel [ 73.861984]
+12/31/69 06:00:15 PM WARN kernel [ 73.861984] htt_alloc_peer_map_mem : Flush Interval Configured to 256 pkts
+12/31/69 06:00:15 PM INFO kernel [ 73.864238] ol_txrx_pdev_attach: 2500 tx desc's allocated ; range starts from db160000
+12/31/69 06:00:15 PM WARN kernel [ 73.868975] Firmware_Build_Number:50
+12/31/69 06:00:15 PM WARN kernel [ 73.868998] FW wireless modes: 0x680c
+12/31/69 06:00:15 PM WARN kernel [ 73.869009] num_rf_chain:0x00000002 ht_cap_info:0x0000085b vht_cap_info:0x339959b2 vht_supp_mcs:0x0000fffa
+12/31/69 06:00:15 PM WARN kernel [ 73.869040] btcoex_support 0, wlan_prio_gpio 0, coex_gpio_pin 0 0 0
+12/31/69 06:00:15 PM WARN kernel [ 73.869053] wmi_service_coex_gpio 1, wmi_service_4_wire_coex_support 1, coex_version 0
+12/31/69 06:00:15 PM WARN kernel [ 73.869067]
+12/31/69 06:00:15 PM WARN kernel [ 73.869067] Sending Ext resource cfg: HOST PLATFORM as 0
+12/31/69 06:00:15 PM WARN kernel [ 73.869067] fw_feature_bitmap as 50 to TGT
+12/31/69 06:00:15 PM INFO kernel [ 73.869137] ol_ath_service_ready_event: tt_support: 1
+12/31/69 06:00:15 PM INFO kernel [ 73.869149] ol_ath_service_ready_event: periodic_chan_stats: 1
+12/31/69 06:00:15 PM WARN kernel [ 73.869158] ol_ath_service_ready_event: sw_cal_support_check_flag: 1
+12/31/69 06:00:15 PM INFO kernel [ 73.869170] Peer Caching Enabled ; num_peers = 530, num_active_peers = 52 num_tids = 104, num_vdevs = 17
+12/31/69 06:00:15 PM WARN kernel [ 73.869222] EXT NSS Supported
+12/31/69 06:00:15 PM INFO kernel [ 73.869250] idx 1 req 2 num_units 1 num_unit_info 12 unit size 256 actual units 53
+12/31/69 06:00:15 PM WARN kernel [ 73.869308] ol_ath_alloc_host_mem_chunk req_id 2 idx 0 num_units 53 unit_len 256,
+12/31/69 06:00:15 PM INFO kernel [ 73.869323] idx 2 req 3 num_units 1 num_unit_info 12 unit size 1024 actual units 53
+12/31/69 06:00:15 PM WARN kernel [ 73.869393] ol_ath_alloc_host_mem_chunk req_id 3 idx 1 num_units 53 unit_len 1024,
+12/31/69 06:00:15 PM INFO kernel [ 73.869406] idx 3 req 4 num_units 1 num_unit_info 12 unit size 4096 actual units 53
+12/31/69 06:00:15 PM WARN kernel [ 73.869589] ol_ath_alloc_host_mem_chunk req_id 4 idx 2 num_units 53 unit_len 4096,
+12/31/69 06:00:15 PM INFO kernel [ 73.869603] idx 0 req 1 num_units 0 num_unit_info 2 unit size 744 actual units 531
+12/31/69 06:00:15 PM WARN kernel [ 73.869929] ol_ath_alloc_host_mem_chunk req_id 1 idx 3 num_units 531 unit_len 744,
+12/31/69 06:00:15 PM INFO kernel [ 73.869944] idx 4 req 6 num_units 35 num_unit_info 0 unit size 3072 actual units 35
+12/31/69 06:00:15 PM WARN kernel [ 73.870072] ol_ath_alloc_host_mem_chunk req_id 6 idx 4 num_units 35 unit_len 3072,
+12/31/69 06:00:15 PM INFO kernel [ 73.870086] idx 5 req 7 num_units 1 num_unit_info 0 unit size 6144 actual units 1
+12/31/69 06:00:15 PM WARN kernel [ 73.870233] ol_ath_alloc_host_mem_chunk req_id 7 idx 5 num_units 1 unit_len 6144,
+12/31/69 06:00:15 PM INFO kernel [ 73.870247] idx 6 req 5 num_units 0 num_unit_info 2 unit size 2052 actual units 531
+12/31/69 06:00:15 PM WARN kernel [ 73.871204] ol_ath_alloc_host_mem_chunk req_id 5 idx 6 num_units 531 unit_len 2052,
+12/31/69 06:00:15 PM WARN kernel [ 73.871216] Support not added yet for Service 91
+12/31/69 06:00:15 PM WARN kernel [ 73.871223] Support not added yet for Service 92
+12/31/69 06:00:15 PM WARN kernel [ 73.871230] No EXT_MSG send INIT now
+12/31/69 06:00:15 PM WARN kernel [ 73.871249] chunk 0 len 13568 requested , ptr 0x9ab70000
+12/31/69 06:00:15 PM WARN kernel [ 73.871261] chunk 1 len 54272 requested , ptr 0x9b1c0000
+12/31/69 06:00:15 PM WARN kernel [ 73.871271] chunk 2 len 217088 requested , ptr 0x9b200000
+12/31/69 06:00:15 PM WARN kernel [ 73.871280] chunk 3 len 395064 requested , ptr 0x9b280000
+12/31/69 06:00:15 PM WARN kernel [ 73.871289] chunk 4 len 107520 requested , ptr 0x9b1e0000
+12/31/69 06:00:15 PM WARN kernel [ 73.871297] chunk 5 len 6144 requested , ptr 0x9a76a000
+12/31/69 06:00:15 PM WARN kernel [ 73.871306] chunk 6 len 1089612 requested , ptr 0x9b400000
+12/31/69 06:00:15 PM WARN kernel [ 73.871315] chunk 7 len 0 requested , ptr 0x0
+12/31/69 06:00:15 PM WARN kernel [ 73.871404] ol_ath_service_ready_event[4275] WAPI MBSSID 2
+12/31/69 06:00:15 PM WARN kernel [ 73.871571] smart_log_init: Smart logging Enabled buf=db510000 (size=65536)
+12/31/69 06:00:15 PM WARN kernel [ 73.913105] Version = 16777216 3 status = 0
+12/31/69 06:00:15 PM INFO kernel [ 73.913194] ol_ath_connect_htc() WMI is ready
+12/31/69 06:00:15 PM INFO kernel [ 73.913270] target uses HTT version 2.2; host uses 2.2
+12/31/69 06:00:15 PM WARN kernel [ 73.913293] htt_h2t_frag_desc_bank_cfg_msg - HTT_H2T_MSG_TYPE_FRAG_DESC_BANK_CFG sent to FW for radio ID = 0
+12/31/69 06:00:15 PM INFO kernel [ 73.919275] ol_ath_attach() connect HTC.
+12/31/69 06:00:15 PM INFO kernel [ 73.919296] bypasswmi : 0
+12/31/69 06:00:15 PM INFO kernel [ 73.919315] ol_regdmn_start: reg-domain param: regdmn=0, countryName=, wModeSelect=FFFFFFFF, netBand=FFFFFFFF, extendedChanMode=0.
+12/31/69 06:00:15 PM INFO kernel [ 73.919341] ol_regdmn_init_channels: !avail mode 0x680c (0x2) flags 0x2150
+12/31/69 06:00:15 PM INFO kernel [ 73.919352] ol_regdmn_init_channels: !avail mode 0x680c (0x1) flags 0x140
+12/31/69 06:00:15 PM INFO kernel [ 73.919397] ol_regdmn_init_channels: !avail mode 0x680c (0x20) flags 0xd0
+12/31/69 06:00:15 PM INFO kernel [ 73.919408] ol_regdmn_init_channels: !avail mode 0x680c (0x40) flags 0x150
+12/31/69 06:00:15 PM INFO kernel [ 73.919450] ol_regdmn_init_channels: !avail mode 0x680c (0x1000) flags 0x10100
+12/31/69 06:00:15 PM INFO kernel [ 73.919461] ol_regdmn_init_channels: !avail mode 0x680c (0x8000) flags 0x20100
+12/31/69 06:00:15 PM INFO kernel [ 73.919471] ol_regdmn_init_channels: !avail mode 0x680c (0x10000) flags 0x40100
+12/31/69 06:00:15 PM INFO kernel [ 73.919481] ol_regdmn_init_channels: !avail mode 0x680c (0x20000) flags 0x100100
+12/31/69 06:00:15 PM INFO kernel [ 73.919490] ol_regdmn_init_channels: !avail mode 0x680c (0x40000) flags 0x200100
+12/31/69 06:00:15 PM INFO kernel [ 73.919500] ol_regdmn_init_channels: !avail mode 0x680c (0x80000) flags 0x400100
+12/31/69 06:00:15 PM INFO kernel [ 73.919510] ol_regdmn_init_channels: !avail mode 0x680c (0x100000) flags 0x800100
+12/31/69 06:00:15 PM INFO kernel [ 73.919520] ol_regdmn_init_channels: !avail mode 0x680c (0x200000) flags 0x4000100
+12/31/69 06:00:15 PM INFO kernel [ 73.919530] ol_regdmn_init_channels: !avail mode 0x680c (0x400000) flags 0x8000100
+12/31/69 06:00:15 PM INFO kernel [ 73.919845] OL Resmgr Init-ed
+12/31/69 06:00:15 PM INFO kernel [ 73.920033] ieee80211_bsteering_attach: Band steering initialized
+12/31/69 06:00:15 PM INFO kernel [ 73.920074] acfg_attach: 3013: Netlink socket created:da789c00
+12/31/69 06:00:15 PM INFO kernel [ 73.920116] SPECTRAL : get_capability not registered
+12/31/69 06:00:15 PM INFO kernel [ 73.920127] HAL_CAP_PHYDIAG : Capable
+12/31/69 06:00:15 PM INFO kernel [ 73.920137] SPECTRAL : Need to fix the capablity check for RADAR (spectral_attach : 237)
+12/31/69 06:00:15 PM INFO kernel [ 73.920145] SPECTRAL : get_capability not registered
+12/31/69 06:00:15 PM INFO kernel [ 73.920152] HAL_CAP_RADAR : Capable
+12/31/69 06:00:15 PM INFO kernel [ 73.920161] SPECTRAL : Need to fix the capablity check for SPECTRAL
+12/31/69 06:00:15 PM INFO kernel [ 73.920161] (spectral_attach : 242)
+12/31/69 06:00:15 PM INFO kernel [ 73.920171] SPECTRAL : get_capability not registered
+12/31/69 06:00:15 PM INFO kernel [ 73.920178] HAL_CAP_SPECTRAL_SCAN : Capable
+12/31/69 06:00:15 PM INFO kernel [ 73.920185] SPECTRAL : get_tsf64 not registered
+12/31/69 06:00:15 PM INFO kernel [ 73.920217] Green-AP : Green-AP : Attached
+12/31/69 06:00:15 PM INFO kernel [ 73.920217]
+12/31/69 06:00:15 PM INFO kernel [ 73.920229] Green-AP : Attached
+12/31/69 06:00:15 PM INFO kernel [ 73.920236] rate power table override is only supported for AR98XX
+12/31/69 06:00:15 PM WARN kernel [ 73.920393] ol_ath_smart_ant_attach: Hardware doest not support Smart Antenna.
+12/31/69 06:00:15 PM INFO kernel [ 73.920461] ol_if_dfs_attach: called; ptr=db54198c, radar_info=da73fb90
+12/31/69 06:00:15 PM WARN kernel [ 73.920471] dfs_attach: event log enabled by default
+12/31/69 06:00:15 PM WARN kernel [ 73.921451] >>>> CB Set (null)
+12/31/69 06:00:15 PM INFO kernel [ 73.921851] ol_ath_attach() UMAC attach .
+12/31/69 06:00:15 PM INFO kernel [ 73.921858]
+12/31/69 06:00:15 PM INFO kernel [ 73.921858] BURSTING enabled by default
+12/31/69 06:00:15 PM WARN kernel [ 73.922052] ol_ath_attach: Set global_ic[1] ..ptr:bf52bf9c
+12/31/69 06:00:15 PM WARN kernel [ 73.922103] ath_lowi_if_netlink_init LOWI Netlink successfully created
+12/31/69 06:00:15 PM INFO kernel [ 73.922137] osif_wrap_attach:444 osif wrap attached
+12/31/69 06:00:15 PM INFO kernel [ 73.922169] osif_wrap_devt_init:405 osif wrap dev table init done
+12/31/69 06:00:15 PM WARN kernel [ 73.922181] Wrap Attached: Wrap_com =de4b7000 ic->ic_wrap_com=de4b7000 &wrap_com->wc_devt=de4b7000
+12/31/69 06:00:15 PM INFO kernel [ 73.922192] __ol_ath_attach: needed_headroom reservation 60
+12/31/69 06:00:15 PM WARN kernel [ 73.924660] ol_ath_thermal_mitigation_attach: --
+12/31/69 06:00:15 PM WARN kernel [ 73.924690] ol_ath_ahb_probe num_radios=0, wifi_radios[0].sc = dad00500 wifi_radio_type = 2
+12/31/69 06:00:15 PM WARN kernel [ 73.924718] ath_sysfs_diag_init: diag_fsattr
+12/31/69 06:00:15 PM WARN kernel [ 73.925232] *********** IPQ4019 *************Wifi1 CPU frequency 250000000
+12/31/69 06:00:15 PM WARN kernel [ 73.958720] hif_target_sync_ahb: Got FW signal, retries = 1hif_ahb_enable_bus: X - hif_type = 0xd, target_type = 0xbhif_config_ce: ce_init donehif_config_ce: X, ret = 0hif_set_hia: Ehif_pci_bus_configure: hif_set_hia donehif_configure_irq: Ehif_enable: X OKhif_napi_create: NAPI structures initializedhif_napi_create: NAPI id 6 created for pipe 5qca_napi_create: napi instance 32 created on pipe 4
+12/31/69 06:00:15 PM WARN kernel [ 73.964826] hif_napi_event: received evnt: CONF cmd; v = 1 (state=0x1)hif_napi_event: setting configuration to ON
+12/31/69 06:00:15 PM WARN kernel [ 73.964826] __ol_ath_attach() Allocated scn db300500
+12/31/69 06:00:15 PM INFO kernel [ 73.964970] __ol_ath_attach: dev name wifi1
+12/31/69 06:00:15 PM WARN kernel [ 73.964989] ol_ath_attach interface_id 1
+12/31/69 06:00:15 PM INFO kernel [ 73.965280] ol_target_init() BMI inited.
+12/31/69 06:00:15 PM INFO kernel [ 73.965393] ol_target_init() BMI Get Target Info.
+12/31/69 06:00:15 PM WARN kernel [ 73.965405] Chip id: 0xb, chip version: 0x1000000
+12/31/69 06:00:15 PM INFO kernel [ 73.965415]
+12/31/69 06:00:15 PM INFO kernel [ 73.965415] CE WAR Disabled
+12/31/69 06:00:15 PM INFO kernel [ 73.965561] NUM_DEV=1 FWMODE=0x2 FWSUBMODE=0x0 FWBR_BUF 0
+12/31/69 06:00:15 PM INFO kernel [ 73.965757] ol_target_init() configure Target .
+12/31/69 06:00:15 PM WARN kernel [ 73.965846]
+12/31/69 06:00:15 PM WARN kernel [ 73.965846] Target Version is 1000000
+12/31/69 06:00:15 PM WARN kernel [ 73.965858]
+12/31/69 06:00:15 PM WARN kernel [ 73.965858] Flash Download Address c0000
+12/31/69 06:00:15 PM WARN kernel [ 73.965870] ol_transfer_bin_file: flash data file defined
+12/31/69 06:00:15 PM WARN kernel [ 73.965883] ol_transfer_bin_file[3769] Get Caldata for wifi1.
+12/31/69 06:00:15 PM WARN kernel [ 73.965987] qdf_fs_read[59], Open File /tmp/wifi1.caldata SUCCESS!!file system magic:-2054924042super blocksize:4096inode 3170file size:12064qc98xx_verify_checksum: flash checksum passed: 0x763a
+12/31/69 06:00:15 PM WARN kernel [ 73.966108] ol_transfer_bin_file 3830: Download Flash data len 12064
+12/31/69 06:00:15 PM INFO kernel [ 73.967864] Board extended Data download address: 0x0
+12/31/69 06:00:15 PM WARN kernel [ 73.987573]
+12/31/69 06:00:15 PM WARN kernel [ 73.987573] Board data initialized
+12/31/69 06:00:15 PM INFO kernel [ 73.987750] ol_ath_download_firmware: Download OTP, flash download ADDRESS 0xc0000
+12/31/69 06:00:15 PM INFO kernel [ 73.987765]
+12/31/69 06:00:15 PM INFO kernel [ 73.987765] Selecting OTP binary for CHIP Version -1082699768
+12/31/69 06:00:15 PM INFO kernel [ 73.987944] ol_transfer_bin_file 3650: downloading file 0, Download data len 4676
+12/31/69 06:00:15 PM INFO kernel [ 74.004459]
+12/31/69 06:00:15 PM INFO kernel [ 74.004459] First OTP send param 8000
+12/31/69 06:00:15 PM WARN kernel [ 74.009200] ol_ath_download_firmware :First OTP download and Execute is good address:0x5400 return param 4660
+12/31/69 06:00:15 PM WARN kernel [ 74.009221] ol_ath_download_firmware:##Board Id 21 , CHIP Id 0
+12/31/69 06:00:15 PM INFO kernel [ 74.009329] ol_ath_download_firmware: BOARDDATA DOWNLOAD TO address 0xc0000
+12/31/69 06:00:15 PM WARN kernel [ 74.009365]
+12/31/69 06:00:15 PM WARN kernel [ 74.009365] wifi1: Selecting board data file name boardData_1_0_IPQ4019_DK04_5G.bin
+12/31/69 06:00:15 PM WARN kernel [ 74.009383] ol_transfer_bin_file: Board Data File download to address=0xc0000 file name=IPQ4019/hw.1/boardData_1_0_IPQ4019_DK04_5G.bin
+12/31/69 06:00:15 PM INFO kernel [ 74.009681] ol_transfer_bin_file 3650: downloading file 3, Download data len 12064
+12/31/69 06:00:15 PM INFO kernel [ 74.010120] Board extended Data download address: 0x0
+12/31/69 06:00:15 PM INFO kernel [ 74.030196] ol_ath_download_firmware: Using 0x1234 for the remainder of init
+12/31/69 06:00:15 PM INFO kernel [ 74.030217]
+12/31/69 06:00:15 PM INFO kernel [ 74.030217] Selecting OTP binary for CHIP Version -1082699768
+12/31/69 06:00:15 PM INFO kernel [ 74.030398] ol_transfer_bin_file 3650: downloading file 0, Download data len 4676
+12/31/69 06:00:15 PM WARN kernel [ 74.050322]
+12/31/69 06:00:15 PM WARN kernel [ 74.050322] [Flash] : Ignore Module param
+12/31/69 06:00:15 PM INFO kernel [ 74.050351]
+12/31/69 06:00:15 PM INFO kernel [ 74.050351] Second otp download Param 10000
+12/31/69 06:00:15 PM WARN kernel [ 74.060915] ol_ath_download_firmware : Second OTP download and Execute is good, param=0x0
+12/31/69 06:00:15 PM INFO kernel [ 74.060940]
+12/31/69 06:00:15 PM INFO kernel [ 74.060940] Mission mode: Firmware CHIP Version -1082699768
+12/31/69 06:00:15 PM INFO kernel [ 74.061695] ol_swap_seg_alloc: Successfully allocated memory for SWAP size=262144
+12/31/69 06:00:15 PM WARN kernel [ 74.062127] ol_swap_wlan_memory_expansion: length:185067 size_left:185087 dma_size_left:262144 fw_temp:e2a61004 fw_entry_size:185091
+12/31/69 06:00:15 PM WARN kernel [ 74.062148] ol_swap_wlan_memory_expansion: dma_virt_addr :e29b3000 fw_temp: e2a61008 length: 185067
+12/31/69 06:00:15 PM INFO kernel [ 74.062386] Swap: bytes_left to copy: fw:16; dma_page:77077
+12/31/69 06:00:15 PM WARN kernel [ 74.062402] ol_swap_wlan_memory_expansion: length:0 size_left:12 dma_size_left:77077 fw_temp:e2a8e2f7 fw_entry_size:185091
+12/31/69 06:00:15 PM INFO kernel [ 74.062410] Swap: wrong length read:0
+12/31/69 06:00:15 PM INFO kernel [ 74.062421] ol_swap_wlan_memory_expansion: Swap total_bytes copied: 185067 Target address 4180b0
+12/31/69 06:00:15 PM INFO kernel [ 74.062591] scn=db300500 target_write_addr=4180b0 seg_info=de57d810
+12/31/69 06:00:15 PM INFO kernel [ 74.062611] ol_transfer_swap_struct:Code swap structure successfully downloaded for bin type =2
+12/31/69 06:00:15 PM WARN kernel [ 74.062622] bin_filename=IPQ4019/hw.1/athwlan.bin swap_filename=/lib/firmware/IPQ4019/hw.1/athwlan.codeswap.bin
+12/31/69 06:00:15 PM WARN kernel [ 74.062669] ol_transfer_bin_file: Downloading firmware file: IPQ4019/hw.1/athwlan.bin
+12/31/69 06:00:15 PM INFO kernel [ 74.063546] ol_transfer_bin_file 3650: downloading file 1, Download data len 378640
+12/31/69 06:00:15 PM INFO WAN:47025ecf Preconfigured Event: ok
+12/31/69 06:00:15 PM INFO WAN:47025ecf wandev preconfigured type: mdm, uid: 47025ecf, uptime: 74
+12/31/69 06:00:15 PM INFO WAN:47025ecf Fixing up APN for profile 1
+12/31/69 06:00:16 PM WARN kernel [ 74.857148] [wifi0] FWLOG: [100885] WAL_DBGID_RST_STATS ( 0x1, 0x1, 0x96c, 0x0 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857194] [wifi0] FWLOG: [100923] WAL_DBGID_TX_AC_BUFFER_SET ( 0x3, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857284] [wifi0] FWLOG: [100923] WAL_DBGID_TX_AC_BUFFER_SET ( 0x12, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857317] [wifi0] FWLOG: [100923] WAL_DBGID_TX_AC_BUFFER_SET ( 0x45, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857349] [wifi0] FWLOG: [100923] WAL_DBGID_TX_AC_BUFFER_SET ( 0x67, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857380] [wifi0] FWLOG: [100934] WAL_DBGID_PDEV_INFO_PRINT ( 0x16, 0xa10, 0x810, 0x0, 0x12 )
+12/31/69 06:00:16 PM WARN kernel [ 74.857413] [wifi0] FWLOG: [100934] WAL_DBGID_PDEV_INFO_PRINT ( 0x16, 0x0, 0x12, 0x10, 0x12 )
+12/31/69 06:00:16 PM INFO kernel [ 75.347268] ol_target_init() Download FW done.
+12/31/69 06:00:16 PM WARN kernel [ 75.347350] ERROR: No wifi_dump dts node available in the dts entry file
+12/31/69 06:00:16 PM INFO kernel [ 75.347567] ol_ath_attach() WMI attached. wmi_handle de5d6000
+12/31/69 06:00:16 PM WARN kernel [ 75.347583] wmi_unified_register_event_handler: Event id 62 is unavailable
+12/31/69 06:00:16 PM WARN kernel [ 75.347596] +htc_create .. HIF :db250000-htc_create: (0xda717800)
+12/31/69 06:00:16 PM INFO kernel [ 75.347653] htc_wmi_init() HT Create . da717800
+12/31/69 06:00:16 PM INFO kernel [ 75.347734] htc_wmi_init 7779 host_enable 0 nss_nwifi_offload 0
+12/31/69 06:00:16 PM INFO kernel [ 75.347748] ol_ath_set_default_tgt_config : AC Minfree buffer allocation through module param (umac.ko)
+12/31/69 06:00:16 PM INFO kernel [ 75.347756] OL_ACBKMinfree : 0
+12/31/69 06:00:16 PM INFO kernel [ 75.347764] OL_ACBEMinfree : 0
+12/31/69 06:00:16 PM INFO kernel [ 75.347771] OL_ACVIMinfree : 0
+12/31/69 06:00:16 PM INFO kernel [ 75.347778] OL_ACVOMinfree : 0
+12/31/69 06:00:16 PM WARN kernel [ 75.347787] hif_enable_fastpath, Enabling fastpath mode
+12/31/69 06:00:16 PM ALERT kernel [ 75.347793] +HWT
+12/31/69 06:00:16 PM WARN kernel [ 75.347807] hif_completion_thread_startup: pipe_num:0 pipe_info:0xdb254b78hif_completion_thread_startup: pipe_num:3 pipe_info:0xdb254c50hif_completion_thread_startup: pipe_num:4 pipe_info:0xdb254c98
+12/31/69 06:00:16 PM ALERT kernel [ 75.357554] -HWT
+12/31/69 06:00:16 PM WARN kernel [ 75.358982] Startup Mode-0 set
+12/31/69 06:00:16 PM INFO kernel [ 75.359004]
+12/31/69 06:00:16 PM INFO kernel [ 75.359004] <=== cfg max peer id 1056 ====>
+12/31/69 06:00:16 PM WARN kernel [ 75.359818] htt_peer_map_timer_init Enter pdev db718000 hrtimer db71c948
+12/31/69 06:00:16 PM WARN kernel [ 75.359848]
+12/31/69 06:00:16 PM WARN kernel [ 75.359848] htt_alloc_peer_map_mem : Alloc Success : host q vaddr db356000 paddr 9b356000
+12/31/69 06:00:16 PM WARN kernel [ 75.359862]
+12/31/69 06:00:16 PM WARN kernel [ 75.359862] htt_alloc_peer_map_mem : Flush Interval Configured to 256 pkts
+12/31/69 06:00:16 PM INFO kernel [ 75.362090] ol_txrx_pdev_attach: 2500 tx desc's allocated ; range starts from d95e0000
+12/31/69 06:00:16 PM WARN kernel [ 75.364324] Firmware_Build_Number:50
+12/31/69 06:00:16 PM WARN kernel [ 75.364348] FW wireless modes: 0x1f9001
+12/31/69 06:00:16 PM WARN kernel [ 75.364362] num_rf_chain:0x00000002 ht_cap_info:0x0000085b vht_cap_info:0x339959b2 vht_supp_mcs:0x0000fffa
+12/31/69 06:00:16 PM WARN kernel [ 75.364386] wmi_service_coex_gpio 0, wmi_service_4_wire_coex_support 0, coex_version 0
+12/31/69 06:00:16 PM WARN kernel [ 75.364402]
+12/31/69 06:00:16 PM WARN kernel [ 75.364402] Sending Ext resource cfg: HOST PLATFORM as 0
+12/31/69 06:00:16 PM WARN kernel [ 75.364402] fw_feature_bitmap as 50 to TGT
+12/31/69 06:00:16 PM INFO kernel [ 75.364481] ol_ath_service_ready_event: tt_support: 1
+12/31/69 06:00:16 PM INFO kernel [ 75.364493] ol_ath_service_ready_event: periodic_chan_stats: 1
+12/31/69 06:00:16 PM WARN kernel [ 75.364502] ol_ath_service_ready_event: sw_cal_support_check_flag: 1
+12/31/69 06:00:16 PM INFO kernel [ 75.364514] Peer Caching Enabled ; num_peers = 530, num_active_peers = 52 num_tids = 104, num_vdevs = 17
+12/31/69 06:00:16 PM WARN kernel [ 75.364573] EXT NSS Supported
+12/31/69 06:00:16 PM INFO kernel [ 75.364604] idx 1 req 2 num_units 1 num_unit_info 12 unit size 256 actual units 53
+12/31/69 06:00:16 PM WARN kernel [ 75.364664] ol_ath_alloc_host_mem_chunk req_id 2 idx 0 num_units 53 unit_len 256,
+12/31/69 06:00:16 PM INFO kernel [ 75.364678] idx 2 req 3 num_units 1 num_unit_info 12 unit size 1024 actual units 53
+12/31/69 06:00:16 PM WARN kernel [ 75.364750] ol_ath_alloc_host_mem_chunk req_id 3 idx 1 num_units 53 unit_len 1024,
+12/31/69 06:00:16 PM INFO kernel [ 75.364763] idx 3 req 4 num_units 1 num_unit_info 12 unit size 4096 actual units 53
+12/31/69 06:00:16 PM WARN kernel [ 75.364943] ol_ath_alloc_host_mem_chunk req_id 4 idx 2 num_units 53 unit_len 4096,
+12/31/69 06:00:16 PM INFO kernel [ 75.364956] idx 0 req 1 num_units 0 num_unit_info 2 unit size 744 actual units 531
+12/31/69 06:00:16 PM WARN kernel [ 75.365276] ol_ath_alloc_host_mem_chunk req_id 1 idx 3 num_units 531 unit_len 744,
+12/31/69 06:00:16 PM INFO kernel [ 75.365290] idx 4 req 6 num_units 35 num_unit_info 0 unit size 3072 actual units 35
+12/31/69 06:00:16 PM WARN kernel [ 75.365393] ol_ath_alloc_host_mem_chunk req_id 6 idx 4 num_units 35 unit_len 3072,
+12/31/69 06:00:16 PM INFO kernel [ 75.365406] idx 5 req 7 num_units 1 num_unit_info 0 unit size 6144 actual units 1
+12/31/69 06:00:16 PM WARN kernel [ 75.365433] ol_ath_alloc_host_mem_chunk req_id 7 idx 5 num_units 1 unit_len 6144,
+12/31/69 06:00:16 PM INFO kernel [ 75.365446] idx 6 req 5 num_units 0 num_unit_info 2 unit size 2052 actual units 531
+12/31/69 06:00:16 PM WARN kernel [ 75.367565] ol_ath_alloc_host_mem_chunk req_id 5 idx 6 num_units 531 unit_len 2052,
+12/31/69 06:00:16 PM WARN kernel [ 75.367692] Support not added yet for Service 91
+12/31/69 06:00:16 PM WARN kernel [ 75.367701] Support not added yet for Service 92
+12/31/69 06:00:16 PM WARN kernel [ 75.367708] No EXT_MSG send INIT now
+12/31/69 06:00:16 PM WARN kernel [ 75.367728] chunk 0 len 13568 requested , ptr 0x9b360000
+12/31/69 06:00:16 PM WARN kernel [ 75.367853] chunk 1 len 54272 requested , ptr 0x995d0000
+12/31/69 06:00:16 PM WARN kernel [ 75.367864] chunk 2 len 217088 requested , ptr 0x99640000
+12/31/69 06:00:16 PM WARN kernel [ 75.367873] chunk 3 len 395064 requested , ptr 0x99680000
+12/31/69 06:00:16 PM WARN kernel [ 75.367882] chunk 4 len 107520 requested , ptr 0x99700000
+12/31/69 06:00:16 PM WARN kernel [ 75.367891] chunk 5 len 6144 requested , ptr 0x9b2e2000
+12/31/69 06:00:16 PM WARN kernel [ 75.367900] chunk 6 len 1089612 requested , ptr 0x99000000
+12/31/69 06:00:16 PM WARN kernel [ 75.367989] chunk 7 len 0 requested , ptr 0x0
+12/31/69 06:00:16 PM WARN kernel [ 75.368230] ol_ath_service_ready_event[4275] WAPI MBSSID 2
+12/31/69 06:00:16 PM WARN kernel [ 75.368623] smart_log_init: Smart logging Enabled buf=d9140000 (size=65536)
+12/31/69 06:00:16 PM WARN kernel [ 75.410563] Version = 16777216 3 status = 0
+12/31/69 06:00:16 PM INFO kernel [ 75.410629] ol_ath_connect_htc() WMI is ready
+12/31/69 06:00:16 PM WARN kernel [ 75.410686] htt_h2t_frag_desc_bank_cfg_msg - HTT_H2T_MSG_TYPE_FRAG_DESC_BANK_CFG sent to FW for radio ID = 1
+12/31/69 06:00:16 PM INFO kernel [ 75.410706] target uses HTT version 2.2; host uses 2.2
+12/31/69 06:00:16 PM INFO kernel [ 75.415725] ol_ath_attach() connect HTC.
+12/31/69 06:00:16 PM INFO kernel [ 75.415740] bypasswmi : 0
+12/31/69 06:00:16 PM INFO kernel [ 75.415755] ol_regdmn_start: reg-domain param: regdmn=0, countryName=, wModeSelect=FFFFFFFF, netBand=FFFFFFFF, extendedChanMode=0.
+12/31/69 06:00:16 PM INFO kernel [ 75.415781] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x2) flags 0x2150
+12/31/69 06:00:16 PM INFO kernel [ 75.415827] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x4) flags 0xa0
+12/31/69 06:00:16 PM INFO kernel [ 75.415841] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x8) flags 0xc0
+12/31/69 06:00:16 PM INFO kernel [ 75.415864] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x20) flags 0xd0
+12/31/69 06:00:16 PM INFO kernel [ 75.415874] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x40) flags 0x150
+12/31/69 06:00:16 PM INFO kernel [ 75.415884] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x800) flags 0x10080
+12/31/69 06:00:16 PM INFO kernel [ 75.415896] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x2000) flags 0x20080
+12/31/69 06:00:16 PM INFO kernel [ 75.415906] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x4000) flags 0x40080
+12/31/69 06:00:16 PM INFO kernel [ 75.416014] Add VHT80 channel: 5210
+12/31/69 06:00:16 PM INFO kernel [ 75.416023] Add VHT80 channel: 5290
+12/31/69 06:00:16 PM INFO kernel [ 75.416032] Add VHT80 channel: 5530
+12/31/69 06:00:16 PM INFO kernel [ 75.416039] Add VHT80 channel: 5610
+12/31/69 06:00:16 PM INFO kernel [ 75.416046] Add VHT80 channel: 5690
+12/31/69 06:00:16 PM INFO kernel [ 75.416054] Add VHT80 channel: 5775
+12/31/69 06:00:16 PM INFO kernel [ 75.416084] Skipping VHT80 channel 5825
+12/31/69 06:00:16 PM INFO kernel [ 75.416098] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x200000) flags 0x4000100
+12/31/69 06:00:16 PM INFO kernel [ 75.416108] ol_regdmn_init_channels: !avail mode 0x1f9001 (0x400000) flags 0x8000100
+12/31/69 06:00:16 PM WARN kernel [ 75.420492] freq=58
+12/31/69 06:00:16 PM WARN kernel [ 75.420504] freq=106
+12/31/69 06:00:16 PM WARN kernel [ 75.420511] freq=122
+12/31/69 06:00:16 PM WARN kernel [ 75.420517] freq=138
+12/31/69 06:00:16 PM INFO kernel [ 75.420559] OL Resmgr Init-ed
+12/31/69 06:00:16 PM INFO kernel [ 75.420729] ieee80211_bsteering_attach: Band steering initialized
+12/31/69 06:00:16 PM WARN kernel [ 75.420745] acfg_attach: Offload using existing sock da789c00
+12/31/69 06:00:16 PM INFO kernel [ 75.420788] SPECTRAL : get_capability not registered
+12/31/69 06:00:16 PM INFO kernel [ 75.420797] HAL_CAP_PHYDIAG : Capable
+12/31/69 06:00:16 PM INFO kernel [ 75.420808] SPECTRAL : Need to fix the capablity check for RADAR (spectral_attach : 237)
+12/31/69 06:00:16 PM INFO kernel [ 75.420816] SPECTRAL : get_capability not registered
+12/31/69 06:00:16 PM INFO kernel [ 75.420822] HAL_CAP_RADAR : Capable
+12/31/69 06:00:16 PM INFO kernel [ 75.420831] SPECTRAL : Need to fix the capablity check for SPECTRAL
+12/31/69 06:00:16 PM INFO kernel [ 75.420831] (spectral_attach : 242)
+12/31/69 06:00:16 PM INFO kernel [ 75.420842] SPECTRAL : get_capability not registered
+12/31/69 06:00:16 PM INFO kernel [ 75.420848] HAL_CAP_SPECTRAL_SCAN : Capable
+12/31/69 06:00:16 PM INFO kernel [ 75.420856] SPECTRAL : get_tsf64 not registered
+12/31/69 06:00:16 PM INFO kernel [ 75.420879] Green-AP : Green-AP : Attached
+12/31/69 06:00:16 PM INFO kernel [ 75.420879]
+12/31/69 06:00:16 PM INFO kernel [ 75.420891] Green-AP : Attached
+12/31/69 06:00:16 PM INFO kernel [ 75.420899] rate power table override is only supported for AR98XX
+12/31/69 06:00:16 PM WARN kernel [ 75.420963] ol_ath_smart_ant_attach: Hardware doest not support Smart Antenna.
+12/31/69 06:00:16 PM INFO kernel [ 75.421028] ol_if_dfs_attach: called; ptr=d96f198c, radar_info=da73fb90
+12/31/69 06:00:16 PM WARN kernel [ 75.421037] dfs_attach: event log enabled by default
+12/31/69 06:00:16 PM WARN kernel [ 75.421998] >>>> CB Set (null)
+12/31/69 06:00:16 PM INFO kernel [ 75.422788] ol_ath_attach() UMAC attach .
+12/31/69 06:00:16 PM INFO kernel [ 75.422795]
+12/31/69 06:00:16 PM INFO kernel [ 75.422795] BURSTING enabled by default
+12/31/69 06:00:16 PM WARN kernel [ 75.422858] ol_ath_attach: Set global_ic[2] ..ptr:bf52bf9c
+12/31/69 06:00:16 PM WARN kernel [ 75.422880] ath_lowi_if_netlink_init Incremented LOWI netlink ref count: 2
+12/31/69 06:00:16 PM INFO kernel [ 75.422900] osif_wrap_attach:444 osif wrap attached
+12/31/69 06:00:16 PM INFO kernel [ 75.422932] osif_wrap_devt_init:405 osif wrap dev table init done
+12/31/69 06:00:16 PM WARN kernel [ 75.422944] Wrap Attached: Wrap_com =dab46800 ic->ic_wrap_com=dab46800 &wrap_com->wc_devt=dab46800
+12/31/69 06:00:16 PM INFO kernel [ 75.422954] __ol_ath_attach: needed_headroom reservation 60
+12/31/69 06:00:16 PM WARN kernel [ 75.424386] ol_ath_thermal_mitigation_attach: --
+12/31/69 06:00:16 PM WARN kernel [ 75.424424] ol_ath_ahb_probe num_radios=1, wifi_radios[1].sc = db300500 wifi_radio_type = 2
+12/31/69 06:00:16 PM WARN kernel [ 75.424452] ath_sysfs_diag_init: diag_fsattr
+12/31/69 06:00:16 PM INFO kernel [ 75.424726] ath_ol_pci: (Atheros/multi-bss)
+12/31/69 06:00:16 PM WARN kernel [ 75.425233] hif_pci_enable_bus: con_mode = 0x0, device_id = 0x46
+12/31/69 06:00:16 PM INFO kernel [ 75.425303] ath_ol_pci 0000:01:00.0: enabling device (0140 -> 0142)
+12/31/69 06:00:16 PM WARN kernel [ 75.426300] hif_pci_enable_bus: hif_enable_pci done *********** QCA9984 *************hif_pci_enable_bus: hif_type = 0xc, target_type = 0xahif_pci_enable_bus: hif_pci_probe_tgt_wakeup donehif_target_sync: Loop checking FW signalhif_target_sync: Got FW signal, retries = 1hif_config_ce: ce_init donehif_config_ce: X, ret = 0hif_set_hia: Ehif_set_hia_extnd: E
+12/31/69 06:00:16 PM INFO kernel [ 75.446777] chip_id 0xa chip_revision 0x0
+12/31/69 06:00:16 PM INFO kernel [ 75.446794]
+12/31/69 06:00:16 PM INFO kernel [ 75.446794] CLOCK PLL skipped
+12/31/69 06:00:16 PM INFO kernel [ 75.446808] hif_set_hia_extnd: setting the target pll frac ffffffff intval ffffffff
+12/31/69 06:00:16 PM INFO kernel [ 75.446817] hif_set_hia_extnd: no frac provided, skipping pre-configuring PLL
+12/31/69 06:00:16 PM INFO kernel [ 75.446827] hif_set_hia_extnd: targ_clk is not provided, skipping pre-configuring PLL
+12/31/69 06:00:16 PM WARN kernel [ 75.448949] hif_pci_bus_configure: hif_set_hia donehif_configure_irq: Ehif_pci_configure_legacy_irq: Ehif_pci_configure_legacy_irq: X, ret = 0hif_enable: X OKhif_napi_create: NAPI structures initializedhif_napi_create: NAPI id 6 created for pipe 5qca_napi_create: napi instance 32 created on pipe 4
+12/31/69 06:00:16 PM WARN kernel [ 75.449108] hif_napi_event: received evnt: CONF cmd; v = 1 (state=0x1)hif_napi_event: setting configuration to ON
+12/31/69 06:00:16 PM WARN kernel [ 75.449108] __ol_ath_attach() Allocated scn d97c0500
+12/31/69 06:00:16 PM INFO kernel [ 75.449250] __ol_ath_attach: dev name wifi2
+12/31/69 06:00:16 PM WARN kernel [ 75.449269] ol_ath_attach interface_id 2
+12/31/69 06:00:16 PM INFO kernel [ 75.449523] ol_target_init() BMI inited.
+12/31/69 06:00:16 PM INFO kernel [ 75.449636] ol_target_init() BMI Get Target Info.
+12/31/69 06:00:16 PM WARN kernel [ 75.449649] Chip id: 0xa, chip version: 0x1000000
+12/31/69 06:00:16 PM INFO kernel [ 75.449657]
+12/31/69 06:00:16 PM INFO kernel [ 75.449657] CE WAR Disabled
+12/31/69 06:00:16 PM INFO kernel [ 75.449798] NUM_DEV=1 FWMODE=0x2 FWSUBMODE=0x0 FWBR_BUF 0
+12/31/69 06:00:16 PM INFO kernel [ 75.449991] ol_target_init() configure Target .
+12/31/69 06:00:16 PM WARN kernel [ 75.450072]
+12/31/69 06:00:16 PM WARN kernel [ 75.450072] Target Version is 1000000
+12/31/69 06:00:16 PM WARN kernel [ 75.450084]
+12/31/69 06:00:16 PM WARN kernel [ 75.450084] Flash Download Address c0000
+12/31/69 06:00:16 PM WARN kernel [ 75.450096] ol_transfer_bin_file: flash data file defined
+12/31/69 06:00:16 PM WARN kernel [ 75.450106] ol_transfer_bin_file[3769] Get Caldata for wifi2.
+12/31/69 06:00:16 PM WARN kernel [ 75.450193] qdf_fs_read[59], Open File /tmp/wifi2.caldata SUCCESS!!file system magic:-2054924042super blocksize:4096inode 3173file size:12064qc98xx_verify_checksum: flash checksum passed: 0x9323
+12/31/69 06:00:16 PM WARN kernel [ 75.450307] ol_transfer_bin_file 3830: Download Flash data len 12064
+12/31/69 06:00:16 PM INFO kernel [ 75.450697] Board extended Data download address: 0x0
+12/31/69 06:00:16 PM WARN kernel [ 75.470089]
+12/31/69 06:00:16 PM WARN kernel [ 75.470089] Board data initialized
+12/31/69 06:00:16 PM INFO kernel [ 75.470263] ol_ath_download_firmware: Download OTP, flash download ADDRESS 0xc0000
+12/31/69 06:00:16 PM INFO kernel [ 75.470274]
+12/31/69 06:00:16 PM INFO kernel [ 75.470274] Selecting OTP binary for CHIP Version 0
+12/31/69 06:00:16 PM INFO WAN:47025ecf Configure Event: ok
+12/31/69 06:00:16 PM INFO WAN:47025ecf configured_event: Device activation state: True
+12/31/69 06:00:16 PM INFO kernel [ 75.538903] ol_transfer_bin_file 3650: downloading file 0, Download data len 9204
+12/31/69 06:00:17 PM INFO kernel [ 75.569033]
+12/31/69 06:00:17 PM INFO kernel [ 75.569033] First OTP send param 8000
+12/31/69 06:00:17 PM INFO WAN:47025ecf wandev configured type: mdm, uid: 47025ecf, uptime: 75
+12/31/69 06:00:17 PM INFO WAN:47025ecf StandardModem::checkNIASession: NIA mode : disconnected session : None
+12/31/69 06:00:17 PM INFO WAN:47025ecf StandardModem::checkNIASession: connection state : disconnected
+12/31/69 06:00:17 PM WARN kernel [ 76.356688] [wifi1] FWLOG: [102418] WAL_DBGID_RST_STATS ( 0x1, 0x1, 0x1464, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356736] [wifi1] FWLOG: [102457] WAL_DBGID_TX_AC_BUFFER_SET ( 0x3, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356771] [wifi1] FWLOG: [102457] WAL_DBGID_TX_AC_BUFFER_SET ( 0x12, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356803] [wifi1] FWLOG: [102457] WAL_DBGID_TX_AC_BUFFER_SET ( 0x45, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356834] [wifi1] FWLOG: [102457] WAL_DBGID_TX_AC_BUFFER_SET ( 0x67, 0x1e, 0x94c, 0x94c, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356865] [wifi1] FWLOG: [102471] WAL_DBGID_PDEV_INFO_PRINT ( 0x16, 0xa10, 0x810, 0x10, 0x0 )
+12/31/69 06:00:17 PM WARN kernel [ 76.356897] [wifi1] FWLOG: [102471] WAL_DBGID_PDEV_INFO_PRINT ( 0x16, 0x10, 0x0, 0x10, 0x12 )
+12/31/69 06:00:18 PM WARN kernel [ 76.907922] Switching to Tx Mode-1 Threshold 280
+12/31/69 06:00:18 PM INFO WAN:47025ecf The cell id for the MC400LP6 (SIM1) on port modem1 is 2934028 (0x2cc50c)
+12/31/69 06:00:18 PM INFO WAN:47025ecf signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:8.4(dB), RSRP:-71(dB), RSRQ:-8(dB), RFBAND: Band 13
+12/31/69 06:00:19 PM WARN kernel [ 77.780995] ol_ath_download_firmware :First OTP download and Execute is good address:0x400 return param 4660
+12/31/69 06:00:19 PM WARN kernel [ 77.781019] ol_ath_download_firmware:##Board Id 1 , CHIP Id 0
+12/31/69 06:00:19 PM INFO kernel [ 77.781130] ol_ath_download_firmware: BOARDDATA DOWNLOAD TO address 0xc0000
+12/31/69 06:00:19 PM WARN kernel [ 77.952880] ol_transfer_bin_file: Board Data File download to address=0xc0000 file name=QCA9984/hw.1/boardData_QCA9984_CUS239_5G_v1_001.bin
+12/31/69 06:00:19 PM INFO kernel [ 77.953211] ol_transfer_bin_file 3650: downloading file 3, Download data len 12064
+12/31/69 06:00:19 PM INFO kernel [ 77.953623] Board extended Data download address: 0x0
+12/31/69 06:00:19 PM INFO kernel [ 77.973380] ol_ath_download_firmware: Using 0x1234 for the remainder of init
+12/31/69 06:00:19 PM INFO kernel [ 77.973404]
+12/31/69 06:00:19 PM INFO kernel [ 77.973404] Selecting OTP binary for CHIP Version 0
+12/31/69 06:00:19 PM INFO kernel [ 77.973597] ol_transfer_bin_file 3650: downloading file 0, Download data len 9204
+12/31/69 06:00:19 PM WARN kernel [ 78.003647]
+12/31/69 06:00:19 PM WARN kernel [ 78.003647] [Flash] : Ignore Module param
+12/31/69 06:00:19 PM INFO kernel [ 78.003676]
+12/31/69 06:00:19 PM INFO kernel [ 78.003676] Second otp download Param 10000
+12/31/69 06:00:19 PM WARN kernel [ 78.405379] Switching to Tx Mode-1 Threshold 280
+12/31/69 06:00:21 PM WARN kernel [ 80.223161] ol_ath_download_firmware : Second OTP download and Execute is good, param=0x0
+12/31/69 06:00:21 PM INFO kernel [ 80.223184]
+12/31/69 06:00:21 PM INFO kernel [ 80.223184] Mission mode: Firmware CHIP Version 0
+12/31/69 06:00:21 PM WARN IPS IPS Feature has an expired license. Not Starting.
+12/31/69 06:00:21 PM INFO kernel [ 80.292938] ol_swap_seg_alloc: Successfully allocated memory for SWAP size=262144
+12/31/69 06:00:21 PM WARN kernel [ 80.293659] ol_swap_wlan_memory_expansion: length:249029 size_left:249049 dma_size_left:262144 fw_temp:e3205004 fw_entry_size:249053
+12/31/69 06:00:21 PM WARN kernel [ 80.293680] ol_swap_wlan_memory_expansion: dma_virt_addr :e31c4000 fw_temp: e3205008 length: 249029
+12/31/69 06:00:21 PM INFO kernel [ 80.294253] Swap: bytes_left to copy: fw:16; dma_page:13115
+12/31/69 06:00:21 PM WARN kernel [ 80.294280] ol_swap_wlan_memory_expansion: length:0 size_left:12 dma_size_left:13115 fw_temp:e3241cd1 fw_entry_size:249053
+12/31/69 06:00:21 PM INFO kernel [ 80.294289] Swap: wrong length read:0
+12/31/69 06:00:21 PM INFO kernel [ 80.294300] ol_swap_wlan_memory_expansion: Swap total_bytes copied: 249029 Target address 4231f0
+12/31/69 06:00:21 PM INFO kernel [ 80.294435] scn=d97c0500 target_write_addr=4231f0 seg_info=da9dbb10
+12/31/69 06:00:21 PM INFO kernel [ 80.294452] ol_transfer_swap_struct:Code swap structure successfully downloaded for bin type =2
+12/31/69 06:00:21 PM WARN kernel [ 80.294462] bin_filename=QCA9984/hw.1/athwlan.bin swap_filename=/lib/firmware/QCA9984/hw.1/athwlan.codeswap.bin
+12/31/69 06:00:21 PM WARN kernel [ 80.294549] ol_transfer_bin_file: Downloading firmware file: QCA9984/hw.1/athwlan.bin
+12/31/69 06:00:21 PM INFO kernel [ 80.452983] ol_transfer_bin_file 3650: downloading file 1, Download data len 388892
+12/31/69 06:00:22 PM WARN root No snmp user accounts were found.
+12/31/69 06:00:23 PM INFO kernel [ 81.704403] ol_target_init() Download FW done.
+12/31/69 06:00:23 PM WARN kernel [ 81.704484] ERROR: No wifi_dump dts node available in the dts entry file
+12/31/69 06:00:23 PM INFO kernel [ 81.704713] ol_ath_attach() WMI attached. wmi_handle da420000
+12/31/69 06:00:23 PM WARN kernel [ 81.704727] wmi_unified_register_event_handler: Event id 62 is unavailable
+12/31/69 06:00:23 PM WARN kernel [ 81.704741] +htc_create .. HIF :d9158000-htc_create: (0xdeda4800)
+12/31/69 06:00:23 PM INFO kernel [ 81.704788] htc_wmi_init() HT Create . deda4800
+12/31/69 06:00:23 PM INFO kernel [ 81.704860] htc_wmi_init 7779 host_enable 0 nss_nwifi_offload 0
+12/31/69 06:00:23 PM INFO kernel [ 81.704876] ol_ath_set_default_tgt_config : AC Minfree buffer allocation through module param (umac.ko)
+12/31/69 06:00:23 PM INFO kernel [ 81.704884] OL_ACBKMinfree : 0
+12/31/69 06:00:23 PM INFO kernel [ 81.704891] OL_ACBEMinfree : 0
+12/31/69 06:00:23 PM INFO kernel [ 81.704898] OL_ACVIMinfree : 0
+12/31/69 06:00:23 PM INFO kernel [ 81.704906] OL_ACVOMinfree : 0
+12/31/69 06:00:23 PM WARN kernel [ 81.704915] hif_enable_fastpath, Enabling fastpath mode
+12/31/69 06:00:23 PM ALERT kernel [ 81.704921] +HWT
+12/31/69 06:00:23 PM WARN kernel [ 81.704934] hif_completion_thread_startup: pipe_num:0 pipe_info:0xd915cb78hif_completion_thread_startup: pipe_num:3 pipe_info:0xd915cc50hif_completion_thread_startup: pipe_num:4 pipe_info:0xd915cc98
+12/31/69 06:00:23 PM ALERT kernel [ 81.714066] -HWT
+12/31/69 06:00:23 PM WARN kernel [ 81.714159] Startup Mode-0 set
+12/31/69 06:00:23 PM INFO kernel [ 81.714170]
+12/31/69 06:00:23 PM INFO kernel [ 81.714170] <=== cfg max peer id 1056 ====>
+12/31/69 06:00:23 PM WARN kernel [ 81.714837] htt_peer_map_timer_init Enter pdev d8c18000 hrtimer d8c1c948
+12/31/69 06:00:23 PM WARN kernel [ 81.714861]
+12/31/69 06:00:23 PM WARN kernel [ 81.714861] htt_alloc_peer_map_mem : Alloc Success : host q vaddr daee4000 paddr 9aee4000
+12/31/69 06:00:23 PM WARN kernel [ 81.714874]
+12/31/69 06:00:23 PM WARN kernel [ 81.714874] htt_alloc_peer_map_mem : Flush Interval Configured to 256 pkts
+12/31/69 06:00:23 PM INFO kernel [ 81.717156] ol_txrx_pdev_attach: 2500 tx desc's allocated ; range starts from d8ec0000
+12/31/69 06:00:23 PM WARN kernel [ 81.719333] Firmware_Build_Number:50
+12/31/69 06:00:23 PM WARN kernel [ 81.719355] FW wireless modes: 0x7f9001
+12/31/69 06:00:23 PM WARN kernel [ 81.719367] num_rf_chain:0x00000004 ht_cap_info:0x0000185b vht_cap_info:0x339b79fa vht_supp_mcs:0x0000ffaa
+12/31/69 06:00:23 PM WARN kernel [ 81.719391] wmi_service_coex_gpio 0, wmi_service_4_wire_coex_support 0, coex_version 0
+12/31/69 06:00:23 PM WARN kernel [ 81.719406]
+12/31/69 06:00:23 PM WARN kernel [ 81.719406] Sending Ext resource cfg: HOST PLATFORM as 0
+12/31/69 06:00:23 PM WARN kernel [ 81.719406] fw_feature_bitmap as 50 to TGT
+12/31/69 06:00:23 PM INFO kernel [ 81.719439] ol_ath_service_ready_event: tt_support: 1
+12/31/69 06:00:23 PM INFO kernel [ 81.719489] ol_ath_service_ready_event: periodic_chan_stats: 1
+12/31/69 06:00:23 PM WARN kernel [ 81.719498] ol_ath_service_ready_event: sw_cal_support_check_flag: 1
+12/31/69 06:00:23 PM INFO kernel [ 81.719510] Peer Caching Enabled ; num_peers = 530, num_active_peers = 52 num_tids = 104, num_vdevs = 17
+12/31/69 06:00:23 PM WARN kernel [ 81.719536] EXT NSS Supported
+12/31/69 06:00:23 PM INFO kernel [ 81.719590] idx 1 req 2 num_units 1 num_unit_info 12 unit size 256 actual units 53
+12/31/69 06:00:23 PM WARN kernel [ 81.719645] ol_ath_alloc_host_mem_chunk req_id 2 idx 0 num_units 53 unit_len 256,
+12/31/69 06:00:23 PM INFO kernel [ 81.719660] idx 2 req 3 num_units 1 num_unit_info 12 unit size 1024 actual units 53
+12/31/69 06:00:23 PM WARN kernel [ 81.719727] ol_ath_alloc_host_mem_chunk req_id 3 idx 1 num_units 53 unit_len 1024,
+12/31/69 06:00:23 PM INFO kernel [ 81.719740] idx 3 req 4 num_units 1 num_unit_info 12 unit size 4096 actual units 53
+12/31/69 06:00:23 PM WARN kernel [ 81.719914] ol_ath_alloc_host_mem_chunk req_id 4 idx 2 num_units 53 unit_len 4096,
+12/31/69 06:00:23 PM INFO kernel [ 81.719927] idx 0 req 1 num_units 0 num_unit_info 2 unit size 2216 actual units 531
+12/31/69 06:00:23 PM WARN kernel [ 81.720949] ol_ath_alloc_host_mem_chunk req_id 1 idx 3 num_units 531 unit_len 2216,
+12/31/69 06:00:23 PM INFO kernel [ 81.720964] idx 4 req 6 num_units 35 num_unit_info 0 unit size 3072 actual units 35
+12/31/69 06:00:23 PM WARN kernel [ 81.721066] ol_ath_alloc_host_mem_chunk req_id 6 idx 4 num_units 35 unit_len 3072,
+12/31/69 06:00:23 PM INFO kernel [ 81.721079] idx 5 req 7 num_units 1 num_unit_info 0 unit size 12288 actual units 1
+12/31/69 06:00:23 PM WARN kernel [ 81.721110] ol_ath_alloc_host_mem_chunk req_id 7 idx 5 num_units 1 unit_len 12288,
+12/31/69 06:00:23 PM INFO kernel [ 81.721122] idx 6 req 5 num_units 0 num_unit_info 2 unit size 2092 actual units 531
+12/31/69 06:00:23 PM WARN kernel [ 81.722074] ol_ath_alloc_host_mem_chunk req_id 5 idx 6 num_units 531 unit_len 2092,
+12/31/69 06:00:23 PM WARN kernel [ 81.722088] Support not added yet for Service 91
+12/31/69 06:00:23 PM WARN kernel [ 81.722095] Support not added yet for Service 92
+12/31/69 06:00:23 PM WARN kernel [ 81.722102] No EXT_MSG send INIT now
+12/31/69 06:00:23 PM WARN kernel [ 81.722119] chunk 0 len 13568 requested , ptr 0x9e6cc000
+12/31/69 06:00:23 PM WARN kernel [ 81.722129] chunk 1 len 54272 requested , ptr 0x98f20000
+12/31/69 06:00:23 PM WARN kernel [ 81.722139] chunk 2 len 217088 requested , ptr 0x98f40000
+12/31/69 06:00:23 PM WARN kernel [ 81.722150] chunk 3 len 1176696 requested , ptr 0x98800000
+12/31/69 06:00:23 PM WARN kernel [ 81.722159] chunk 4 len 107520 requested , ptr 0x98940000
+12/31/69 06:00:23 PM WARN kernel [ 81.722168] chunk 5 len 12288 requested , ptr 0x98970000
+12/31/69 06:00:23 PM WARN kernel [ 81.722176] chunk 6 len 1110852 requested , ptr 0x98a00000
+12/31/69 06:00:23 PM WARN kernel [ 81.722185] chunk 7 len 0 requested , ptr 0x0
+12/31/69 06:00:23 PM WARN kernel [ 81.722216] ol_ath_service_ready_event[4275] WAPI MBSSID 2
+12/31/69 06:00:23 PM WARN kernel [ 81.722437] smart_log_init: Smart logging Enabled buf=d8b10000 (size=65536)
+12/31/69 06:00:23 PM WARN kernel [ 81.797632] Version = 16777216 3 status = 0
+12/31/69 06:00:23 PM INFO kernel [ 81.797697] ol_ath_connect_htc() WMI is ready
+12/31/69 06:00:23 PM INFO kernel [ 81.797765] target uses HTT version 2.2; host uses 2.2
+12/31/69 06:00:23 PM WARN kernel [ 81.797787] htt_h2t_frag_desc_bank_cfg_msg - HTT_H2T_MSG_TYPE_FRAG_DESC_BANK_CFG sent to FW for radio ID = 2
+12/31/69 06:00:23 PM INFO kernel [ 81.802824] ol_ath_attach() connect HTC.
+12/31/69 06:00:23 PM INFO kernel [ 81.802833] bypasswmi : 0
+12/31/69 06:00:23 PM INFO kernel [ 81.802850] ol_regdmn_start: reg-domain param: regdmn=0, countryName=, wModeSelect=FFFFFFFF, netBand=FFFFFFFF, extendedChanMode=0.
+12/31/69 06:00:23 PM INFO kernel [ 81.802879] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2) flags 0x2150
+12/31/69 06:00:23 PM INFO kernel [ 81.802923] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4) flags 0xa0
+12/31/69 06:00:23 PM INFO kernel [ 81.802934] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x8) flags 0xc0
+12/31/69 06:00:23 PM INFO kernel [ 81.802944] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x20) flags 0xd0
+12/31/69 06:00:23 PM INFO kernel [ 81.802954] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x40) flags 0x150
+12/31/69 06:00:23 PM INFO kernel [ 81.802964] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x800) flags 0x10080
+12/31/69 06:00:23 PM INFO kernel [ 81.802976] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2000) flags 0x20080
+12/31/69 06:00:23 PM INFO kernel [ 81.802986] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4000) flags 0x40080
+12/31/69 06:00:23 PM INFO kernel [ 81.803094] Add VHT80 channel: 5210
+12/31/69 06:00:23 PM INFO kernel [ 81.803102] Add VHT80 channel: 5290
+12/31/69 06:00:23 PM INFO kernel [ 81.803110] Add VHT80 channel: 5530
+12/31/69 06:00:23 PM INFO kernel [ 81.803117] Add VHT80 channel: 5610
+12/31/69 06:00:23 PM INFO kernel [ 81.803125] Add VHT80 channel: 5690
+12/31/69 06:00:23 PM INFO kernel [ 81.803132] Add VHT80 channel: 5775
+12/31/69 06:00:23 PM INFO kernel [ 81.803163] Skipping VHT80 channel 5825
+12/31/69 06:00:23 PM INFO kmod Loading kernel module: usbserial
+12/31/69 06:00:23 PM WARN kernel [ 81.805984] freq=58
+12/31/69 06:00:23 PM WARN kernel [ 81.805993] freq=106
+12/31/69 06:00:23 PM WARN kernel [ 81.806000] freq=122
+12/31/69 06:00:23 PM WARN kernel [ 81.806007] freq=138
+12/31/69 06:00:23 PM INFO kernel [ 81.806049] OL Resmgr Init-ed
+12/31/69 06:00:23 PM INFO kernel [ 81.806341] ieee80211_bsteering_attach: Band steering initialized
+12/31/69 06:00:23 PM WARN kernel [ 81.806420] acfg_attach: Offload using existing sock da789c00
+12/31/69 06:00:23 PM INFO kernel [ 81.806496] SPECTRAL : get_capability not registered
+12/31/69 06:00:23 PM INFO kernel [ 81.806522] HAL_CAP_PHYDIAG : Capable
+12/31/69 06:00:23 PM INFO kernel [ 81.806537] SPECTRAL : Need to fix the capablity check for RADAR (spectral_attach : 237)
+12/31/69 06:00:23 PM INFO kernel [ 81.806579] SPECTRAL : get_capability not registered
+12/31/69 06:00:23 PM INFO kernel [ 81.806588] HAL_CAP_RADAR : Capable
+12/31/69 06:00:23 PM INFO kernel [ 81.806597] SPECTRAL : Need to fix the capablity check for SPECTRAL
+12/31/69 06:00:23 PM INFO kernel [ 81.806597] (spectral_attach : 242)
+12/31/69 06:00:23 PM INFO kernel [ 81.806608] SPECTRAL : get_capability not registered
+12/31/69 06:00:23 PM INFO kernel [ 81.806614] HAL_CAP_SPECTRAL_SCAN : Capable
+12/31/69 06:00:23 PM INFO kernel [ 81.806622] SPECTRAL : get_tsf64 not registered
+12/31/69 06:00:23 PM INFO kernel [ 81.806646] Green-AP : Green-AP : Attached
+12/31/69 06:00:23 PM INFO kernel [ 81.806646]
+12/31/69 06:00:23 PM INFO kernel [ 81.806657] Green-AP : Attached
+12/31/69 06:00:23 PM INFO kernel [ 81.806664] rate power table override is only supported for AR98XX
+12/31/69 06:00:23 PM INFO kernel [ 81.806785] ol_if_dfs_attach: called; ptr=d8f7998c, radar_info=da73fb70
+12/31/69 06:00:23 PM WARN kernel [ 81.806794] dfs_attach: event log enabled by default
+12/31/69 06:00:23 PM WARN kernel [ 81.807951] >>>> CB Set (null)
+12/31/69 06:00:23 PM INFO kernel [ 81.809297] ol_ath_attach() UMAC attach .
+12/31/69 06:00:23 PM INFO kernel [ 81.809339]
+12/31/69 06:00:23 PM INFO kernel [ 81.809339] BURSTING enabled by default
+12/31/69 06:00:23 PM WARN kernel [ 81.809481] ol_ath_attach: Set global_ic[3] ..ptr:bf52bf9c
+12/31/69 06:00:23 PM WARN kernel [ 81.809533] ath_lowi_if_netlink_init Incremented LOWI netlink ref count: 3
+12/31/69 06:00:23 PM INFO kernel [ 81.809552] osif_wrap_attach:444 osif wrap attached
+12/31/69 06:00:23 PM INFO kernel [ 81.809584] osif_wrap_devt_init:405 osif wrap dev table init done
+12/31/69 06:00:23 PM WARN kernel [ 81.809595] Wrap Attached: Wrap_com =dabbd000 ic->ic_wrap_com=dabbd000 &wrap_com->wc_devt=dabbd000
+12/31/69 06:00:23 PM INFO kernel [ 81.809607] __ol_ath_attach: needed_headroom reservation 60
+12/31/69 06:00:23 PM WARN kernel [ 81.811631] ol_ath_thermal_mitigation_attach: --
+12/31/69 06:00:23 PM WARN kernel [ 81.811749] ol_ath_pci_probe num_radios=2, wifi_radios[2].sc = d97c0500 wifi_radio_type = 2
+12/31/69 06:00:23 PM WARN kernel [ 81.811787] ath_sysfs_diag_init: diag_fsattr
+12/31/69 06:00:23 PM WARN kernel [ 81.814770] isCountryCodeValid: EEPROM regdomain 0x16
+12/31/69 06:00:23 PM INFO kernel [ 81.814820] ol_regdmn_init_channels: !avail mode 0x680c (0x2) flags 0x2150
+12/31/69 06:00:23 PM INFO kernel [ 81.814833] ol_regdmn_init_channels: !avail mode 0x680c (0x1) flags 0x140
+12/31/69 06:00:23 PM INFO kernel [ 81.814878] ol_regdmn_init_channels: !avail mode 0x680c (0x20) flags 0xd0
+12/31/69 06:00:23 PM INFO kernel [ 81.814888] ol_regdmn_init_channels: !avail mode 0x680c (0x40) flags 0x150
+12/31/69 06:00:23 PM INFO kernel [ 81.814946] ol_regdmn_init_channels: !avail mode 0x680c (0x1000) flags 0x10100
+12/31/69 06:00:23 PM INFO kernel [ 81.814973] ol_regdmn_init_channels: !avail mode 0x680c (0x8000) flags 0x20100
+12/31/69 06:00:23 PM INFO kernel [ 81.814984] ol_regdmn_init_channels: !avail mode 0x680c (0x10000) flags 0x40100
+12/31/69 06:00:23 PM INFO kernel [ 81.814994] ol_regdmn_init_channels: !avail mode 0x680c (0x20000) flags 0x100100
+12/31/69 06:00:23 PM INFO kernel [ 81.815004] ol_regdmn_init_channels: !avail mode 0x680c (0x40000) flags 0x200100
+12/31/69 06:00:23 PM INFO kernel [ 81.815014] ol_regdmn_init_channels: !avail mode 0x680c (0x80000) flags 0x400100
+12/31/69 06:00:23 PM INFO kernel [ 81.815025] ol_regdmn_init_channels: !avail mode 0x680c (0x100000) flags 0x800100
+12/31/69 06:00:23 PM INFO kernel [ 81.815035] ol_regdmn_init_channels: !avail mode 0x680c (0x200000) flags 0x4000100
+12/31/69 06:00:23 PM INFO kernel [ 81.815045] ol_regdmn_init_channels: !avail mode 0x680c (0x400000) flags 0x8000100
+12/31/69 06:00:23 PM WARN kernel [ 81.815800] set TXBF_SND_PERIOD: value 100 wmi_status 0
+12/31/69 06:00:23 PM WARN kernel [ 81.833912] wmi_dbg_cfg_send: mod[0]00000000 dbgcfg40000000 cfgvalid[0] 00000000 cfgvalid[1] 00000000, cfgvalid[2] 70000000
+12/31/69 06:00:23 PM WARN kernel [ 81.834132] The driver is compiled without TXRX prints enabled.
+12/31/69 06:00:23 PM WARN kernel [ 81.834132] To enable them, recompile with TXRX_PRINT_ENABLE defined.
+12/31/69 06:00:23 PM INFO kmod Loading kernel module: ftdi_sio
+12/31/69 06:00:23 PM INFO kernel [ 81.847768] usbcore: registered new interface driver usbserial
+12/31/69 06:00:23 PM WARN kernel [ 81.946932] wlan_vap_create : enter. devhandle=0xdad00500, opmode=IEEE80211_M_HOSTAP, flags=0x1
+12/31/69 06:00:23 PM WARN kernel [ 81.947402] wlan_vap_create : exit. devhandle=0xdad00500, vap=0xd8bc0000, opmode=IEEE80211_M_HOSTAP, flags=0x1.
+12/31/69 06:00:23 PM WARN kernel [ 81.947420] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:23 PM WARN kernel [ 81.996682] [DEBUG] vap-0(ath00):set SIOC80211NWID, 11 characters
+12/31/69 06:00:23 PM INFO kernel [ 82.080160] usbcore: registered new interface driver ftdi_sio
+12/31/69 06:00:23 PM INFO kernel [ 82.080329] usbserial: USB Serial support registered for FTDI USB Serial Device
+12/31/69 06:00:23 PM INFO apdisc AP discovery agent started
+12/31/69 06:00:23 PM WARN kernel [ 82.117423] dfs_control enable detects, ignore_dfs 1
+12/31/69 06:00:23 PM INFO apdisc Wake up agent in 7200 seconds
+12/31/69 06:00:23 PM WARN kernel [ 82.296903] wlan_vap_create : enter. devhandle=0xd97c0500, opmode=IEEE80211_M_HOSTAP, flags=0x1
+12/31/69 06:00:23 PM WARN kernel [ 82.297326] wlan_vap_create : exit. devhandle=0xd97c0500, vap=0xdacb8000, opmode=IEEE80211_M_HOSTAP, flags=0x1.
+12/31/69 06:00:23 PM WARN kernel [ 82.297343] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:23 PM WARN kernel [ 82.357946] [DEBUG] vap-0(ath20):set SIOC80211NWID, 14 characters
+12/31/69 06:00:24 PM WARN kernel [ 82.659250] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:24 PM INFO kernel [ 82.666533] 8021q: adding VLAN 0 to HW filter on device ath00
+12/31/69 06:00:24 PM INFO kernel [ 82.679033] device ath00 entered promiscuous mode
+12/31/69 06:00:24 PM INFO kernel [ 82.679125] primarylan1: port 2(ath00) entered forwarding state
+12/31/69 06:00:24 PM INFO kernel [ 82.679160] primarylan1: port 2(ath00) entered forwarding state
+12/31/69 06:00:24 PM WARN kernel [ 83.002464] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:24 PM INFO kernel [ 83.016724] 8021q: adding VLAN 0 to HW filter on device ath20
+12/31/69 06:00:24 PM INFO kernel [ 83.064096] device ath20 entered promiscuous mode
+12/31/69 06:00:24 PM INFO kernel [ 83.064194] primarylan1: port 3(ath20) entered forwarding state
+12/31/69 06:00:24 PM INFO kernel [ 83.064230] primarylan1: port 3(ath20) entered forwarding state
+12/31/69 06:00:24 PM ERR IPS IPS Rules not found. Sending a request to NetCloud to get the latest.
+12/31/69 06:00:24 PM NOTICE hostapd Configuration file: /var/run/hostapd-ath00.conf (phy ath00) --> new PHY
+12/31/69 06:00:24 PM INFO kernel [ 83.458449] primarylan1: port 2(ath00) entered disabled state
+12/31/69 06:00:24 PM WARN hostapd ath00: Could not connect to kernel driver
+12/31/69 06:00:24 PM ERR hostapd Using interface ath00 with hwaddr 00:30:44:2c:8e:f3 and ssid "AER2200-ef2"
+12/31/69 06:00:25 PM INFO kernel [ 83.726181] primarylan1: port 1(eth0.2) entered forwarding state
+12/31/69 06:00:25 PM WARN kernel [ 83.976826] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:25 PM NOTICE hostapd ath00: interface state UNINITIALIZED->ENABLED
+12/31/69 06:00:25 PM NOTICE hostapd ath00: AP-ENABLED
+12/31/69 06:00:25 PM INFO kernel [ 83.996825] primarylan1: port 2(ath00) entered forwarding state
+12/31/69 06:00:25 PM INFO kernel [ 83.996878] primarylan1: port 2(ath00) entered forwarding state
+12/31/69 06:00:25 PM INFO kernel [ 83.996923] 8021q: adding VLAN 0 to HW filter on device ath00
+12/31/69 06:00:25 PM NOTICE hostapd Configuration file: /var/run/hostapd-ath20.conf (phy ath20) --> new PHY
+12/31/69 06:00:25 PM INFO kernel [ 84.118203] primarylan1: port 3(ath20) entered disabled state
+12/31/69 06:00:25 PM WARN hostapd ath20: Could not connect to kernel driver
+12/31/69 06:00:25 PM ERR hostapd Using interface ath20 with hwaddr 00:30:44:2c:8e:f4 and ssid "AER2200-ef2-5g"
+12/31/69 06:00:26 PM WARN kernel [ 84.666781] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+12/31/69 06:00:26 PM NOTICE hostapd ath20: interface state UNINITIALIZED->ENABLED
+12/31/69 06:00:26 PM NOTICE hostapd ath20: AP-ENABLED
+12/31/69 06:00:26 PM INFO kernel [ 84.686826] primarylan1: port 3(ath20) entered forwarding state
+12/31/69 06:00:26 PM INFO kernel [ 84.686881] primarylan1: port 3(ath20) entered forwarding state
+12/31/69 06:00:26 PM INFO kernel [ 84.686928] 8021q: adding VLAN 0 to HW filter on device ath20
+12/31/69 06:00:26 PM NOTICE hostapd Remove interface 'ath00'
+12/31/69 06:00:26 PM NOTICE hostapd ath00: interface state ENABLED->DISABLED
+12/31/69 06:00:26 PM NOTICE hostapd ath00: AP-DISABLED
+12/31/69 06:00:26 PM NOTICE hostapd ath00: CTRL-EVENT-TERMINATING
+12/31/69 06:00:26 PM WARN kernel [ 85.376995] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+01:29:48 PM INFO kernel [ 85.458387] primarylan1: port 2(ath00) entered disabled state
+01:29:48 PM INFO clock System time set to: 19:29:48 04/25/19 UTC
+01:29:48 PM NOTICE hostapd Remove interface 'ath20'
+01:29:48 PM NOTICE hostapd ath20: interface state ENABLED->DISABLED
+01:29:48 PM NOTICE hostapd ath20: AP-DISABLED
+01:29:48 PM NOTICE hostapd ath20: CTRL-EVENT-TERMINATING
+01:29:48 PM WARN kernel [ 85.636855] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+01:29:48 PM INFO kernel [ 85.697668] primarylan1: port 3(ath20) entered disabled state
+01:29:48 PM NOTICE hostapd Configuration file: /var/run/hostapd-ath00.conf (phy ath00) --> new PHY
+01:29:48 PM WARN hostapd ath00: Could not connect to kernel driver
+01:29:48 PM ERR hostapd Using interface ath00 with hwaddr 00:30:44:2c:8e:f3 and ssid "AER2200-ef2"
+01:29:48 PM INFO gre LAN change
+01:29:48 PM WARN kernel [ 86.396872] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+01:29:48 PM NOTICE hostapd ath00: interface state UNINITIALIZED->ENABLED
+01:29:48 PM NOTICE hostapd ath00: AP-ENABLED
+01:29:48 PM INFO kernel [ 86.416685] primarylan1: port 2(ath00) entered forwarding state
+01:29:48 PM INFO kernel [ 86.416742] primarylan1: port 2(ath00) entered forwarding state
+01:29:48 PM INFO kernel [ 86.416790] 8021q: adding VLAN 0 to HW filter on device ath00
+01:29:48 PM NOTICE hostapd Configuration file: /var/run/hostapd-ath20.conf (phy ath20) --> new PHY
+01:29:49 PM WARN hostapd ath20: Could not connect to kernel driver
+01:29:49 PM ERR hostapd Using interface ath20 with hwaddr 00:30:44:2c:8e:f4 and ssid "AER2200-ef2-5g"
+01:29:49 PM WARN kernel [ 87.037113] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+01:29:49 PM NOTICE hostapd ath20: interface state UNINITIALIZED->ENABLED
+01:29:49 PM NOTICE hostapd ath20: AP-ENABLED
+01:29:49 PM INFO kernel [ 87.056842] primarylan1: port 3(ath20) entered forwarding state
+01:29:49 PM INFO kernel [ 87.056895] primarylan1: port 3(ath20) entered forwarding state
+01:29:49 PM INFO kernel [ 87.056944] 8021q: adding VLAN 0 to HW filter on device ath20
+01:29:54 PM INFO netcloud Router is not managed by NetCloud
+01:30:03 PM INFO kernel [ 101.446182] primarylan1: port 2(ath00) entered forwarding state
+01:30:04 PM INFO kernel [ 102.086168] primarylan1: port 3(ath20) entered forwarding state
+01:30:12 PM INFO WAN:47025ecf The cell id for the MC400LP6 (SIM1) on port modem1 is 2934128 (0x2cc570)
+01:30:12 PM INFO WAN:47025ecf signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:9.0(dB), RSRP:-71(dB), RSRQ:-8(dB), RFBAND: Band 4
+01:30:15 PM WARN wlan update channel radio=0 scan busy so requeue
+01:30:17 PM INFO IPS New IPS Signatures, version 1_077, is available for upgrade
+01:30:17 PM WARN IPS Required IPS Signature upgrade being installed
+01:30:18 PM INFO kmod Removing kernel module: shortcut-fe-cm
+01:30:18 PM INFO WAN:47025ecf The cell id for the MC400LP6 (SIM1) on port modem1 is 2934028 (0x2cc50c)
+01:30:18 PM INFO WAN:47025ecf signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:9.0(dB), RSRP:-71(dB), RSRQ:-8(dB), RFBAND: Band 13
+01:30:22 PM WARN kernel [ 119.885220] __ieee80211_smart_ant_init: Smart Antenna functions are not registered !!!
+01:30:22 PM WARN wlan Scan timed out for radio 0
+01:30:22 PM INFO kmod Loading kernel module: tdts
+01:30:22 PM INFO kernel [ 120.124473] Init chrdev /dev/detector with major 190
+01:30:22 PM INFO kmod Loading kernel module: tdts_nffw
+01:30:22 PM INFO kernel [ 120.146644] tdts_nffw: tdts_nffw is ready
+01:30:26 PM INFO IPS Engine version 2.0.1047 loaded
+01:30:26 PM INFO IPS Rule Set version 1.077 loaded
+01:34:31 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_ATT,002.049_002, fw_info path: ['status', 'wan', 'devices', 'mdm-47025ecf', 'ob_upgrade', 'fw_info_att']
+01:34:32 PM INFO upgrade Found file on server; version: 02.30.01.01_ATT,002.049_002
+01:34:32 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:32 PM INFO upgrade No upgrade found
+01:34:32 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_GENERIC,002.045_001, fw_info path: ['status', 'wan', 'devices', 'mdm-47025ecf', 'ob_upgrade', 'fw_info_generic']
+01:34:32 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_ATT,002.049_002, fw_info path: ['status', 'wan', 'devices', 'mdm-46d497c6', 'ob_upgrade', 'fw_info_att']
+01:34:32 PM INFO upgrade Found file on server; version: 02.30.01.01_GENERIC,002.045_001
+01:34:32 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:32 PM INFO upgrade Found file on server; version: 02.30.01.01_ATT,002.049_002
+01:34:32 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:32 PM INFO upgrade No upgrade found
+01:34:32 PM INFO logsys Last message repeated 1 times.
+01:34:32 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_SPRINT,002.045_000, fw_info path: ['status', 'wan', 'devices', 'mdm-47025ecf', 'ob_upgrade', 'fw_info_sprint']
+01:34:32 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_GENERIC,002.045_001, fw_info path: ['status', 'wan', 'devices', 'mdm-46d497c6', 'ob_upgrade', 'fw_info_generic']
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_GENERIC,002.045_001
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_SPRINT,002.045_000
+01:34:33 PM INFO upgrade No upgrade found
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:33 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_SPRINT,002.045_000, fw_info path: ['status', 'wan', 'devices', 'mdm-46d497c6', 'ob_upgrade', 'fw_info_sprint']
+01:34:33 PM INFO upgrade No upgrade found
+01:34:33 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_VERIZON,002.052_000, fw_info path: ['status', 'wan', 'devices', 'mdm-47025ecf', 'ob_upgrade', 'fw_info_verizon']
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_SPRINT,002.045_000
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:33 PM INFO upgrade No upgrade found
+01:34:33 PM INFO upgrade Checking upgrade server for pkg: 02.30.01.01_VERIZON,002.052_000, fw_info path: ['status', 'wan', 'devices', 'mdm-46d497c6', 'ob_upgrade', 'fw_info_verizon']
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_VERIZON,002.052_000
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:33 PM INFO upgrade No upgrade found
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_VERIZON,002.052_000
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:33 PM INFO upgrade No upgrade found
+01:34:33 PM INFO upgrade Found file on server; version: 02.30.01.01_VERIZON,002.052_000
+01:34:33 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:34 PM INFO upgrade No upgrade found
+01:34:34 PM INFO upgrade Found file on server; version: 02.30.01.01_VERIZON,002.052_000
+01:34:34 PM INFO upgrade overwrite supported: False, downgrade supported: False
+01:34:34 PM INFO upgrade No upgrade found
+01:39:40 PM INFO httpserver Accepted web login from local address 192.168.0.5, user: admin
+01:40:07 PM INFO netcloud NetCloud Session Stopped
+01:40:07 PM INFO netcloud Registering Router
+01:40:07 PM INFO netcloud Checking Authentication
+01:40:09 PM INFO netcloud Successfully Registered Router
+01:40:09 PM INFO netcloud Connecting to NetCloud
+01:40:09 PM INFO netcloud Checking Authentication
+01:40:09 PM INFO netcloud Binding to Stream Server
+01:40:09 PM INFO netcloud Successfully connected to NetCloud
+01:40:10 PM INFO netcloud Updated status.ecm.info.Account
+01:40:10 PM INFO netcloud Updated status.ecm.info.Group
+01:40:10 PM NOTICE ulogd[2120] building new pluginstance stack: 'ct1:NFCT,gp1:GPRINT'
+01:40:10 PM NOTICE ulogd[2120] NFCT working in polling mode
+01:40:10 PM NOTICE ulogd[2120] GPRINT: log file to stdout
+01:40:13 PM INFO rollback Schedule rollback in 900 seconds
+01:40:13 PM INFO netcloud Applying config patch
+01:40:14 PM INFO netcloud Restarting server connection in 15 seconds
+01:40:14 PM INFO netcloud Patched config
+01:40:14 PM WARN netcloud Abandoning post for inactive stream: <services.wpcclient.CSStreamConnection object at 0xafaf5690>
+01:40:29 PM INFO netcloud NetCloud Session Stopped
+01:40:29 PM INFO netcloud Connecting to NetCloud
+01:40:29 PM INFO netcloud Checking Authentication
+01:40:29 PM INFO netcloud Binding to Stream Server
+01:40:29 PM INFO netcloud Successfully connected to NetCloud
+01:40:29 PM INFO rollback Cancel rollback
+01:40:29 PM INFO netcloud Config patch accepted on reconnect
+01:40:30 PM INFO netcloud Updated status.ecm.info.Account
+01:40:30 PM INFO netcloud Updated status.ecm.info.Group
+01:40:42 PM INFO kernel [ 740.330810] ctnetlink v0.93: registering with nfnetlink.
+01:42:30 PM INFO netcloud Server Requested Reconnect: 10 seconds
+01:42:31 PM WARN netcloud Abandoning post for inactive stream: <services.wpcclient.CSStreamConnection object at 0xafb03590>
+01:42:31 PM INFO netcloud NetCloud Session Stopped
+01:42:40 PM INFO netcloud Connecting to NetCloud
+01:42:41 PM INFO netcloud Checking Authentication
+01:42:41 PM INFO netcloud Binding to Stream Server
+01:42:41 PM INFO netcloud Successfully connected to NetCloud
+01:42:41 PM INFO netcloud Updated status.ecm.info.Account
+01:42:41 PM INFO netcloud Updated status.ecm.info.Group
+01:47:42 PM INFO netcloud Trimmed 2 WAN state records.
+01:49:59 PM INFO httpserver Successfully logged out user: admin
+02:01:06 PM WARN ssh Failed SSH login attempt from 192.168.0.5, user: (none)
+02:01:18 PM INFO ssh Client SSH session started from 192.168.0.5, user: admin

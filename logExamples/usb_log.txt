@@ -1,0 +1,243 @@
+28433 syslog.info syslogd started: BusyBox v1.24.1
+28433 kern.notice kernel: klogd started: BusyBox v1.24.1 (2019-03-29 09:23:43 MDT)
+28434 user.info usbupgrade: Exception while checking for updated router firmware on USB stick, look for modem update file instead
+28434 user.info usbupgrade: Exception while checking for updated modem firmware on USB stick.  Error: [Errno 2] No such file or directory: '/var/media/modem.json'
+28436 user.err qxdmlog: USB Stick error: [Errno 2] No such file or directory: '/var/media/loginfo.json'
+28474 user.info policy.FailoverFailback: connected -> wait_for_next (primary: mdm-47025ecf, next_dev: None)
+28474 user.info policy.FailoverFailback: wait_for_next -> pick_next (primary: mdm-47025ecf, next_dev: None)
+28474 user.info WAN:47025ecf: Stopping
+28474 user.info WAN:47025ecf: connected -> disconnecting
+28474 user.info WAN:47025ecf: signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:17.4(dB), RSRP:-74(dB), RSRQ:-8(dB), RFBAND: Band 13
+28474 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....SignalVerify
+28474 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....DHCP
+28474 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....AutoAPNBack
+28474 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 0, step:171, instance: 0
+28474 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1022) modem1: modem_common_qmi_connected_status_process() step:102, status:13, instance: 0 Got ABORT
+28474 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 13, step:172, instance: 0
+28474 user.info cp_stack_mgr:   INFO  lte_sierra.c(1993) modem1: lte_sierra_data_close_process() stop verify monitor
+28474 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:108, status:0
+28474 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:109, status:0
+28474 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(3021) modem1: modem_common_qmi_data_close_process() ----- leaving with next step:110, resl: 1, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:110, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(3021) modem1: modem_common_qmi_data_close_process() ----- leaving with next step:111, resl: 1, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:111, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2723) modem1: modem_common_qmi_data_close_connection_status() - NETWORK STATUS DISCONNECTED
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:112, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:113, status:0
+28475 user.info cp_stack_mgr:   WARN  modem_common_qmi.c(2891) modem1: modem_common_qmi_data_close_process() - MODEM_COMMON_QMI_DATA_CLOSE_DISCONNECTV6: mcqc->connectionv6_handle: 0
+28475 user.info cp_stack_mgr:   WARN  modem_common_qmi.c(2894) modem1: modem_common_qmi_data_close_process() - skip closing without connection handle
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:116, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2757) modem1: modem_common_qmi_data_close_process() step:117, status:0
+28475 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(3021) modem1: modem_common_qmi_data_close_process() ----- leaving with next step:118, resl: 0, status:0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 0, step:173, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 0, step:175, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 286,  status: 0, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 287,  status: 0, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1441) modem1: lte_sierra_attach_process() ok: 1, power: 1
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 291,  status: 0, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 29, step:176, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 29, step:177, instance: 0
+28475 user.info cp_stack_mgr:   INFO  lte_sierra.c(1986) modem1: lte_sierra_data_close_process() status: 0, step:178, instance: 0
+28475 user.info cp_stack_mgr:   INFO  modem_common.c( 338) modem1: MODEM: CLOSING -> CLOSED [modem_common:1013]
+28475 user.info cp_stack_mgr:   INFO  simctrl.c(3419) modem1: simctrl_event_data_closed()
+28475 user.info WAN:47025ecf: Disconnect Event: ok
+28475 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....CPPM
+28475 kern.info kernel: [24908.973728] Link Down indicated - id:21
+28475 kern.info kernel: [24908.973728] 
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN1 -> vzwims, IPV4V6
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN2 -> vzwadmin, IPV4V6
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN3 -> VZWINTERNET, IP
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN4 -> vzwapp, IPV4V6
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN5 -> vzw800, IPV4V6
+28475 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN6 -> vzwenterprise, IP
+28475 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....AutoAPNFront
+28475 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....AutoSelect
+28475 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....MultiSIMCritExit
+28475 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....AutoCarrier
+28476 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....MultiSIM
+28476 user.info WAN:47025ecf.ConnectorMgr: disconnectDone....MultiSIMCritEnter
+28476 user.info WAN:47025ecf: WanDevMixIn:stopStartDoneContCheck
+28476 user.info WAN:47025ecf: WanDevMixIn:stopStabilityCheck
+28476 user.info WAN:47025ecf: disconnecting -> disconnected, Reason: Unready
+28476 user.info WAN:47025ecf: Stopped
+28476 user.warn WAN:47025ecf.ConnectorMgr: already reset
+28476 user.warn dns: No DNS Servers Configured!  Some features may not function properly!
+28478 user.info WAN:47025ecf: Fixing up APN for profile 1
+28478 user.info WAN:47025ecf: Configure Event: ok
+28478 user.info WAN:47025ecf: configured_event: Device activation state: True
+28478 user.info WAN:47025ecf: wandev configured type: mdm, uid: 47025ecf, uptime: 24911
+28478 user.info WAN:47025ecf: StandardModem::checkNIASession: NIA mode : disconnected session : None
+28478 user.info WAN:47025ecf: StandardModem::checkNIASession: connection state : disconnected
+28483 user.info WAN:47025ecf: Fixing up APN for profile 1
+28483 user.info WAN:47025ecf: Configure Event: ok
+28483 user.info WAN:47025ecf: configured_event: Device activation state: True
+28483 user.info WAN:47025ecf: wandev configured type: mdm, uid: 47025ecf, uptime: 24916
+28483 user.info WAN:47025ecf: StandardModem::checkNIASession: NIA mode : disconnected session : None
+28483 user.info WAN:47025ecf: StandardModem::checkNIASession: connection state : disconnected
+28483 user.info policy.FailoverFailback: pick_next -> wait_for_next (primary: mdm-47025ecf, next_dev: mdm-47025ecf)
+28483 user.info policy.FailoverFailback: wait_for_next -> pick_next (primary: None, next_dev: None)
+28484 user.info policy.FailoverFailback: pick_next -> wait_for_next (primary: None, next_dev: mdm-47025ecf)
+28484 user.info policy.WanChange: idle -> connect_next (primary: None, next_dev: mdm-47025ecf)
+28484 user.info policy.WanChange: connect_next -> connect_wait (primary: None, next_dev: mdm-47025ecf)
+28484 user.info WAN:47025ecf: WanDevMixIn:Starting
+28484 user.info WAN:47025ecf: disconnected -> connecting
+28484 user.info WAN:47025ecf: wandev connecting type: mdm, uid: 47025ecf, uptime: 24917
+28484 user.info WAN:47025ecf: signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:13.2(dB), RSRP:-69(dB), RSRQ:-8(dB), RFBAND: Band 13
+28484 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 678):cp_stack_manager_execute(0x8018000c)
+28484 user.info WAN:47025ecf: Execute Event ok: 8
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....MultiSIMCritEnter
+28484 user.info WAN:47025ecf.MultiSIM: MSIM state: Initial
+28484 user.info WAN:47025ecf.MultiSIM: MSIM state: Initiate
+28484 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 678):cp_stack_manager_execute(0x8018000c)
+28484 user.info WAN:47025ecf: Execute Event ok: 4
+28484 user.info WAN:47025ecf.MultiSIM: MSIM state: Success
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....MultiSIM
+28484 user.info WAN:47025ecf.AutoCarrier: CARSWITCHstate: Initial
+28484 user.info WAN:47025ecf.AutoCarrier: CARSWITCHstate: Initiate
+28484 user.info WAN:47025ecf: autoCarrierSwitch verizon
+28484 user.info WAN:47025ecf: Current carrier is correct. No switch needed.
+28484 user.info WAN:47025ecf.AutoCarrier: CARSWITCHstate: Success
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....AutoCarrier
+28484 user.info WAN:47025ecf: Fixing up APN for profile 1
+28484 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 678):cp_stack_manager_execute(0x8018000c)
+28484 user.info cp_stack_mgr:   INFO  simctrl.c(1286) modem1: simctrl_crit_exit_process() step:60, status:0
+28484 user.info cp_stack_mgr:   INFO  simctrl.c(1266) modem1: simctrl_crit_exit_process_done() status:0
+28484 user.info WAN:47025ecf: Execute Event ok: 9
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....MultiSIMCritExit
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....AutoSelect
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN1 -> vzwims, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN2 -> vzwadmin, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN3 -> VZWINTERNET, IP
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN4 -> vzwapp, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN5 -> vzw800, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN6 -> vzwenterprise, IP
+28484 user.info WAN:47025ecf.AutoAPNFront: auto apn state: Finished
+28484 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....AutoAPNFront
+28484 user.info WAN:47025ecf.CPPM: Connecting device
+28484 user.info cp_stack_mgr:   INFO  simctrl.c(2396) modem1: simctrl_data_open()
+28484 user.info cp_stack_mgr:   INFO  simctrl.c(1941) modem1: simctrl_handle_open() attempting connect of active sim
+28484 user.info cp_stack_mgr:   INFO  simctrl_ifc_shim.c( 322) modem1: simctrl_shim_protocol_info_ifc_get_info()
+28484 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 862) modem1: cp_stack_manager_get_signal_strength() - not configured yet
+28484 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 827) modem1: cp_stack_manager_update_diagnostics() - not yet configured
+28484 user.info WAN:47025ecf: Connect Event: processing - state: connecting
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:150, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:151, instance: 0
+28484 user.info cp_stack_mgr:   INFO  gsm.c(1330) modem1: modem_gsm_is_APN_configuration_needed() - APN configuration NOT needed
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:158, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:159, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1814) modem1: lte_sierra_data_open_process() ----- exiting with step=160, resl=1
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN1 -> vzwims, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN2 -> vzwadmin, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN3 -> VZWINTERNET, IP
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN4 -> vzwapp, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN5 -> vzw800, IPV4V6
+28484 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN6 -> vzwenterprise, IP
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 286,  status: 0, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 287,  status: 0, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1441) modem1: lte_sierra_attach_process() ok: 1, power: 1
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1413) modem1: lte_sierra_attach_process() step: 291,  status: 0, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:160, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:161, instance: 0
+28484 user.info cp_stack_mgr:   INFO  lte_sierra.c(1814) modem1: lte_sierra_data_open_process() ----- exiting with step=162, resl=1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:41, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:42, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:43, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:44, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:45, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:45, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:46, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:47, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:48, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:49, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:50, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:51, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:51, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:52, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:53, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:54, instance: 0, status: 0, resl: 1
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:74, status:0
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:81, status:0
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:82, status:0
+28484 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1622) modem1: modem_common_qmi_data_register_process() - READY: reg:1 and (cs:2 or ps:1) - MCC:311, MNC:480
+28485 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:81, status:0
+28485 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:82, status:0
+28485 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1622) modem1: modem_common_qmi_data_register_process() - READY: reg:1 and (cs:2 or ps:1) - MCC:311, MNC:480
+28486 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:81, status:0
+28487 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:82, status:0
+28487 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1622) modem1: modem_common_qmi_data_register_process() - READY: reg:1 and (cs:2 or ps:1) - MCC:311, MNC:480
+28488 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:81, status:0
+28488 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:82, status:0
+28488 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1622) modem1: modem_common_qmi_data_register_process() - READY: reg:1 and (cs:2 or ps:1) - MCC:311, MNC:480
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:81, status:0
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:82, status:0
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1622) modem1: modem_common_qmi_data_register_process() - READY: reg:1 and (cs:2 or ps:1) - MCC:311, MNC:480
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c( 452) modem1: modem_common_qmi_process_network_service_indication() - 8 service up
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(1237) modem1: modem_common_qmi_data_register_process() step:83, status:0
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:54, instance: 0, status: 0, resl: 1
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:55, instance: 0, status: 0, resl: 1
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2280) modem1: modem_common_qmi_data_open_process() - connecting via profile: 3
+28489 user.info cp_stack_mgr: modem1: Active APN: VZWINTERNET
+28489 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:56, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 862) modem1: cp_stack_manager_get_signal_strength() - not configured yet
+28490 user.info cp_stack_mgr:   INFO  cp_stack_manager.c( 827) modem1: cp_stack_manager_update_diagnostics() - not yet configured
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:56, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:57, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:57, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:58, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:59, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2423) modem1: modem_common_qmi_data_open_process() Not Running IPV6
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:68, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:69, instance: 0, status: 0, resl: 0
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2067) modem1: modem_common_qmi_data_open_process() step:72, instance: 0, status: 0, resl: 1
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2682) modem1: modem_common_qmi_data_open_process() done with resl: 0
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c(2703) modem1: modem_common_qmi_data_open_process() ----- exiting with step:73, instance: 0, status: 0, resl: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:162, instance: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:163, instance: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:167, instance: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1814) modem1: lte_sierra_data_open_process() ----- exiting with step=168, resl=1
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:168, instance: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1535) modem1: lte_sierra_data_open_process() step:170, instance: 0
+28490 user.info cp_stack_mgr:   INFO  lte_sierra.c(1814) modem1: lte_sierra_data_open_process() ----- exiting with step=171, resl=0
+28490 user.info cp_stack_mgr:   INFO  modem_common.c( 338) modem1: MODEM: OPENING -> OPEN [modem_common:497]
+28490 user.info cp_stack_mgr:   INFO  simctrl.c(3394) modem1: simctrl_event_data_open_done()
+28490 user.info cp_stack_mgr:   INFO  simctrl_ifc_shim.c( 322) modem1: simctrl_shim_protocol_info_ifc_get_info()
+28490 user.info WAN:47025ecf: Connect Event: ok - state: connecting
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN1 -> vzwims, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN2 -> vzwadmin, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN3 -> VZWINTERNET, IP
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN4 -> vzwapp, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN5 -> vzw800, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN6 -> vzwenterprise, IP
+28490 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....CPPM
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN1 -> vzwims, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN2 -> vzwadmin, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN3 -> VZWINTERNET, IP
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN4 -> vzwapp, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN5 -> vzw800, IPV4V6
+28490 user.info cp_stack_mgr:   WARN  wan_manager_linux.c(2144):wan_manager_parse_cb() adding APN6 -> vzwenterprise, IP
+28490 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....AutoAPNBack
+28490 daemon.info udhcpc[8431]: udhcpc (v1.24.1) started
+28490 user.info cp_stack_mgr:   INFO  modem_common_qmi.c( 940) modem1: modem_common_qmi_connected_status_response() - NETWORK STATUS CONNECTED
+28490 daemon.info udhcpc[8431]: Sending discover...
+28490 daemon.info udhcpc[8431]: Sending select for 100.96.80.232...
+28490 daemon.info udhcpc[8431]: Lease of 100.96.80.232 obtained, lease time 7200
+28490 user.info WAN:47025ecf.DHCP: ipinfo={'gateway': '100.96.80.233', 'ip_address': '100.96.80.232', 'netmask': '255.255.255.240', 'dnslist': ['198.224.164.135', '198.224.160.135']}
+28490 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....DHCP
+28490 user.info WAN:47025ecf.ConnectorMgr: connectSuccess....SignalVerify
+28490 user.info WAN:47025ecf: WanDevMixIn:startStabilityCheck
+28490 user.info WAN:47025ecf: WanDevMixIn:startDoneContCheck
+28490 user.info WAN:47025ecf: connecting -> connected, Reason: Failback
+28490 user.info WAN:47025ecf: wandev connected type: mdm, uid: 47025ecf, uptime: 24923
+28490 user.info WAN:47025ecf: Connection Type: LTE
+28491 user.info policy.WanChange: connect_wait -> idle (primary: mdm-47025ecf, next_dev: mdm-47025ecf)
+28491 user.crit wanmgr: Unhandled exception in wan eventWorker
+28491 user.err wanmgr: Traceback (most recent call last):
+  File "services/utils/netman.py", line 1044, in eventWorker
+  File "services/localnet.py", line 204, in internalSvcTask
+AttributeError: 'InternalSvcs' object has no attribute 'vpn_connected'
+28491 user.crit wanmgr: Exception is: 'InternalSvcs' object has no attribute 'vpn_connected'
+28491 user.crit wanmgr: Function is: <bound method InternalSvcs.internalSvcTask of <services.localnet.InternalSvcs object at 0xb1829df0>>
+28492 user.info policy.FailoverFailback: wait_for_next -> disconnect_prev (primary: mdm-47025ecf, next_dev: mdm-47025ecf)
+28492 user.info policy.FailoverFailback: disconnect_prev -> connected (primary: mdm-47025ecf, next_dev: mdm-47025ecf)
+28504 user.info WAN:47025ecf: signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:12.8(dB), RSRP:-69(dB), RSRQ:-8(dB), RFBAND: Band 4
+28511 user.info WAN:47025ecf: signal MC400LP6 (SIM1) on port modem1: 100%, RSSI:-47(dBm), SINR:16.2(dB), RSRP:-69(dB), RSRQ:-8(dB), RFBAND: Band 13
