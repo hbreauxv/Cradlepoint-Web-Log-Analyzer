@@ -2,10 +2,12 @@ from flask import Flask, render_template, flash, redirect, url_for
 from bokeh.plotting import figure
 from bokeh.embed import components
 from forms import logFileForm
+from ConnStateParse import ConnStateParse
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\x7f[\xce\x97\xf9\x86\x1b\x92YBx/7\xdcX^\xea\xd5\xc4\t~\x8c\xbe\x02'
 
+connStatePlot = None
 
 @app.route('/')
 def showDashboard():
@@ -13,6 +15,8 @@ def showDashboard():
 
 	plots = []
 	plots.append(makePlot())
+	if connStatePlot:
+		plots.append(components(connStatePlot))
 
 	return render_template('dashboard.html', plots=plots, form=form)
 
@@ -25,6 +29,8 @@ def uploadFile():
 		logFileName = form.logFile.data.filename
 		form.logFile.data.save('logFiles/' + logFileName)
 		flash("LogFile: {} has been submitted".format(logFileName))
+		global connStatePlot
+		connStatePlot = ConnStateParse.parseLog('logFiles/' + logFileName, 'plot')
 
 	return redirect(url_for('showDashboard'))
 
