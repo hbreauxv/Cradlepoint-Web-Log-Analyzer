@@ -18,11 +18,11 @@ def showDashboard():
 	form = logFileForm()
 
 	plots = []
-	sPlots = session.get('plots', None)
-	if sPlots:
-		plots.append(sPlots)
+	fileNameLoc = session.pop('logFileLoc', None)
+	if fileNameLoc:
+		plots = generatePlots(fileNameLoc)
 
-	return render_template('dashboard.html', plots=sPlots, form=form)
+	return render_template('dashboard.html', plots=plots, form=form)
 
 @app.route('/UploadFile', methods=['POST'])
 def uploadFile():
@@ -34,21 +34,28 @@ def uploadFile():
 		form.logFile.data.save(savedLocation)
 		flash("LogFile: {} has been submitted".format(logFileName))
 
-		session.pop('plots', None) #clear old plots from session
-		session['plots'] = []
-
-		log = logFile(savedLocation)
-		log.open()
-
-		connStatePlot = ConnStateParse.parseLog(log, 'plot')
-		plot = components(connStatePlot) #add new one
-		session['plots'].append(plot) #add new one
-
-		sigQParse = signalQualityParser()
-		sigQPlot = sigQParse.parseLog(log, 'plot')
-		plots = [components(x) for x in sigQPlot]
-		session['plots'].extend(plots)
-
-		remove(savedLocation)  # don't want these files to build up, remove after parse
+		session.pop('logFileLoc', None) #clear old logFileLoc from session
+		session['logFileLoc'] = savedLocation
 
 	return redirect(url_for('showDashboard'))
+
+
+def generatePlots(logFileLoc):
+
+	plots = []
+	log = logFile(logFileLoc)
+	log.open()
+
+	connStatePlot = ConnStateParse.parseLog(log, 'plot')
+	plots.append(components(connStatePlot))
+
+	sigQParse = signalQualityParser()
+	sigQPlot = sigQParse.parseLog(log, 'plot')
+
+	for figure in sigQPlot:
+		plots.append(components(figure))
+
+
+	remove(logFileLoc)  # don't want these files to build up, remove after parse
+
+	return plots
