@@ -7,6 +7,7 @@ from time import strftime, sleep
 import json
 import logging
 import tempfile
+from datetime import datetime
 
 
 class logFile(object):
@@ -36,20 +37,64 @@ class logFile(object):
 
 	def _translateFile(self):
 		# For now, just read source & write to temp all at once.  Ver 2 - produce on-demand.
-		line = self._sourceFD.readline()
+		#Determine what kind of file this is
+		if self._isNCMSupportLog():
+			self._translateNCMSupportLog()
+		else:
+			self._translateDefault()
+		self.reset()
 
+	##Support logs are exported from NCM on a per router basis
+	#Reports time as follows "2019-04-25 13:34:33", using 24 hour time
+	#Log contains a lot of extra data we don't currently need. Trim off that data and keep only log
+	#Date can be from 1969, need to detect this and adjust time
+	#Log sorted newest->oldest
+	def _isNCMSupportLog(self):
+		self._sourceFD.seek(0)
+		for i in range(2):
+			self._sourceFD.readline()
+		line = self._sourceFD.readline()
+		self._sourceFD.seek(0)
+		return line == "ECM Info\n"
+	
+	def _translateNCMSupportLog(self):
+		ncm_rgx = r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\|\s*(\S*)\|\s*(\S*)\|(.*)$'
+		originTime = datetime(1969,12,31,18,0,0) # Currently unused reference to the origin time of the log file
+		timeformat = r'%Y-%m-%d %H:%M:%S'
+		lastDate = None
+		offsetDate = None
+		lastCorrectDate = None
+		for line in self._sourceFD:
+			matchobj = re.match(ncm_rgx, line)
+			if matchobj:
+				curdatetime = datetime.strptime(matchobj.group(1), timeformat)
+				#This stuff gets kinda janky, but it's a functioning first pass for dealing with the 1969 issue
+				if not offsetDate and curdatetime.year == 1969: # Save last correct date
+					offsetDate = curdatetime
+					lastCorrectDate = lastDate
+				if curdatetime.year == 1969:
+					finaldatetime = lastCorrectDate - (offsetDate - curdatetime)
+					strDateTime = finaldatetime.strftime(timeformat)
+				else:
+					lastDate = curdatetime
+					strDateTime = matchobj.group(1)
+				line = '{} 0.0.0.0 S= {} ﻿{} -- {}\n'.format(strDateTime, matchobj.group(2), matchobj.group(3), matchobj.group(4))
+				self._tempFD.write(line)
+			if line == 'Status\n':
+				break
+	
+	def _translateDefault(self):
+		line = self._sourceFD.readline()
+		#Determine what kind of file this is
 		while line:
 			self._tempFD.write(line)
-
 			line = self._sourceFD.readline()
-
-		self.reset()
 
 	def _tokenize(self, line):
 		'''Break line into its component parts.
 		   Return:  dictionary with the following elements:  timestamp, IP, Host, Level, Source, Message'''
 		ret = {}
-		expr = re.compile('(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\s*(\d+.\d+.\d+.\d+)\s*S=\s*(\S*)\s*\W(\S*)\s*--\s*(.*)')
+		expr = re.compile(r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\s*(\d+.\d+.\d+.\d+)\s*S=\s*(\S*)\s*\W(\S*)\s*--\s*(.*)')
 
 		mtch = expr.match(line)
 		if mtch:
