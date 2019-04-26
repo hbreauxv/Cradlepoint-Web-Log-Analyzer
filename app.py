@@ -22,7 +22,7 @@ def showDashboard():
 	if sPlots:
 		plots.append(sPlots)
 
-	return render_template('dashboard.html', plots=plots, form=form)
+	return render_template('dashboard.html', plots=sPlots, form=form)
 
 @app.route('/UploadFile', methods=['POST'])
 def uploadFile():
@@ -34,12 +34,20 @@ def uploadFile():
 		form.logFile.data.save(savedLocation)
 		flash("LogFile: {} has been submitted".format(logFileName))
 
+		session.pop('plots', None) #clear old plots from session
+		session['plots'] = []
+
 		log = logFile(savedLocation)
 		log.open()
-		connStatePlot = ConnStateParse.parseLog(log, 'plot')
 
-		session.pop('plots', None) #clear old plots from session
-		session['plots'] = components(connStatePlot) #add new one
+		connStatePlot = ConnStateParse.parseLog(log, 'plot')
+		plot = components(connStatePlot) #add new one
+		session['plots'].append(plot) #add new one
+
+		sigQParse = signalQualityParser()
+		sigQPlot = sigQParse.parseLog(log, 'plot')
+		plots = [components(x) for x in sigQPlot]
+		session['plots'].extend(plots)
 
 		remove(savedLocation)  # don't want these files to build up, remove after parse
 
