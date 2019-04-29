@@ -172,7 +172,7 @@ class ConnStateParse():
                 desc=details,
                 dtstr=dtstrs
             ))
-            p.step('x','y', source=source, line_width=2, mode='before', color=color, alpha=0.6, legend=uid)
+            p.step('x','y', source=source, line_width=2, mode='after', color=color, alpha=0.6, legend=uid)
             p.circle('x','y', source=source, color=color, size=8, alpha=0.6, legend=uid)
         # Format legend
         p.legend.location = "bottom_center"
@@ -180,8 +180,7 @@ class ConnStateParse():
         p.legend.click_policy="hide"
         if view:
             show(p)
-        return p        
-
+        return p
 
 
 if __name__ == '__main__':

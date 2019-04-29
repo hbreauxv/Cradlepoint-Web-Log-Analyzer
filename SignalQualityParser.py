@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 import sys
-import subprocess
-import random
 import re
 from time import strftime, sleep 
-import json
-import logging
-import tempfile
 from LogFile import logFile
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import ColumnDataSource, HoverTool, LinearAxis
 from datetime import datetime
 
 class signalQualityParser(object):
+	timeformat = r'%Y-%m-%d %H:%M:%S'
 	def __init__(self):
 		# excellent = if greater or equal to [0], 
 		# good = if greater than [1] but less than [0]
@@ -49,7 +45,6 @@ class signalQualityParser(object):
 		#      uid2:{'RSSI':[], 'SINR':[], 'RSRP':[], 'RSRQ':[], 'ECIO':[], 'RFBAND':[]}
 		#  }
 		log.setIterMode('tokenize')
-		timeformat = r'%Y-%m-%d %H:%M:%S'
 
 		uids = {}
 		re_uid_str = r'WAN:([0-9a-f]+)'
@@ -102,10 +97,10 @@ class signalQualityParser(object):
 					else:
 						quality = "Poor"
 
-					timestamp = datetime.strptime(line['timestamp'], timeformat)
+					timestamp = datetime.strptime(line['timestamp'], signalQualityParser.timeformat)
 					if sig_str not in uids[uid_name]:
 						uids[uid_name][sig_str] = []
-					uids[uid_name][sig_str].append([timestamp, val, quality ])
+					uids[uid_name][sig_str].append([timestamp, val_int, quality ])
 		#print(uids)
 		final_uids = {}
 		for uid in uids:
@@ -121,10 +116,18 @@ class signalQualityParser(object):
 		#Features here: Step graph (using mode 'after'), circles on points for better visuals,
 		#   Tooltips showing desc data, legend with 'hide' option, y_range using strings
 		TOOLTIPS = [
-			("Details", "@desc"),
+			("Quality", "@desc"),
+			("dBm", "@y"),
+			("DateTime", "@timeStr"),
 		]
-		plots = []
+		colorQuality = {
+			"Excellent":	"green",
+			"Good":			"blue",
+			"Fair":			"orange",
+			"Poor":			"red"
+		}
 		#print(graphDict)
+		plots = []
 		for uid in graphDict:
 			#if no entries in the series, skip it
 			if len(graphDict[uid]) == 0:
@@ -132,25 +135,25 @@ class signalQualityParser(object):
 			p=figure(plot_width=1000, x_axis_type='datetime', y_range=(-125,50), tooltips=TOOLTIPS)
 			p.title.text = 'Signal Quality Graph {}'.format(uid)
 			#Colors here are what will be used to color lines (in order) TODO make sure that we just loop if we hit the end
-			colors = iter(['red','blue','green','deepskyblue', 'navy', 'rosybrown', 'darkgoldenrod', ' aquamarine', 'olive', 'orangered', 'orange', 'pink', 'purple', 'indigo',])
+			colors = iter(['red','blue','green','darkgoldenrod', 'navy', 'rosybrown', 'deepskyblue', ' aquamarine', 'olive', 'orangered', 'orange', 'pink', 'purple', 'indigo',])
 			for s in graphDict[uid]:
 				if len(graphDict[uid][s]) == 0 or s == 'RFBAND':
 					continue
-				color = next(colors)
+				maincolor = next(colors)
 				datetimes = [elt[0] for elt in graphDict[uid][s]]
-				#print(datetimes)
+				timeStr= [datetime.strftime(elt[0],signalQualityParser.timeformat) for elt in graphDict[uid][s]]
 				values = [elt[1] for elt in graphDict[uid][s]]
-				details =   [str(elt[2]) for elt in graphDict[uid][s]]
+				details = [str(elt[2]) for elt in graphDict[uid][s]]
+				qualitycolors = [colorQuality[elt[2]] for elt in graphDict[uid][s]]
 				source = ColumnDataSource(data=dict(
 					x=datetimes,
 					y=values,
 					desc=details,
+					qcolor=qualitycolors,
+					timeStr=timeStr
 					))
-				source1 = source
-				source2 = source
-				p.circle('x','y', source=source1, color=color, size=8, alpha=0.6, legend=s)
-				p.step('x','y', source=source2, line_width=2, mode='after', color=color, alpha=0.6, legend=s)
-				#p.add_layout(LinearAxis(y_range_name="{}".format(s)))
+				p.circle('x','y', source=source, color='qcolor', size=8, alpha=0.8)
+				p.step('x','y', source=source, line_width=2, mode='after', color=maincolor, alpha=0.6, legend=s)
 			# Format legend
 			p.legend.location = "bottom_center"
 			p.legend.orientation = "horizontal"
