@@ -43,8 +43,12 @@ def uploadFile():
 def generatePlots(logFileLoc):
 
 	plots = []
-	log = logFile(logFileLoc)
-	log.open()
+	try:
+		log = logFile(logFileLoc)
+		log.open()
+	except FileNotFoundError as e:
+		print('Could not find file: {}'.format(e))
+		return []
 
 	connStatePlot = ConnStateParse.parseLog(log, 'plot')
 	plots.append(components(connStatePlot))
