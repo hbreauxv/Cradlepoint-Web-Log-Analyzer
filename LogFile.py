@@ -59,7 +59,7 @@ class logFile(object):
 	
 	def _translateNCMSupportLog(self):
 		ncm_rgx = r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\|\s*(\S*)\|\s*(\S*)\|(.*)$'
-		originTime = datetime(1969,12,31,18,0,0) # Currently unused reference to the origin time of the log file
+		#originTime = datetime(1969,12,31,18,0,0) # Currently unused reference to the origin time of the log file
 		timeformat = r'%Y-%m-%d %H:%M:%S'
 		lastDate = None
 		offsetDate = None
