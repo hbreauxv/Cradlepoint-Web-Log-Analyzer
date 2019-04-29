@@ -26,12 +26,13 @@ class ConnStateParse():
         timeformat = r'%Y-%m-%d %H:%M:%S'
         def __init__(self, dt, uid, state, details={}):
             self.dt = datetime.strptime(dt, self.timeformat)
+            self.dtstr = dt
             # self.dt = dt
             self.uid = uid
             #self.state = ConnStateParse.WANState[state].value  # State as integer from enum
             self.state = state  # state as string
             self.details = copy(details)  # Dictionary of additional event details
-            self.details['State']=state
+            self.details.update({'State':state})
         
         def detailFormat(self):
             ret = ''
@@ -50,7 +51,7 @@ class ConnStateParse():
             return '{},{},{},"{}"\n'.format(self.dt, self.uid, self.state, self.details)
         
         def getList(self):
-            return [self.dt, self.state, self.detailFormat()]
+            return [self.dt, self.state, self.detailFormat(), self.dtstr]
 
 
     #Given a line, return a WANEvent if the line shows one
@@ -152,6 +153,7 @@ class ConnStateParse():
         output_file('graph.html') # Naming our output html doc
         TOOLTIPS = [
             ("Details", "@desc"),
+            ("Time", "@dtstr")
         ]
         connStateRange=[x.name for x in ConnStateParse.WANState] #Get list of state strings
         #Colors here are what will be used to color lines (in order) TODO make sure that we just loop if we hit the end
@@ -163,12 +165,14 @@ class ConnStateParse():
             datetimes = [elt[0] for elt in graphDict[uid]]
             stateEnum = [elt[1] for elt in graphDict[uid]]
             details =   [str(elt[2]) for elt in graphDict[uid]]
+            dtstrs =    [elt[3] for elt in graphDict[uid]]
             source = ColumnDataSource(data=dict(
                 x=datetimes,
                 y=stateEnum,
                 desc=details,
+                dtstr=dtstrs
             ))
-            p.step('x','y', source=source, line_width=2, mode='after', color=color, alpha=0.6, legend=uid)
+            p.step('x','y', source=source, line_width=2, mode='before', color=color, alpha=0.6, legend=uid)
             p.circle('x','y', source=source, color=color, size=8, alpha=0.6, legend=uid)
         # Format legend
         p.legend.location = "bottom_center"
