@@ -13,11 +13,27 @@
     </form>
     <br>
 
-    {% for plot in plots %}
-        {% for part in plot %}
-            {{part | safe}}
-        {% endfor %}
-    {% endfor %}
+    <div class="flex">
+        {% if plots %}
+        <div class="connection">
+            <h4>Connection State Graphs</h4>
+            {% for plot in plots %}
+                {% for part in plot %}
+                    {{part | safe}}
+                {% endfor %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if analysis %}
+        <div class="analysis">
+            <h4>Log Message Analysis</h4>
+            {% for msg in analysis %}
+            <p>{{msg}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
 
 
 {% endblock %}
