@@ -39,6 +39,14 @@ def uploadFile():
 
 	return redirect(url_for('showDashboard'))
 
+@app.errorhandler(404)
+def page_not_found(e):
+	return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def server_error(e):
+	return render_template('500.html'), 500
+
 
 def generatePlots(logFileLoc):
 
@@ -59,7 +67,7 @@ def generatePlots(logFileLoc):
 	for figure in sigQPlot:
 		plots.append(components(figure))
 
-
-	remove(logFileLoc)  # don't want these files to build up, remove after parse
+	# this line breaks things on windows
+	# remove(logFileLoc)  # don't want these files to build up, remove after parse
 
 	return plots
