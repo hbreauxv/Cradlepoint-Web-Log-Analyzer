@@ -8,6 +8,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
 
+.container {
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
 .bg-steel {
   background-color: #5f788a;
 }
@@ -27,4 +41,16 @@ h1, h2, h3, h4, h5, h6 {
 th, td {
   padding: 5px;
   text-align: left;
+}
+
+div {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.form-control {
+  display: flex;
 }

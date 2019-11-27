@@ -2,38 +2,44 @@
 
 
 {% block content %}
-
-    <h3>Upload a file to generate graphs</h3>
-    <br>
-    <form id="logFileForm" action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
-        {{ form.hidden_tag() }}
-        {{ form.logFile() }}
-
-        <input type="submit">
-    </form>
-    <br>
-
-    <div class="flex">
-        {% if plots %}
-        <div class="connection">
-            <h4>Connection State Graphs</h4>
-            {% for plot in plots %}
-                {% for part in plot %}
-                    {{part | safe}}
-                {% endfor %}
-            {% endfor %}
-        </div>
-        {% endif %}
-
-        {% if analysis %}
-        <div class="analysis">
-            <h4>Log Message Analysis</h4>
-            {% for msg in analysis %}
-            <p>{{msg}}</p>
-            {% endfor %}
-        </div>
-        {% endif %}
+    <div class="row" style="flex:1">
+        <h3>Upload a file to generate graphs</h3>
     </div>
+    <div class="row" style="flex:1">
+        <br>
+            <form id="logFileForm" action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                {{ form.logFile() }}
+
+                <input type="submit">
+            </form>
+        <br>
+        <br>
+    </div>
+
+
+    {% if plots %}
+    <div class="row" style="flex:1">
+        <h4>Connection State Graphs</h4>
+        {% for plot in plots %}
+            {% for part in plot %}
+                {{part | safe}}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if analysis %}
+    <div class="row" style="flex:1">
+        <h4 style="white-space:pre-line">Log Message Analysis</h4>
+    </div>
+    <div class="row" style="flex:1">
+
+        {% for msg in analysis %}
+        <p>{{msg}}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 
 {% endblock %}
