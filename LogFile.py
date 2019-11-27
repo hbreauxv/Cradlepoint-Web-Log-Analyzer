@@ -328,7 +328,7 @@ class logFile(object):
 		#open input file, read contents and modify to generic and write to new (temp) file.
 		self._sourceFD = open(self.logFileName, 'r')
 
-		self._tempFD = tempfile.NamedTemporaryFile(mode='w+')  
+		self._tempFD = tempfile.NamedTemporaryFile(mode='w+', encoding='UTF-8')
 		self._tempFileName = self._tempFD.name
 
 		# Translate the file now that we've opened it.
