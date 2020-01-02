@@ -3,8 +3,13 @@
 
 {% block content %}
     <div class="row" style="flex:1">
-        <h3>Upload a file to generate graphs</h3>
+        <h3>Upload a log to view Analysis!</h3>
     </div>
+
+    <div class="row" style="flex:1">
+        <p>Problem messages and a connection state graph will be generated.</p>
+    </div>
+
     <div class="row" style="flex:1">
         <br>
             <form id="logFileForm" action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
@@ -17,6 +22,17 @@
         <br>
     </div>
 
+    {% if analysis %}
+    <div class="row" style="flex:1">
+        <h4 style="white-space:pre-line">Log Message Analysis</h4>
+    </div>
+    <div class="row" style="flex:1">
+
+        {% for msg in analysis %}
+        <p>{{msg}}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
 
     {% if plots %}
     <div class="row" style="flex:1">
@@ -29,17 +45,7 @@
     </div>
     {% endif %}
 
-    {% if analysis %}
-    <div class="row" style="flex:1">
-        <h4 style="white-space:pre-line">Log Message Analysis</h4>
-    </div>
-    <div class="row" style="flex:1">
 
-        {% for msg in analysis %}
-        <p>{{msg}}</p>
-        {% endfor %}
-    </div>
-    {% endif %}
 
 
 {% endblock %}
