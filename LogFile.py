@@ -316,7 +316,10 @@ class logFile(object):
 				break
 
 		if self._translator is None:
-			raise Exception('Unrecognized File Format')
+			# Unrecognized format. Graphs wont work, interpret as router log to at least get message analysis
+			self._translator = RouterUIExportTranslator()
+			print("Log Format not detected, graphs will probably not be generated")
+			# raise Exception('Unrecognized File Format')
 
 	def setIterMode(self, mode):
 		if mode.lower() not in ['raw', 'tokenize']:
