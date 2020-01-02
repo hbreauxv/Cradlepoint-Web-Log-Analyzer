@@ -45,6 +45,12 @@ def uploadFile():
 
     return redirect(url_for('showDashboard'))
 
+@app.route('/log_messages', methods=['GET'])
+def showMessages():
+    with open("log_messages.json", "r") as f:
+        j = f.read()
+    return j
+
 
 @app.errorhandler(404)
 def page_not_found(e):
