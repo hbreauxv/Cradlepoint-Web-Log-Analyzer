@@ -1,0 +1,203 @@
+{
+	"Connectivity+Modem": [{
+			"Message": "(Connect Error.*$)",
+			"Meaning": "CPPM Connect Errors indicate the modem had an issue connecting to the carrier. \u00a0If you look after this Connect Error message the logs should show the specific error. \u00a0This article has more information on common connect error messages: https://customer.cradlepoint.com/s/article/NCOS-No-Internet-or-Connection-Issues",
+			"Level": "ERROR",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(state=connecting \u00a0result=carrier reject.*$)",
+			"Meaning": "The modem tried to connect but failed because of a carrier reject. \u00a0Carrier reject usually indicates improper provisioning from the carrier or the wrong APN is being used. \u00a0",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(Connect Event: carrier reject - state: connecting.*$)",
+			"Meaning": "The modem tried to connect but failed because of a carrier reject. \u00a0Carrier reject usually indicates improper provisioning from the carrier or the wrong APN is being used. \u00a0",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(LTE Modem data connection failed - status:26.*$)",
+			"Meaning": "The LTE connection to the internet failed. \u00a0Status 26 indicates a carrier reject event. \u00a0Carrier reject is usually a result of improper provisioning from the carrier or the wrong APN being used. \u00a0",
+			"Level": "INFO",
+			"Type": "cp_stack_mgr",
+			"Problematic": true
+		},
+		{
+			"Message": "(state=connecting \u00a0result=no carrier.*$)",
+			"Meaning": "No carrier is an error that typically indicates bad provisioning by the carrier.  In some cases it can also appear if the modem is in an area with very poor signal strength.  To resolve this error you usually want to verify provisioning with the carrier and/or move the modem to an area with better signal strength. ",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(Connect Event: no carrier - state: connecting.*$)",
+			"Meaning": "No carrier is an error that typically indicates bad provisioning by the carrier.  In some cases it can also appear if the modem is in an area with very poor signal strength.  To resolve this error you usually want to verify provisioning with the carrier and/or move the modem to an area with better signal strength. ",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(LTE Modem data connection failed - status:9.*$)",
+			"Meaning": "The LTE connection to the internet failed. \u00a0Status 9 indicates a no carrier error. \u00a0No carrier is usually a result of bad provisioning or very poor signal strength.  ",
+			"Level": "INFO",
+			"Type": "cp_stack_mgr",
+			"Problematic": true
+		},
+		{
+			"Message": "(SIM error: NOSIM.*$)",
+			"Meaning": "The SIM card is not inserted, it is inserted improperly, either the SIM or the port for the SIM may be bad,\u00a0or you have an incorrect size of SIM card. If the SIM is inserted properly, and is the correct size, and you are still getting the NO SIM error, then you need to test the SIM card in a different device to eliminate the SIM being the issue. https://customer.cradlepoint.com/s/article/What-type-of-SIM-cards-do-CradlePoint-modems-use ",
+			"Level": "WARN",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(suspending due to IP conflict.*$)",
+			"Meaning": "The Cradlepoint is detecting an IP Conflict, usually this happens when there is something on the network that has the same IP address as the one of the Cradlepoint's networks. \u00a0The most common appearance of this is when the WAN connection is trying to use an IP Address that is within the same IP address of one of the Cradlepoint's LANs.  To resolve that, change the subnet of your LAN, or get the WAN to give out addresses on a non-conflicting range. ",
+			"Level": "WARN",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(Connect Event: unknown error - state: connecting.*$)",
+			"Meaning": "A CPPM unknown error usually indicates the modem or SIM is not functioning properly.  It can also indicate modem/SIM card provisioning errors.  ",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(state=connecting result=unknown error.*$)",
+			"Meaning": "A CPPM unknown error usually indicates the modem or SIM is not functioning properly.  It can also indicate modem/SIM card provisioning errors.  ",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(Module FW\\(.*\\) / SIM Carrier\\(.*\\) - mismatch.*$)",
+			"Meaning": "Indicates a mismatch between the modem firmware and the SIM. It is most likely to occur on modems that do not support\u00a0Auto Carrier Selection. For modems that do not support Auto-Carrier Selection, ensure the correct firmware is loaded. For information about modem firmware management, click\u00a0https://customer.cradlepoint.com/s/article/NCOS-Cradlepoint-Manual-Modem-Firmware-Update.",
+			"Level": "INFO",
+			"Type": "WAN",
+			"Problematic": true
+		},
+		{
+			"Message": "(Wandev configure exception: Static config error: missing static ip dns server\\(s\\).*$)",
+			"Meaning": "A static IP was configured on the WAN by the user, but the user did not configure DNS servers for the WAN connection.  To resolve this, go to Connection Manager, select the WAN connection, click \"Edit\", and then specifiy static DNS servers. ",
+			"Level": "ERROR",
+			"Type": "WAN",
+			"Problematic": ""
+		}
+	],
+	"IPSec": [{
+			"Message": "(generating IKE_AUTH response 1 \\[ N\\(AUTH_FAILED\\) \\].*$)",
+			"Meaning": "IPSec peer failed authentication, and an AUTH_FAILED response is being sent to it.  This can often times mean there is a pre-shared key mismatch.  https://customer.cradlepoint.com/s/article/Pre-Shared-Key-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(parsed IKE_AUTH response 1 \\[ N\\(AUTH_FAILED\\) \\].*$)",
+			"Meaning": "IPSec peer failed authentication, and an AUTH_FAILED response was received.  This can often times mean there is a pre-shared key mismatch.  https://customer.cradlepoint.com/s/article/Pre-Shared-Key-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(received AUTHENTICATION_FAILED notify error.*$)",
+			"Meaning": "IPSec peer failed authentication, and an AUTH_FAILED response was received.  This can often times mean there is a pre-shared key mismatch.  https://customer.cradlepoint.com/s/article/Pre-Shared-Key-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(traffic selectors \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\/\\d{1,2} === \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\/\\d{1,2} inacceptable.*$)",
+			"Meaning": "There is a mismatch between the local and remote networks that each side of the tunnel is proposing.  Check to ensure that each side has the correct local/remote networks configured.  https://customer.cradlepoint.com/s/article/Local-Network-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(closing IKE_SA due CHILD_SA setup failure.*$)",
+			"Meaning": "Setup of Phase 2 Child SAs(security associations) failed.  This is usually due to a local/remote traffic selector mismatch, or some other phase 2 encryption/hash/algorithm mismatch.  Log messages above this can help give context to what caused the failure.  https://customer.cradlepoint.com/s/article/Local-Network-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2 ",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(generating IKE_AUTH response 1 \\[ IDr AUTH N\\(MOBIKE_SUP\\) N\\(ADD_4_ADDR\\) N\\(ADD_4_ADDR\\) N\\(ADD_4_ADDR\\) N\\(TS_UNACCEPT\\) \\].*$)",
+			"Meaning": "Setup of Phase 2 Child SAs(security associations) failed, so a response to notify the other side of the tunnel is being generated and sent.  This failure is usually due to a local/remote traffic selector mismatch, or some other phase 2 encryption/hash/algorithm mismatch.  Log messages above this can help give context to what caused the failure.   https://customer.cradlepoint.com/s/article/Local-Network-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": true
+		},
+		{
+			"Message": "(received TS_UNACCEPTABLE notify, no CHILD_SA built.*$)",
+			"Meaning": "Recieved a notifcation from the other side of the tunnel that setup of Phase 2 Child SAs(security associations) failed. This failure is usually due to a local/remote traffic selector mismatch, or some other phase 2 encryption/hash/algorithm mismatch.  Log messages above this can help give context to what caused the failure.   https://customer.cradlepoint.com/s/article/Local-Network-Mismatch-Policy-Based-IPSec-VPN-NCOS-7-0-40",
+			"Level": "INFO, IPSEC CFG: 2, IKE: 2",
+			"Type": "IPSEC",
+			"Problematic": ""
+		},
+		{
+			"Message": "(comp-lzo' is present in remote config but missing in local config, remote='comp-lzo'.*$)",
+			"Meaning": "Comp-lzo is a compression option for OpenVPN.  Cradlepoint routers do not have a way to turn on Comp-lzo.  To get the OpenVPN tunnel to connect, the remote side of the tunnel will have to turn off the comp-lzo flag in their OpenVPN config",
+			"Level": "WARN",
+			"Type": "OPENVPN",
+			"Problematic": ""
+		},
+		{
+			"Message": "(write to TUN/TAP : Invalid argument \\(code=22\\).*$)",
+			"Meaning": "The remote side of the OpenVPN tunnel is trying to push the comp-lzo option to the Cradlepoint.  Cradlepoints do not support using Comp-lzo, so the tunnel wont function properly.  To get the OpenVPN tunnel to connect, the remote side of the tunnel will have to turn off the comp-lzo flag in their OpenVPN config",
+			"Level": "ERR",
+			"Type": "OPENVPN",
+			"Problematic": ""
+		}
+	],
+	"Routing Protocols": [{
+			"Message": "(nsm_change_state\\(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\, Full -> Deleted\\): scheduling new router-LSA origination.*$)",
+			"Meaning": "The OSPF neighbor in this log message is no longer a neighbor and was removed.  The neighbor could have stopped running ospf or ran into other OSPF neighboring issues that caused it to go from a full state to no longer being an OSPF neighbor",
+			"Level": "INFO",
+			"Type": "OSPF",
+			"Problematic": true
+		},
+		{
+			"Message": "(Packet\\[DD\\]: Neighbor \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3} MTU \\d{1,4} is larger than \\[eth0.1:192.168.31.3\\]'s MTU \\d{1,4}.*$)",
+			"Meaning": "There is an MTU mismatch between the two OSPF neighbors.  This will cause them to get stuck in an Exchange/Exstart state and full neighborship will not be able to form.  Change MTU settings to get the two sides to use the same MTU to resolve this.  ",
+			"Level": "WARN",
+			"Type": "OSPF",
+			"Problematic": true
+		},
+		{
+			"Message": "(Packet[DD] [Slave]: Neighbor \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3} packet duplicated..*$)",
+			"Meaning": "This message indicates an MTU mismatch between the two OSPF neighbors.  This will cause them to get stuck in an Exchange/Exstart state and full neighborship will not be able to form.  Change MTU settings to get the two sides to use the same MTU to resolve this.  ",
+			"Level": "INFO",
+			"Type": "OSPF",
+			"Problematic": true
+		},
+		{
+			"Message": "(Packet \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3} \\[Hello:RECV\\]: RouterDeadInterval mismatch \\(expected \\d{1,3}, but received \\d{1,3}\\).*$)",
+			"Meaning": "There is a mismatch in dead intervals.  Make sure the hello and dead intervals match between the routers to resolve this. ",
+			"Level": "WARN",
+			"Type": "OSPF",
+			"Problematic": true
+		}
+	],
+	"NCP": [],
+	"NCM": [{
+			"Message": "(Registration Error: Name or service not known.*$)",
+			"Meaning": "Router was unable to reach NCM because of a DNS issue.  Verify that the router has a working internet connection and try changing your DNS servers to troubleshoot the issue.  See this article for more information: https://customer.cradlepoint.com/s/article/Registration-Error-Name-or-service-not-known",
+			"Level": "INFO",
+			"Type": "NCM",
+			"Problematic": true
+		},
+		{
+			"Message": "(Registration Error: Chain Verification Failed.*$)",
+			"Meaning": "This indicates the router is having problems getting accurate time from an NTP server.  This could be caused by a number of connectivity issues, see this article to troubleshoot: https://customer.cradlepoint.com/s/article/Registration-Error-Chain-Verification-Failed-Troubleshooting",
+			"Level": "INFO",
+			"Type": "NCM",
+			"Problematic": ""
+		}
+	]
+}
