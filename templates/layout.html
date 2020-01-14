@@ -26,8 +26,8 @@
   <body>
     {% include "siteHeader.html" %}
     <main role="main">
-     <div class="container" style="display: flex; align-content: left; justify-content: left; flex-direction: column">
-        <div class="row" style="flex:1">
+     <div class="container">
+        <div class="row">
            {% with messages = get_flashed_messages() %}
            {% if messages %}
            <ul>
@@ -37,7 +37,7 @@
            </ul>
            {% endif %}
            {% endwith %}
-            <div class="flex-container" style="flex-direction: column">
+            <div class="flex-container">
                {% block content %}
                {% endblock %}
             </div>

@@ -14,11 +14,15 @@ h4 {
 
 .container {
   display: flex;
+  align-content: left;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .flex {
