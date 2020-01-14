@@ -8,13 +8,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
 
+h4 {
+    white-space:pre-line;
+}
+
 .container {
   display: flex;
+  align-content: left;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .flex {
@@ -51,6 +59,14 @@ div {
   flex: 50%;
 }
 
+row {
+    flex:1;
+}
+
 .form-control {
   display: flex;
+}
+
+p.thick {
+    font-weight: bold;
 }

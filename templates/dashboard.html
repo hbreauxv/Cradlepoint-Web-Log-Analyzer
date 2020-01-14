@@ -2,15 +2,15 @@
 
 
 {% block content %}
-    <div class="row" style="flex:1">
+    <div class="row">
         <h3>Upload a log to view Analysis!</h3>
     </div>
 
-    <div class="row" style="flex:1">
+    <div class="row">
         <p>Problem messages and a connection state graph will be generated.</p>
     </div>
 
-    <div class="row" style="flex:1">
+    <div class="row">
         <br>
             <form id="logFileForm" action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
                 {{ form.hidden_tag() }}
@@ -23,19 +23,18 @@
     </div>
 
     {% if analysis %}
-    <div class="row" style="flex:1">
-        <h4 style="white-space:pre-line">Log Message Analysis</h4>
+    <div class="row">
+        <h4>Log Message Analysis</h4>
     </div>
-    <div class="row" style="flex:1">
-
+    <div class="row">
         {% for msg in analysis %}
-        <p>{{msg}}</p>
+        <p class=" {{ loop.cycle('thick', '', '') }} ">{{msg}}</p>
         {% endfor %}
     </div>
     {% endif %}
 
     {% if plots %}
-    <div class="row" style="flex:1">
+    <div class="row">
         <h4>Connection State Graphs</h4>
         {% for plot in plots %}
             {% for part in plot %}
