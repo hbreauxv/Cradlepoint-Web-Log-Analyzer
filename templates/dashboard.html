@@ -28,7 +28,7 @@
     </div>
     <div class="row">
         {% for msg in analysis %}
-        <p class=" {{ loop.cycle('thick', '', '') }} ">{{msg}}</p>
+        <p class=" {{ loop.cycle('thick', 'error-message', '') }} ">{{msg}}</p>
         {% endfor %}
     </div>
     {% endif %}

@@ -70,3 +70,7 @@ row {
 p.thick {
     font-weight: bold;
 }
+
+p.error-message {
+    margin-left: 5px;
+}
