@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
 
+h4 {
+    white-space:pre-line;
+}
+
 .container {
   display: flex;
 }
@@ -49,6 +53,10 @@ div {
 
 .column {
   flex: 50%;
+}
+
+row {
+    flex:1;
 }
 
 .form-control {
