@@ -27,9 +27,8 @@
         <h4 style="white-space:pre-line">Log Message Analysis</h4>
     </div>
     <div class="row" style="flex:1">
-
         {% for msg in analysis %}
-        <p>{{msg}}</p>
+        <p class=" {{ loop.cycle('odd', 'even') }} ">{{msg}}</p>
         {% endfor %}
     </div>
     {% endif %}

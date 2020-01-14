@@ -54,3 +54,7 @@ div {
 .form-control {
   display: flex;
 }
+
+p.odd {
+    font-weight: bold;
+}
