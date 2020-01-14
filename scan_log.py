@@ -107,7 +107,8 @@ class ScanLog(object):
                     # if there's a match, write the line, match, and the meaning to our output file
                     if match:
                         # 1/2/20 - removing print of whole log message because some messages are humongous
-                        problem_messages.append("Problem found on line %s! " % i)
+                        problem_messages.append("Problem found on line %s: " % i)
+                        problem_messages.append(" %s" % key)
                         problem_messages.append("Common meaning of error: %s" % dictionary[key] + '\n')
 
         return problem_messages
